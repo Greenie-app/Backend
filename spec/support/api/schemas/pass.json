@@ -1,0 +1,94 @@
+{
+  "$schema":    "http://json-schema.org/draft-07/schema#",
+  "id":         "file:/pass.json#",
+  "title":      "Pass",
+  "type":       "object",
+  "properties": {
+    "pilot":         {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "id": {
+      "type": "number"
+    },
+    "time":          {
+      "type":   "string",
+      "format": "date-time"
+    },
+    "ship_name":     {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "aircraft_type": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "grade":         {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "score":         {
+      "type":    [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-5](\\.[05])?$"
+    },
+    "trap":          {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "wire":          {
+      "type":    [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4
+    },
+    "notes":         {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required":   [
+    "id",
+    "time"
+  ]
+}

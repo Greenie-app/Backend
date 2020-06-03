@@ -1,0 +1,1772 @@
+=== Log opened UTC 2020-06-03 00:18:55
+2020-06-03 00:18:54.954 INFO    DCS: Command line: "E:\Program Files\Eagle Dynamics\DCS World OpenBeta\bin\DCS.exe" 
+2020-06-03 00:18:54.954 INFO    DCS: DCS/2.5.6.49798 (x86_64; Windows NT 10.0.19041)
+2020-06-03 00:18:54.954 INFO    DCS: DCS revision: 169791
+2020-06-03 00:18:54.954 INFO    DCS: Renderer revision: 20354
+2020-06-03 00:18:54.954 INFO    DCS: Terrain revision: 20270
+2020-06-03 00:18:54.954 INFO    DCS: CPU cores: 8, threads: 8, System RAM: 32676 MB, Pagefile: 4864 MB
+2020-06-03 00:18:54.996 INFO    EDCORE: (dDispatcher)enterToState_:0
+2020-06-03 00:18:55.081 INFO    Dispatcher: 2020/6/2 17:18 V1803061700
+2020-06-03 00:18:55.175 INFO    INPUT: Device [Keyboard] created deviceId = -1
+2020-06-03 00:18:55.184 INFO    INPUT: Device [VirtualFly - TQ6+  {E0E5F4F0-922A-11ea-8006-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.184 INFO    INPUT: Joystick created[VirtualFly - TQ6+  {E0E5F4F0-922A-11ea-8006-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.187 INFO    INPUT: Device [VirtualFly - YOKO+  {E0EF1CB0-922A-11ea-801C-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.187 INFO    INPUT: Joystick created[VirtualFly - YOKO+  {E0EF1CB0-922A-11ea-801C-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.197 INFO    INPUT: Device [vJoy Device {9B68C5B0-92A7-11ea-8002-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.206 INFO    INPUT: Joystick created[vJoy Device {9B68C5B0-92A7-11ea-8002-444553540000}], ForceFeedBack: yes, guidFFDriver: {EEC6993A-B3FD-11d2-A916-00C04FB98638}
+2020-06-03 00:18:55.346 INFO    INPUT: Device [MFG Crosswind V2 {E0E77B90-922A-11ea-800B-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.346 INFO    INPUT: Joystick created[MFG Crosswind V2 {E0E77B90-922A-11ea-800B-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.360 INFO    INPUT: Device [F16 MFD 1 {E0E5A6D0-922A-11ea-8003-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.360 INFO    INPUT: Joystick created[F16 MFD 1 {E0E5A6D0-922A-11ea-8003-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.363 INFO    INPUT: Device [A10C UFC {E0E7F0C0-922A-11ea-8010-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.363 INFO    INPUT: Joystick created[A10C UFC {E0E7F0C0-922A-11ea-8010-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.366 INFO    INPUT: Device [Throttletek 1 {E0E7F0C0-922A-11ea-8011-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.366 INFO    INPUT: Joystick created[Throttletek 1 {E0E7F0C0-922A-11ea-8011-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.463 INFO    INPUT: Device [F16 MFD 2 {E0E7C9B0-922A-11ea-800E-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.463 INFO    INPUT: Joystick created[F16 MFD 2 {E0E7C9B0-922A-11ea-800E-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.469 INFO    INPUT: Device [VPC MT-50 Throttle CM {E0E92940-922A-11ea-8016-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.469 INFO    INPUT: Joystick created[VPC MT-50 Throttle CM {E0E92940-922A-11ea-8016-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.537 INFO    INPUT: Device [VPC MT-50CM Stick {E0EEF5A0-922A-11ea-801B-444553540000}] created deviceId = -1
+2020-06-03 00:18:55.537 INFO    INPUT: Joystick created[VPC MT-50CM Stick {E0EEF5A0-922A-11ea-801B-444553540000}], ForceFeedBack: no
+2020-06-03 00:18:55.562 INFO    INPUT: Device [Mouse] created deviceId = -1
+2020-06-03 00:18:55.618 INFO    SOUND: Using driver: wasapi
+2020-06-03 00:18:55.620 INFO    SOUND: Found 8 available audio device(s):
+2020-06-03 00:18:55.620 INFO    SOUND:   0: ID: "{0.0.0.00000000}.{1030ce2f-c927-46fc-932e-ccbc1e310b83}", Name: "HDMI (NVIDIA High Definition Audio)"
+2020-06-03 00:18:55.620 INFO    SOUND:   1: ID: "{0.0.0.00000000}.{14409a8b-97b9-426e-89ba-5e1bd10a409e}", Name: "Speakers (Steam Streaming Speakers)"
+2020-06-03 00:18:55.620 INFO    SOUND:   2: ID: "{0.0.0.00000000}.{1475a255-e94c-4462-b4c1-3af1b4b4d78b}", Name: "ROG PG279Q (NVIDIA High Definition Audio)"
+2020-06-03 00:18:55.620 INFO    SOUND:   3: ID: "{0.0.0.00000000}.{205a1842-678e-4200-8572-17881e2a937d}", Name: "Headphones (Realtek USB2.0 Audio)"
+2020-06-03 00:18:55.620 INFO    SOUND:   4: ID: "{0.0.0.00000000}.{29555c9b-9b9e-4074-b57b-4c3c87fecb16}", Name: "Speakers (Steam Streaming Microphone)"
+2020-06-03 00:18:55.620 INFO    SOUND:   5: ID: "{0.0.0.00000000}.{9f0d47cb-7175-497a-84d7-56f8dae19172}", Name: "Speakers (Realtek(R) Audio)"
+2020-06-03 00:18:55.620 INFO    SOUND:   6: ID: "{0.0.0.00000000}.{f105a3c0-0755-468d-9517-1d7761d74364}", Name: "Digital Output (Realtek(R) Audio)"
+2020-06-03 00:18:55.620 INFO    SOUND:   7: ID: "{0.0.0.00000000}.{f2670e96-c6a6-44bf-a17e-33e1ba0b5286}", Name: "Headset Earphone (HyperX 7.1 Audio)"
+2020-06-03 00:19:00.298 INFO    SOUND: Added sound path: Sounds
+2020-06-03 00:19:00.327 INFO    SOUNDER: Loaded 207 packed sounders.
+2020-06-03 00:19:00.327 INFO    Dispatcher: InitLow
+2020-06-03 00:20:44.790 INFO    NET: Login success.
+2020-06-03 00:20:46.894 INFO    NET: Got auth data.
+2020-06-03 00:20:46.898 INFO    DCS: Successfully got authorization data.
+2020-06-03 00:20:46.911 INFO    Dispatcher: Loading installed modules...
+2020-06-03 00:20:48.885 INFO    SECURITYCONTROL: Loaded mods/tech/wwii units/dcs_module.pak.crypt
+2020-06-03 00:20:49.032 WARNING Dispatcher: "./Mods/aircraft/A-10A" is not authorized.
+2020-06-03 00:20:49.991 WARNING Dispatcher: "./Mods/aircraft/F-15C" is not authorized.
+2020-06-03 00:20:51.930 WARNING Dispatcher: "./Mods/aircraft/MiG-29" is not authorized.
+2020-06-03 00:20:52.377 WARNING Dispatcher: "./Mods/aircraft/Su-25A" is not authorized.
+2020-06-03 00:20:52.547 WARNING Dispatcher: "./Mods/aircraft/Su-27" is not authorized.
+2020-06-03 00:20:58.771 INFO    Scripting: OBSOLETE mount_vfs_sound_path() used in ./CoreMods/aircraft/AJS37/entry.lua
+2020-06-03 00:20:58.986 INFO    Scripting: OBSOLETE mount_vfs_sound_path() used in ./Mods/aircraft/AJS37/entry.lua
+2020-06-03 00:20:59.013 INFO    Scripting: OBSOLETE mount_vfs_sound_path() used in ./Mods/aircraft/F14/entry.lua
+2020-06-03 00:20:59.178 ALERT   Scripting: loadfile: can't open 'C:\Users\riscf\Saved Games\DCS.openbeta\Mods/tech/US Navy Crew/MD-3.lua'
+2020-06-03 00:20:59.178 ALERT   Scripting: loadfile: can't open 'C:\Users\riscf\Saved Games\DCS.openbeta\Mods/tech/US Navy Crew/MD-3 Air.lua'
+2020-06-03 00:20:59.241 INFO    Scripting: OBSOLETE mount_vfs_sound_path() used in C:\Users\riscf\Saved Games\DCS.openbeta\Mods/aircraft/Civil Aircraft Mod/entry.lua
+2020-06-03 00:20:59.288 INFO    Scripting: PLUGINS START-------------------------------------------------
+2020-06-03 00:20:59.355 INFO    SOUND: Added sound path: ./CoreMods/tech/TechWeaponPack/Sounds
+2020-06-03 00:20:59.359 INFO    SOUNDER: Loaded 3 packed sounders.
+2020-06-03 00:20:59.472 INFO    SOUND: Added sound path: ./CoreMods/tech/USS John C Stennis/Sounds
+2020-06-03 00:20:59.477 INFO    SOUNDER: Loaded 1 packed sounders.
+2020-06-03 00:20:59.508 INFO    SOUND: Added sound path: ./CoreMods/tech/USS_Nimitz/Sounds
+2020-06-03 00:20:59.517 INFO    SOUNDER: Loaded 3 packed sounders.
+2020-06-03 00:20:59.885 INFO    SOUND: Added sound path: ./CoreMods/aircraft/AJS37/Sounds
+2020-06-03 00:20:59.982 INFO    SOUND: Added sound path: ./CoreMods/aircraft/AV8BNA/Sounds
+2020-06-03 00:21:00.042 INFO    SOUNDER: Loaded 1 sounders.
+2020-06-03 00:21:00.045 WARNING EDCORE: Source ./CoreMods/aircraft/AV8BNA/Shapes is already mounted to the same mount /models/.
+2020-06-03 00:21:00.066 INFO    SOUND: Added sound path: ./CoreMods/aircraft/C-101/Sounds
+2020-06-03 00:21:00.125 WARNING EDCORE: Source ./CoreMods/aircraft/C-101/Liveries is already mounted to the same mount /textures//liveries/.
+2020-06-03 00:21:00.129 INFO    SOUND: Added sound path: ./CoreMods/aircraft/ChinaAssetPack/Sounds
+2020-06-03 00:21:00.275 INFO    SOUNDER: Loaded 10 sounders.
+2020-06-03 00:21:00.295 INFO    SOUND: Added sound path: ./CoreMods/aircraft/Christen Eagle II/Sounds
+2020-06-03 00:21:00.353 INFO    SOUND: Added sound path: ./CoreMods/aircraft/F14/Sounds
+2020-06-03 00:21:00.402 INFO    SOUNDER: Loaded 1 sounders.
+2020-06-03 00:21:00.454 INFO    SOUND: Added sound path: ./CoreMods/aircraft/Hawk/Sounds
+2020-06-03 00:21:00.471 INFO    SOUND: Added sound path: ./CoreMods/aircraft/I-16/Sounds
+2020-06-03 00:21:00.599 INFO    SOUND: Added sound path: ./CoreMods/aircraft/M-2000C/Sounds
+2020-06-03 00:21:00.691 INFO    SOUND: Added sound path: ./CoreMods/aircraft/MiG-21bis/Sounds
+2020-06-03 00:21:00.750 INFO    SOUND: Added sound path: ./CoreMods/aircraft/SA342/Sounds
+2020-06-03 00:21:00.863 INFO    SOUND: Added sound path: ./Mods/tech/CombinedArms/Sounds
+2020-06-03 00:21:00.940 INFO    SOUND: Added sound path: ./Mods/tech/WWII Units/Sounds
+2020-06-03 00:21:00.951 INFO    SOUNDER: Loaded 75 packed sounders.
+2020-06-03 00:21:01.165 INFO    Scripting: plugin: SKIPPED 'A-10A by Eagle Dynamics': disabled by user
+2020-06-03 00:21:01.195 INFO    SOUND: Added sound path: ./Mods/aircraft/A-10C/Sounds
+2020-06-03 00:21:01.198 INFO    SOUND: Added sound path: ./Mods/aircraft/AJS37/Sounds
+2020-06-03 00:21:01.679 INFO    SOUND: Added sound path: ./Mods/aircraft/AV8BNA/Sounds
+2020-06-03 00:21:01.921 INFO    SOUND: Added sound path: ./Mods/aircraft/Bf-109K-4/Sounds
+2020-06-03 00:21:01.931 INFO    SOUND: Added sound path: ./Mods/aircraft/C-101/Sounds
+2020-06-03 00:21:02.363 INFO    SOUND: Added sound path: ./Mods/aircraft/Christen Eagle II/Sounds
+2020-06-03 00:21:02.423 INFO    Scripting: plugin: SKIPPED 'F-15C': disabled by user
+2020-06-03 00:21:02.494 INFO    SOUND: Added sound path: ./Mods/aircraft/F-16C/Sounds
+2020-06-03 00:21:02.570 INFO    SOUND: Added sound path: ./Mods/aircraft/F-5E/Sounds
+2020-06-03 00:21:02.636 INFO    SOUND: Added sound path: ./Mods/aircraft/F-86/Sounds
+2020-06-03 00:21:02.736 INFO    SOUND: Added sound path: ./Mods/aircraft/F14/Sounds
+2020-06-03 00:21:32.549 INFO    SOUND: Added sound path: ./Mods/aircraft/FA-18C/Sounds
+2020-06-03 00:21:32.630 INFO    SOUND: Added sound path: ./Mods/aircraft/FW-190A8/Sounds
+2020-06-03 00:21:32.699 INFO    SOUND: Added sound path: ./Mods/aircraft/FW-190D9/Sounds
+2020-06-03 00:21:32.707 INFO    Scripting: plugin: SKIPPED 'Flaming Cliffs by Eagle Dynamics': disabled by user
+2020-06-03 00:21:32.709 INFO    SOUND: Added sound path: ./Mods/aircraft/I-16/Sounds
+2020-06-03 00:21:32.878 INFO    SOUND: Added sound path: ./Mods/aircraft/JF-17/Sounds
+2020-06-03 00:21:33.396 INFO    SOUND: Added sound path: ./Mods/aircraft/Ka-50/Sounds
+2020-06-03 00:21:33.482 INFO    SOUND: Added sound path: ./Mods/aircraft/L-39C/Sounds
+2020-06-03 00:21:33.496 INFO    SOUND: Added sound path: ./Mods/aircraft/M-2000C/Sounds
+2020-06-03 00:21:33.663 INFO    SOUND: Added sound path: ./Mods/aircraft/MIG-21bis/Sounds
+2020-06-03 00:21:34.085 INFO    SOUND: Added sound path: ./Mods/aircraft/Mi-8MTV2/Sounds
+2020-06-03 00:21:34.154 INFO    SOUND: Added sound path: ./Mods/aircraft/MiG-15bis/Sounds
+2020-06-03 00:21:34.164 INFO    SOUND: Added sound path: ./Mods/aircraft/MiG-19P/Sounds
+2020-06-03 00:21:34.325 INFO    Scripting: plugin: SKIPPED 'MiG-29 Fulcrum by Eagle Dynamics': disabled by user
+2020-06-03 00:21:34.361 INFO    SOUND: Added sound path: ./Mods/aircraft/NS430/Sounds
+2020-06-03 00:21:34.403 INFO    SOUND: Added sound path: ./Mods/aircraft/P-51D/Sounds
+2020-06-03 00:21:34.406 INFO    SOUND: Added sound path: ./Mods/aircraft/SA342/Sounds
+2020-06-03 00:21:34.788 INFO    SOUND: Added sound path: ./Mods/aircraft/SpitfireLFMkIX/Sounds
+2020-06-03 00:21:34.795 INFO    Scripting: plugin: SKIPPED 'Su-25A by Eagle Dynamics': disabled by user
+2020-06-03 00:21:34.795 INFO    Scripting: plugin: SKIPPED 'Su-25T by Eagle Dynamics': disabled by user
+2020-06-03 00:21:34.795 INFO    Scripting: plugin: SKIPPED 'Su-27 Flanker by Eagle Dynamics': disabled by user
+2020-06-03 00:21:34.795 INFO    Scripting: plugin: SKIPPED 'Su-33 Flanker by Eagle Dynamics': disabled by user
+2020-06-03 00:21:34.824 INFO    SOUND: Added sound path: ./Mods/aircraft/TF-51D/Sounds
+2020-06-03 00:21:34.864 INFO    SOUND: Added sound path: ./Mods/aircraft/Uh-1H/Sounds
+2020-06-03 00:21:34.951 INFO    SOUND: Added sound path: ./Mods/aircraft/Yak-52/Sounds
+2020-06-03 00:21:34.994 INFO    SOUND: Added sound path: ./Mods/terrains/Nevada/Sounds
+2020-06-03 00:21:35.030 INFO    SOUND: Added sound path: ./Mods/terrains/Normandy/Sounds
+2020-06-03 00:21:35.224 INFO    SOUND: Added sound path: C:\Users\riscf\Saved Games\DCS.openbeta\Mods/tech/Ze Dim' New Static Packv0.4/Sounds
+2020-06-03 00:21:35.240 ERROR   SOUNDER: Failed to load /sounds/49/Sounders/GroundUnits/WeaponSystem/IFV/toyota_desert.lua: [string "/sounds/49/Sounders/GroundUnits/WeaponSystem/IFV/toyota_desert...."]:9: '=' expected near '-'
+2020-06-03 00:21:35.245 INFO    SOUNDER: Loaded 3 sounders.
+2020-06-03 00:21:35.247 WARNING EDCORE: Source C:\Users\riscf\Saved Games\DCS.openbeta\Mods/tech/Ze Dim' New Static Packv0.4/Shapes is already mounted to the same mount /models/.
+2020-06-03 00:21:35.357 WARNING LOG: 8 duplicate message(s) skipped.
+2020-06-03 00:21:35.357 INFO    SOUND: Added sound path: C:\Users\riscf\Saved Games\DCS.openbeta\Mods/aircraft/Civil Aircraft Mod/Sounds
+2020-06-03 00:21:35.379 INFO    Scripting: PLUGINS DONE--------------------------------------------------
+2020-06-03 00:21:36.264 INFO    SECURITYCONTROL: Loaded ./CoreMods/aircraft/AV8BNA/bin/AV8B_AI.dll
+2020-06-03 00:21:36.268 INFO    SECURITYCONTROL: Loaded ./CoreMods/aircraft/C-101/bin/C101Core.dll
+2020-06-03 00:21:36.272 INFO    SECURITYCONTROL: Loaded ./CoreMods/aircraft/ChinaAssetPack/bin/JF-17_AI.dll
+2020-06-03 00:21:36.276 INFO    CE2_AI: Loading CE AI
+2020-06-03 00:21:36.276 INFO    SECURITYCONTROL: Loaded ./CoreMods/aircraft/Christen Eagle II/bin/CE2_AI.dll
+2020-06-03 00:21:36.280 INFO    SECURITYCONTROL: Loaded ./CoreMods/aircraft/F14/bin/F14-AI.dll
+2020-06-03 00:21:36.284 INFO    MiG21_AI: Loading CE AI
+2020-06-03 00:21:36.284 INFO    SECURITYCONTROL: Loaded ./CoreMods/aircraft/MiG-21bis/bin/MiG21_AI.dll
+2020-06-03 00:21:36.290 INFO    SECURITYCONTROL: Loaded ./CoreMods/services/CaptoGlove/bin/edCaptoGlove.dll
+2020-06-03 00:21:36.319 INFO    SECURITYCONTROL: Loaded ./CoreMods/services/VoiceChat/bin/VoiceChat.dll
+2020-06-03 00:21:36.710 INFO    SECURITYCONTROL: Loaded ./Mods/tech/CombinedArms/bin/GroundCockpitBase.dll
+2020-06-03 00:21:36.993 INFO    SECURITYCONTROL: Loaded ./Mods/tech/CombinedArms/bin/CombinedArms.dll
+2020-06-03 00:21:37.314 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/A-10C/bin/A10.dll
+2020-06-03 00:21:37.621 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/A-10C/bin/Cockpit_A10Common.dll
+2020-06-03 00:21:38.005 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/A-10C/bin/Cockpit_A10C.dll
+2020-06-03 00:21:38.375 INFO    VIGGEN: AJS37.dll built on May  2 2020 06:49:16 SDK: 2 5 6 48192 Run-time: 2.5.6.49798
+2020-06-03 00:21:38.375 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/AJS37/bin/AJS37.dll
+2020-06-03 00:21:38.759 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/AJS37/bin/AJS37-Avionics.dll
+2020-06-03 00:21:39.095 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/AV8BNA/bin/AV8B_CPT.dll
+2020-06-03 00:21:39.408 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/AV8BNA/bin/AV8B_FM.dll
+2020-06-03 00:21:39.757 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Bf-109K-4/bin/Bf109K4.dll
+2020-06-03 00:21:40.074 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/C-101/bin/ABase.dll
+2020-06-03 00:21:40.682 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/C-101/bin/C101EBSys.dll
+2020-06-03 00:21:41.017 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/C-101/bin/C101CCSys.dll
+2020-06-03 00:21:41.038 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/C-101/bin/C101FM.dll
+2020-06-03 00:21:41.365 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Christen Eagle II/bin/CE2_FlightModel.dll
+2020-06-03 00:21:41.689 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Christen Eagle II/bin/CE2_Avionics.dll
+2020-06-03 00:21:42.053 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/F-16C/bin/F16C.dll
+2020-06-03 00:21:42.392 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/F-5E/bin/F5E.dll
+2020-06-03 00:21:42.721 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/F-86/bin/F86.dll
+2020-06-03 00:21:43.041 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/F14/bin/F14-HeatblurCommon.dll
+2020-06-03 00:21:43.401 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/F14/bin/F14-FlightModel.dll
+2020-06-03 00:21:43.806 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/F14/bin/F14-Avionics.dll
+2020-06-03 00:21:44.210 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/FA-18C/bin/FA18C.dll
+2020-06-03 00:21:44.532 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/FW-190A8/bin/FW190A8.dll
+2020-06-03 00:21:44.839 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/FW-190A8/bin/Cockpit_FW190A8.dll
+2020-06-03 00:21:45.142 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/FW-190D9/bin/FW190D9.dll
+2020-06-03 00:21:45.457 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/FW-190D9/bin/Cockpit_FW190D9.dll
+2020-06-03 00:21:45.778 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/I-16/bin/I16FM.dll
+2020-06-03 00:21:46.197 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/JF-17/bin/JF-17_ASM.dll
+2020-06-03 00:21:46.523 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Ka-50/bin/Ka50.dll
+2020-06-03 00:21:46.878 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Ka-50/bin/CockpitKa50.dll
+2020-06-03 00:21:47.224 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/L-39C/bin/L39C.dll
+2020-06-03 00:21:47.541 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/M-2000C/bin/M2KC_FM.dll
+2020-06-03 00:21:47.881 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/M-2000C/bin/M2KC_CPT.dll
+2020-06-03 00:21:48.183 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/MIG-21bis/bin/FlightModel.dll
+2020-06-03 00:21:48.526 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/MIG-21bis/bin/Avionics.dll
+2020-06-03 00:21:48.852 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Mi-8MTV2/bin/Mi8.dll
+2020-06-03 00:21:49.183 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Mi-8MTV2/bin/CockpitMi8.dll
+2020-06-03 00:21:49.511 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/MiG-15bis/bin/Mig15.dll
+2020-06-03 00:21:49.819 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/MiG-19P/bin/MIG19P_FM.dll
+2020-06-03 00:21:50.137 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/MiG-19P/bin/MIG19P_CPT.dll
+2020-06-03 00:21:50.166 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/jsAvionics/bin/jsAvionics.dll
+2020-06-03 00:21:50.495 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/NS430/bin/NS430.dll
+2020-06-03 00:21:50.822 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/P-51D/bin/P51B.dll
+2020-06-03 00:21:51.157 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/P-51D/bin/Cockpit_P51D.dll
+2020-06-03 00:21:51.510 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/SA342/bin/SA342.dll
+2020-06-03 00:21:51.828 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/SpitfireLFMkIX/bin/SpitfireLFMkIX.dll
+2020-06-03 00:21:51.836 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/TF-51D/bin/TF51D.dll
+2020-06-03 00:21:52.161 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Uh-1H/bin/UH1H.dll
+2020-06-03 00:21:52.519 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Uh-1H/bin/CockpitUH1H.dll
+2020-06-03 00:21:52.853 INFO    SECURITYCONTROL: Loaded ./Mods/aircraft/Yak-52/bin/Yak52.dll
+2020-06-03 00:21:52.864 INFO    SECURITYCONTROL: Loaded C:\Users\riscf\Saved Games\DCS.openbeta\Mods/tech/DCS-SRS/bin/srs.dll
+2020-06-03 00:21:52.865 INFO    SOUND: Added sound path: C:\Users\riscf\Saved Games\DCS.openbeta\Sounds
+2020-06-03 00:21:52.903 INFO    SOUNDER: Loaded 7 sounders.
+2020-06-03 00:21:53.000 INFO    DCS: options.graphics =
+{
+	['messagesFontScale'] = 1;
+	['rainDroplets'] = true;
+	['LensEffects'] = 3;
+	['heatBlr'] = 0;
+	['anisotropy'] = 3;
+	['water'] = 2;
+	['motionBlur'] = 0;
+	['outputGamma'] = 2.2;
+	['treesVisibility'] = 5000;
+	['aspect'] = 1.6666666666667;
+	['lights'] = 2;
+	['shadows'] = 1;
+	['MSAA'] = 0;
+	['SSAA'] = 0;
+	['civTraffic'] = '';
+	['clutterMaxDistance'] = 430;
+	['cockpitGI'] = 0;
+	['terrainTextures'] = 'max';
+	['multiMonitorSetup'] = '1camera';
+	['shadowTree'] = false;
+	['chimneySmokeDensity'] = 1;
+	['fullScreen'] = false;
+	['DOF'] = 0;
+	['clouds'] = 1;
+	['forestDistanceFactor'] = 0.5;
+	['flatTerrainShadows'] = 1;
+	['width'] = 1280;
+	['visibRange'] = 'High';
+	['SSLR'] = 0;
+	['effects'] = 3;
+	['SSAO'] = 0;
+	['useDeferredShading'] = 1;
+	['sync'] = false;
+	['textures'] = 2;
+	['scaleGui'] = 1;
+	['preloadRadius'] = 150000;
+	['height'] = 768;
+	['terrainMapMFD'] = 
+	{
+		['distance'] = 
+		{
+			['mapLodDistance3'] = 200000;
+			['mapLodDistance2'] = 100000;
+			['mapLodDistance0'] = 25000;
+			['mapLodDistance1'] = 50000;
+		};
+	};
+};
+2020-06-03 00:21:53.250 INFO    VISUALIZER: LAUNCH IN VR : OpenVR : HP Reverb VR Headset VR1000-2xxx0
+2020-06-03 00:21:53.264 INFO    GRAPHICSVISTA: renderer: 'dx11backend.dll'
+2020-06-03 00:21:53.725 INFO    DX11BACKEND: DX11Renderer initialization (w:1427 h:1400 fullscrn:0 vsync:0 adapter:0 monitor:0 shaderErrors:1)
+2020-06-03 00:21:53.959 INFO    DX11BACKEND: Driver Concurrent Creates - 1
+2020-06-03 00:21:53.959 INFO    DX11BACKEND: Driver Command Lists - 1
+2020-06-03 00:21:54.046 INFO    DX11BACKEND: NVIDIA API init OK
+2020-06-03 00:21:54.046 INFO    DX11BACKEND: NVIDIA Display Driver Version 44614.r445_85
+2020-06-03 00:21:54.046 INFO    DX11BACKEND: GPU count:1
+2020-06-03 00:21:54.104 INFO    DX11BACKEND: commonPool: 68-128, cbPool: 4-14, samplerPool: 5-16
+2020-06-03 00:21:54.114 INFO    DX11BACKEND: DX11ShaderBinaries::loadCache Bazar/shaders/fxo/fxo.zip
+2020-06-03 00:21:54.615 WARNING DX11BACKEND: Shader posteffects/nvd_hdr.fx:DIRECTX11=true;USE_DCS_DEFERRED=1; is outdated as file bazar/shaders/posteffects/nvd_hdr.fx is modified.
+2020-06-03 00:21:56.308 WARNING DX11BACKEND: Shader materialfactory/materialbase.hlsl:DIRECTX11=true;LASERBEAM_MATERIAL=1;USE_DCS_DEFERRED=1; is outdated as file bazar/shaders/materialfactory/laserbeam.hlsl is modified.
+2020-06-03 00:21:56.708 INFO    DX11BACKEND: DX11ShaderBinaries::loadCache done. Loaded 1028/1030.
+2020-06-03 00:21:56.713 INFO    DX11BACKEND: DX11ShaderBinaries::loadCache C:\Users\riscf\Saved Games\DCS.openbeta\fxo
+2020-06-03 00:21:57.068 INFO    DX11BACKEND: DX11ShaderBinaries::loadCache done. Loaded 75/75.
+2020-06-03 00:21:57.112 INFO    VISUALIZER: SceneManager initialization
+2020-06-03 00:21:57.592 INFO    VISUALIZER: cascade shadows init (preset:'default' quality:1 layers:1 size:1)
+2020-06-03 00:21:57.639 INFO    SOUND: Opening audio device "{0.0.0.00000000}.{9f0d47cb-7175-497a-84d7-56f8dae19172}"
+2020-06-03 00:21:57.642 INFO    SOUND: Driver reports 2 channels with mask 0x3
+2020-06-03 00:21:57.642 INFO    SOUND: Using 2 channels at 48000 Hz
+2020-06-03 00:21:57.642 INFO    SOUND: Channel layout: Headphones/Stereo
+2020-06-03 00:21:57.707 INFO    SOUND: Opening audio device "{0.0.0.00000000}.{205a1842-678e-4200-8572-17881e2a937d}"
+2020-06-03 00:21:57.708 INFO    SOUND: Driver reports 2 channels with mask 0x3
+2020-06-03 00:21:57.708 INFO    SOUND: Using 2 channels at 48000 Hz
+2020-06-03 00:21:57.708 INFO    SOUND: Channel layout: Headphones/Stereo
+2020-06-03 00:21:57.788 INFO    DCS: gDescription: "NVIDIA GeForce RTX 2080 Ti" gVendorId: 4318 gDeviceId: 7687 gMemory: 11049 MB
+2020-06-03 00:21:57.808 ERROR   EDOBJECTS: Destruction shape not found AVIASHTAB_CRASH
+2020-06-03 00:21:57.811 ERROR   EDOBJECTS: Object HB_F14_EXT_PHX_ALU with id=311 already declared in table MissileTable
+2020-06-03 00:21:59.937 INFO    DX11BACKEND: DX11ShaderBinaries::loadCache ./Mods/aircraft/F14/fxo
+2020-06-03 00:21:59.943 INFO    DX11BACKEND: DX11ShaderBinaries::loadCache done. Loaded 0/0.
+2020-06-03 00:22:00.468 INFO    EDCORE: (dDispatcher)enterToState_:1
+2020-06-03 00:22:04.857 INFO    UIBASERENDERER: Cannot load font [E:\Program Files\Eagle Dynamics\DCS World OpenBeta\dxgui\skins\fonts\]!
+2020-06-03 00:22:06.556 INFO    LuaNET: Loaded - DCS-SRS-AutoConnect 1.7.7.0
+2020-06-03 00:22:06.564 INFO    LuaNET: Loading - DCS-SRS GameGUI - Ciribob: 1.8.0.5
+2020-06-03 00:22:06.566 INFO    LuaNET: Loaded - DCS-SRS GameGUI - Ciribob: 1.8.0.5
+2020-06-03 00:22:06.571 INFO    LuaNET: Loading - DCS-SRS Overlay GameGUI - Ciribob: 1.8.0.5 
+2020-06-03 00:22:06.572 INFO    LuaNET: Loaded - DCS-SRS Overlay GameGUI - Ciribob: 1.8.0.5 
+2020-06-03 00:22:06.610 INFO    LuaNET: Loaded - Twitch2DCS GameGUI
+2020-06-03 00:22:07.125 INFO    Dispatcher: //=== END OF INIT ======================================//
+2020-06-03 00:22:07.125 INFO    EDCORE: (dDispatcher)enterToState_:2
+2020-06-03 00:22:07.168 INFO    EDCORE: (dDispatcher)enterToState_:3
+2020-06-03 00:22:07.168 INFO    Lua: Lua CPU usage: metric: average game loading: 29.1499 %
+2020-06-03 00:22:07.182 INFO    DCS: Screen: MainMenu
+2020-06-03 00:22:10.335 INFO    SOUND: Using SSSE3 for peak calc.
+2020-06-03 00:22:10.337 INFO    NET: client has started
+2020-06-03 00:22:10.338 INFO    NET: Using IPv6 multicast interface: 17 - Ethernet
+2020-06-03 00:22:10.338 INFO    NET: Using LEDBAT for UDP congestion control.
+2020-06-03 00:22:12.874 INFO    NET: client has stopped
+2020-06-03 00:22:14.725 INFO    NET: server has started
+2020-06-03 00:22:14.727 INFO    NET: Using LEDBAT for UDP congestion control.
+2020-06-03 00:22:18.073 INFO    NET: UPNP IGD detected.
+2020-06-03 00:22:18.073 INFO    NET: Internal LAN IP address: 192.168.1.3
+2020-06-03 00:22:18.073 INFO    NET: External WAN IP address: 136.24.60.68
+2020-06-03 00:22:18.079 INFO    NET: TCP external 136.24.60.68:10308 is redirected to internal 192.168.1.3:10308
+2020-06-03 00:22:18.084 INFO    NET: UDP external 136.24.60.68:10308 is redirected to internal 192.168.1.3:10308
+2020-06-03 00:22:18.084 INFO    NET: Successfully set up Dual-Stack socket, using both IPv4 and IPv6
+2020-06-03 00:22:18.084 INFO    NET: Listen to IPv6 on port 10308
+2020-06-03 00:22:18.085 INFO    Dispatcher: loadMission C:\Users\riscf\Downloads\VVN-73_Carrier_Training_F18.miz
+2020-06-03 00:22:18.085 INFO    WORLDGENERAL: loading mission from: "C:\Users\riscf\Downloads\VVN-73_Carrier_Training_F18.miz"
+2020-06-03 00:22:18.114 INFO    NET: Loading mission: "C:\Users\riscf\Downloads\VVN-73_Carrier_Training_F18.miz"
+2020-06-03 00:22:18.114 INFO    NET: Registering server as 136.24.60.68:10308 (port is forwarded by UPNP)
+2020-06-03 00:22:18.116 INFO    DCS: Screen: Server
+2020-06-03 00:22:18.118 INFO    EDCORE: (dDispatcher)enterToState_:4
+2020-06-03 00:22:18.124 INFO    Dispatcher: Terrain theatre PersianGulf
+2020-06-03 00:22:18.136 INFO    Dispatcher: Start
+2020-06-03 00:22:18.138 INFO    NET: state=ssLoading
+2020-06-03 00:22:18.138 INFO    DCS: Screen: MainMenu
+2020-06-03 00:22:18.149 INFO    Dispatcher: Terrain theatre PersianGulf
+2020-06-03 00:22:18.159 INFO    SECURITYCONTROL: Loaded mods/terrains/persiangulf/terrain.cfg.lua.pak.crypt
+2020-06-03 00:22:18.159 INFO    TERRAIN: lSystem::load(./Mods/terrains/PersianGulf\terrain.cfg.lua)
+2020-06-03 00:22:18.159 INFO    TERRAIN: lSystem::CleanScenes()
+2020-06-03 00:22:18.159 INFO    TERRAIN: lSystem::exit()
+2020-06-03 00:22:18.159 INFO    VISUALIZER: TerrainRenderer::release
+2020-06-03 00:22:18.159 INFO    TERRAIN: lSystem::CleanScenes()
+2020-06-03 00:22:18.159 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 13
+2020-06-03 00:22:18.637 INFO    EDTERRAIN4: TERRAIN_REVISION = 3342
+2020-06-03 00:22:18.637 INFO    EDTERRAIN4: Open terrain cfg "./Mods/terrains/PersianGulf\terrain.cfg.lua"
+2020-06-03 00:22:18.637 INFO    EDTERRAIN4: Build date: 
+2020-06-03 00:22:18.637 INFO    EDTERRAIN4: Texture quality: "max"
+2020-06-03 00:22:18.897 INFO    EDCORE: 0.258839 s  terrain references
+2020-06-03 00:22:18.899 INFO    EDCORE: 0.000011 s  terrain models
+2020-06-03 00:22:18.902 INFO    EDCORE: 0.000005 s  terrain assets
+2020-06-03 00:22:19.001 INFO    EDCORE: 0.087136 s  terrain assets2
+2020-06-03 00:22:19.306 INFO    EDCORE: 0.303714 s  terrain landfile
+2020-06-03 00:22:19.314 INFO    EDCORE: 0.006539 s  terrain surfaceTile
+2020-06-03 00:22:19.325 INFO    EDTERRAIN4: switchTextures (season=0, minTexture=false)
+2020-06-03 00:22:19.656 INFO    EDCORE: 0.331587 s  terrain vfstextures
+2020-06-03 00:22:19.815 INFO    EDCORE: 0.156732 s  terrain scene
+2020-06-03 00:22:19.817 INFO    EDCORE: 0.000006 s  terrain roaddetails
+2020-06-03 00:22:19.824 INFO    EDCORE: 0.000007 s  terrain forest
+2020-06-03 00:22:20.533 INFO    EDCORE: 0.697558 s  terrain routes
+2020-06-03 00:22:20.539 INFO    EDCORE: 0.003715 s  terrain surfacedetails
+2020-06-03 00:22:20.540 INFO    EDCORE: 0.000059 s  terrain blocks
+2020-06-03 00:22:20.556 INFO    EDCORE: 0.000002 s  terrain references
+2020-06-03 00:22:20.903 INFO    EDCORE: 0.356098 s  terrain superficials
+2020-06-03 00:22:20.921 INFO    EDCORE: 0.016202 s  terrain lma
+2020-06-03 00:22:20.923 INFO    EDCORE: 0.000019 s  terrain vectordatasettings
+2020-06-03 00:22:22.434 INFO    EDCORE: 1.498009 s  terrain navgraph
+2020-06-03 00:22:22.435 INFO    EDCORE: 0.000006 s  terrain vti
+2020-06-03 00:22:23.703 INFO    EDTERRAIN4: terrain time: 5.066129 s
+2020-06-03 00:22:23.796 INFO    TERRAIN: lSystem::InitScenes()
+2020-06-03 00:22:23.797 INFO    EDTERRAIN4: lTerraDispatchImpl::setDate( day=21, month=6)
+2020-06-03 00:22:23.797 INFO    EDTERRAIN4: switchTextures (season=0, minTexture=false)
+2020-06-03 00:22:23.797 INFO    DX11BACKEND: Reloading textures ...
+2020-06-03 00:22:23.836 INFO    EDTERRAINGRAPHICS41: ITerrainGraphicsImpl4::openTerrain() START
+2020-06-03 00:22:23.836 INFO    EDTERRAINGRAPHICS41: loading terrain options: Config/terrain/terrainoptions41.lua
+2020-06-03 00:22:23.842 INFO    EDTERRAINGRAPHICS41: loading terrain shading options: ./Mods/terrains/PersianGulf/shadingOptions/Hormuz.lua
+2020-06-03 00:22:23.849 INFO    RENDERER: MetaShaderCache2: [107] from ./Mods/terrains/PersianGulf/misc/metacache/dcs.lua
+2020-06-03 00:22:24.812 INFO    RENDERER: loaded [107/107]
+2020-06-03 00:22:25.174 INFO    EDTERRAINGRAPHICS41: 0.000014s Loaded reference file "persiangulf" buffers: 0
+2020-06-03 00:22:25.174 INFO    EDCORE: 0.000030 s  landscape4::lReferenceFile
+2020-06-03 00:22:25.182 INFO    EDTERRAINGRAPHICS41: ClipmapGraphics::init("colortexture")
+2020-06-03 00:22:25.993 INFO    EDTERRAINGRAPHICS41: 0.812567s Loaded reference file "aircrafts" buffers: 4
+2020-06-03 00:22:25.993 INFO    EDCORE: 0.812574 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.020 INFO    EDTERRAINGRAPHICS41: 0.024979s Loaded reference file "airfieldslights" buffers: 8
+2020-06-03 00:22:26.020 INFO    EDCORE: 0.024988 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.022 INFO    EDTERRAINGRAPHICS41: 0.000919s Loaded reference file "airfieldstabs" buffers: 1
+2020-06-03 00:22:26.022 INFO    EDCORE: 0.000927 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.028 INFO    EDTERRAINGRAPHICS41: materialParams[16]*1536
+2020-06-03 00:22:26.232 INFO    EDTERRAINGRAPHICS41: 0.205150s Loaded reference file "arabian_unique" buffers: 13
+2020-06-03 00:22:26.232 INFO    EDCORE: 0.205172 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.380 INFO    EDTERRAINGRAPHICS41: 0.146730s Loaded reference file "blockobjects" buffers: 9
+2020-06-03 00:22:26.380 INFO    EDCORE: 0.146738 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.409 INFO    EDTERRAINGRAPHICS41: 0.026256s Loaded reference file "bridges" buffers: 6
+2020-06-03 00:22:26.409 INFO    EDCORE: 0.026263 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.424 INFO    EDTERRAINGRAPHICS41: 0.011143s Loaded reference file "commercial" buffers: 4
+2020-06-03 00:22:26.424 INFO    EDCORE: 0.011150 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.473 INFO    EDTERRAINGRAPHICS41: 0.037348s Loaded reference file "communication" buffers: 15
+2020-06-03 00:22:26.473 INFO    EDCORE: 0.037355 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.537 INFO    EDTERRAINGRAPHICS41: 0.061577s Loaded reference file "crash" buffers: 8
+2020-06-03 00:22:26.537 INFO    EDCORE: 0.061585 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.823 INFO    EDTERRAINGRAPHICS41: 0.276195s Loaded reference file "crashmodels" buffers: 18
+2020-06-03 00:22:26.823 INFO    EDCORE: 0.276202 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.894 INFO    EDTERRAINGRAPHICS41: 0.069741s Loaded reference file "dubai_objects" buffers: 10
+2020-06-03 00:22:26.894 INFO    EDCORE: 0.069749 s  landscape4::lReferenceFile
+2020-06-03 00:22:26.926 INFO    EDTERRAINGRAPHICS41: 0.028239s Loaded reference file "dubai_unique" buffers: 6
+2020-06-03 00:22:26.926 INFO    EDCORE: 0.028250 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.037 INFO    EDTERRAINGRAPHICS41: 0.101216s Loaded reference file "equipment" buffers: 24
+2020-06-03 00:22:27.037 INFO    EDCORE: 0.101223 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.173 INFO    EDTERRAINGRAPHICS41: 0.133256s Loaded reference file "housedetail" buffers: 18
+2020-06-03 00:22:27.173 INFO    EDCORE: 0.133263 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.204 INFO    EDTERRAINGRAPHICS41: 0.028553s Loaded reference file "illumination" buffers: 13
+2020-06-03 00:22:27.204 INFO    EDCORE: 0.028561 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.290 INFO    EDTERRAINGRAPHICS41: 0.083638s Loaded reference file "industrial" buffers: 10
+2020-06-03 00:22:27.290 INFO    EDCORE: 0.083645 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.358 INFO    EDTERRAINGRAPHICS41: 0.066050s Loaded reference file "industrial_equipment" buffers: 15
+2020-06-03 00:22:27.358 INFO    EDCORE: 0.066058 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.538 INFO    EDTERRAINGRAPHICS41: 0.177871s Loaded reference file "industrial2" buffers: 11
+2020-06-03 00:22:27.538 INFO    EDCORE: 0.177878 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.540 INFO    EDTERRAINGRAPHICS41: materialParams[5]*1536
+2020-06-03 00:22:27.554 INFO    EDTERRAINGRAPHICS41: 0.013573s Loaded reference file "misc2" buffers: 2
+2020-06-03 00:22:27.554 INFO    EDCORE: 0.013580 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.602 INFO    EDTERRAINGRAPHICS41: 0.045526s Loaded reference file "roadsideobjects" buffers: 18
+2020-06-03 00:22:27.602 INFO    EDCORE: 0.045533 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.627 INFO    EDTERRAINGRAPHICS41: 0.013234s Loaded reference file "seasideobjects" buffers: 5
+2020-06-03 00:22:27.627 INFO    EDCORE: 0.013241 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.744 INFO    EDTERRAINGRAPHICS41: 0.108272s Loaded reference file "vehicles" buffers: 16
+2020-06-03 00:22:27.744 INFO    EDCORE: 0.108279 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.771 INFO    EDTERRAINGRAPHICS41: 0.025578s Loaded reference file "vessels" buffers: 12
+2020-06-03 00:22:27.771 INFO    EDCORE: 0.025585 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.919 INFO    EDTERRAINGRAPHICS41: 0.138656s Loaded reference file "walls" buffers: 0
+2020-06-03 00:22:27.919 INFO    EDCORE: 0.138663 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.929 INFO    EDTERRAINGRAPHICS41: 0.008523s Loaded reference file "small_bush" buffers: 0
+2020-06-03 00:22:27.929 INFO    EDCORE: 0.008531 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.936 INFO    EDTERRAINGRAPHICS41: 0.000308s Loaded reference file "small_bush_group" buffers: 0
+2020-06-03 00:22:27.936 INFO    EDCORE: 0.000316 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.948 INFO    EDTERRAINGRAPHICS41: 0.001273s Loaded reference file "blackgum" buffers: 0
+2020-06-03 00:22:27.948 INFO    EDCORE: 0.001280 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.959 INFO    EDTERRAINGRAPHICS41: 0.001137s Loaded reference file "burfordholly_shrub" buffers: 0
+2020-06-03 00:22:27.959 INFO    EDCORE: 0.001143 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.971 INFO    EDTERRAINGRAPHICS41: 0.001428s Loaded reference file "burfordholly_shrubsingle" buffers: 0
+2020-06-03 00:22:27.971 INFO    EDCORE: 0.001435 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.982 INFO    EDTERRAINGRAPHICS41: 0.001299s Loaded reference file "cirlypalm" buffers: 0
+2020-06-03 00:22:27.982 INFO    EDCORE: 0.001307 s  landscape4::lReferenceFile
+2020-06-03 00:22:27.993 INFO    EDTERRAINGRAPHICS41: 0.001183s Loaded reference file "crepemyrtle" buffers: 0
+2020-06-03 00:22:27.993 INFO    EDCORE: 0.001189 s  landscape4::lReferenceFile
+2020-06-03 00:22:28.005 INFO    EDTERRAINGRAPHICS41: 0.002092s Loaded reference file "datepalm" buffers: 0
+2020-06-03 00:22:28.005 INFO    EDCORE: 0.002103 s  landscape4::lReferenceFile
+2020-06-03 00:22:28.015 INFO    EDTERRAINGRAPHICS41: 0.001360s Loaded reference file "englishoak" buffers: 0
+2020-06-03 00:22:28.015 INFO    EDCORE: 0.001366 s  landscape4::lReferenceFile
+2020-06-03 00:22:28.026 INFO    EDTERRAINGRAPHICS41: 0.001202s Loaded reference file "montereycypress" buffers: 0
+2020-06-03 00:22:28.026 INFO    EDCORE: 0.001208 s  landscape4::lReferenceFile
+2020-06-03 00:22:28.037 INFO    EDTERRAINGRAPHICS41: 0.001018s Loaded reference file "platanustree" buffers: 0
+2020-06-03 00:22:28.037 INFO    EDCORE: 0.001024 s  landscape4::lReferenceFile
+2020-06-03 00:22:28.048 INFO    EDTERRAINGRAPHICS41: 0.001367s Loaded reference file "scotchpine" buffers: 0
+2020-06-03 00:22:28.048 INFO    EDCORE: 0.001373 s  landscape4::lReferenceFile
+2020-06-03 00:22:28.059 INFO    EDTERRAINGRAPHICS41: 0.001042s Loaded reference file "southernmagnolia" buffers: 0
+2020-06-03 00:22:28.059 INFO    EDCORE: 0.001049 s  landscape4::lReferenceFile
+2020-06-03 00:22:28.059 INFO    EDTERRAINGRAPHICS41: InstanceManager2 is completing initialization... 
+2020-06-03 00:22:28.066 INFO    EDTERRAINGRAPHICS41: InstanceManager2::updateObjectDeclBuffer()
+2020-06-03 00:22:28.066 INFO    EDTERRAINGRAPHICS41: InstanceManager2::updateObjectLodDeclBuffer()
+2020-06-03 00:22:28.068 INFO    EDTERRAINGRAPHICS41: InstanceManager2 complete initialization: 
+2020-06-03 00:22:28.068 INFO    EDTERRAINGRAPHICS41:   objects:    908
+2020-06-03 00:22:28.068 INFO    EDTERRAINGRAPHICS41:   subObjects: 6748
+2020-06-03 00:22:28.068 INFO    EDTERRAINGRAPHICS41:   objectLods: 3843
+2020-06-03 00:22:28.068 INFO    EDTERRAINGRAPHICS41:   objectLodRenderItems: 279
+2020-06-03 00:22:28.068 INFO    EDTERRAINGRAPHICS41:   MAX_LODS_IN_OBJECT:       9
+2020-06-03 00:22:28.068 INFO    EDTERRAINGRAPHICS41:   MAX_SUBOBJECTS_IN_OBJECT: 262
+2020-06-03 00:22:28.068 INFO    EDTERRAINGRAPHICS41:   GEOMETRY BUFFERS: 246
+2020-06-03 00:22:28.080 INFO    EDCORE: 0.000005 s  landscape5::OceanFile
+2020-06-03 00:22:28.145 INFO    EDCORE: 0.053658 s  landscape5::GrassFile
+2020-06-03 00:22:28.147 INFO    EDCORE: 0.000001 s  landscape5::lModels5File
+2020-06-03 00:22:28.424 WARNING LOG: 23 duplicate message(s) skipped.
+2020-06-03 00:22:28.424 INFO    EDTERRAINGRAPHICS41: remapper.deformers is not empty
+2020-06-03 00:22:28.476 INFO    EDTERRAINGRAPHICS41: materialParams[27213]*1536
+2020-06-03 00:22:28.477 INFO    EDCORE: 0.060288 s  landscape5::Surface5File
+2020-06-03 00:22:28.512 INFO    EDTERRAINGRAPHICS41: materialParams[1600]*1536
+2020-06-03 00:22:28.512 INFO    EDCORE: 0.009521 s  landscape5::SurfaceTile
+2020-06-03 00:22:28.520 INFO    EDCORE: 0.002190 s  landscape5::Scene5File
+2020-06-03 00:22:28.539 INFO    EDCORE: 0.010583 s  landscape4::lRoutesFile
+2020-06-03 00:22:28.557 INFO    EDCORE: 0.005548 s  landscape4::lSurfaceDetails2File
+2020-06-03 00:22:28.562 INFO    EDTERRAINGRAPHICS41: materialParams[1]*1536
+2020-06-03 00:22:28.562 INFO    EDCORE: 0.000209 s  landscape4::lSuperficialFile
+2020-06-03 00:22:28.573 INFO    EDCORE: 0.000135 s  landscape4::lGeoNamesFile
+2020-06-03 00:22:28.585 INFO    EDCORE: 0.000899 s  landscape5::sup5File
+2020-06-03 00:22:28.596 INFO    EDCORE: 0.000063 s  landscape5::sup5File
+2020-06-03 00:22:28.607 INFO    EDCORE: 0.000001 s  landscape5::navGraph5File
+2020-06-03 00:22:28.607 INFO    EDTERRAINGRAPHICS41: ITerrainGraphicsImpl4::openTerrain() END 4.770908 s
+2020-06-03 00:22:28.607 ERROR_ONCE DX11BACKEND: render target 'mainDepthBuffer_copy' not found
+2020-06-03 00:22:28.607 ERROR_ONCE DX11BACKEND: render target 'DummyShadowMap' not found
+2020-06-03 00:22:28.607 WARNING GRAPHICSCORE: already registered Renderer callback
+2020-06-03 00:22:28.614 INFO    VISUALIZER: StartSimulation
+2020-06-03 00:22:28.859 INFO    VISUALIZER: cascade shadows init (preset:'default' quality:1 layers:1 size:1)
+2020-06-03 00:22:29.349 ERROR_ONCE DX11BACKEND: texture 'lightning.dds' not found. Asked from 'EFFECTS2'
+2020-06-03 00:22:29.743 ERROR_ONCE DX11BACKEND: texture 'LiquidAnimationAlphas' not found. Asked from 'EFFECTS2'
+2020-06-03 00:22:29.743 ERROR_ONCE DX11BACKEND: texture 'LiquidAnimationNormals' not found. Asked from 'EFFECTS2'
+2020-06-03 00:22:29.757 ERROR_ONCE DX11BACKEND: texture 'testFire.dds' not found. Asked from 'EFFECTS2'
+2020-06-03 00:22:29.901 INFO    Dispatcher: initial random seed = 3750164
+2020-06-03 00:22:29.901 INFO    Dispatcher: apply random seed = 3750164
+2020-06-03 00:22:29.906 INFO    WORLDGENERAL: loaded from mission Scripts/World/GPS_GNSS.lua
+2020-06-03 00:22:30.389 INFO    WORLDGENERAL: loaded from mission Config/View/SnapViewsDefault.lua
+2020-06-03 00:22:30.389 INFO    WORLDGENERAL: loaded from mission Config/View/View.lua
+2020-06-03 00:22:30.390 INFO    WORLDGENERAL: loaded from mission Config/View/Server.lua
+2020-06-03 00:22:30.673 INFO    Config: netview started
+2020-06-03 00:22:31.857 INFO    VISUALIZER: CameraIndependedPreload()
+2020-06-03 00:22:31.857 INFO    VISUALIZER: CameraIndependedPreload() finished
+2020-06-03 00:22:31.857 INFO    DCS: use_xRay: no
+2020-06-03 00:22:33.040 INFO    DCS: MissionSpawn:spawnShips 2
+2020-06-03 00:22:33.129 INFO    ANIMATOR: load_basic() started
+2020-06-03 00:22:34.204 ERROR   ANIMATOR: animation '' not found
+2020-06-03 00:22:34.346 INFO    ANIMATOR: Loading graphs:
+2020-06-03 00:22:34.352 ERROR   ANIMATOR: animation '' not found
+2020-06-03 00:22:34.357 INFO    ANIMATOR: load_basic() ended
+2020-06-03 00:22:34.358 INFO    ANIMATOR: load_main() started
+2020-06-03 00:22:34.458 INFO    ANIMATOR: load_main() ended
+2020-06-03 00:22:34.458 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 00:22:34.458 INFO    ANIMATOR: load_basic() started
+2020-06-03 00:22:34.529 INFO    ANIMATOR: load_basic() ended
+2020-06-03 00:22:34.530 INFO    ANIMATOR: load_main() started
+2020-06-03 00:22:34.622 INFO    ANIMATOR: load_main() ended
+2020-06-03 00:22:34.622 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 00:22:34.622 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 00:22:34.622 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 00:22:34.622 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 00:22:34.636 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 00:22:34.651 WARNING FLIGHT: carrier technician [2: shooter] created, id 4
+2020-06-03 00:22:34.651 WARNING FLIGHT: carrier technician [2: director] created, id 2
+2020-06-03 00:22:34.683 WARNING FLIGHT: carrier technician [2: white1] created, id 3
+2020-06-03 00:22:34.699 WARNING FLIGHT: carrier technician [2: white2] created, id 5
+2020-06-03 00:22:34.699 WARNING FLIGHT: carrier technician [2: green_hbb] created, id 6
+2020-06-03 00:22:34.699 WARNING FLIGHT: carrier technician [2: green_nw] created, id 7
+2020-06-03 00:22:34.704 WARNING FLIGHT: carrier technician [3: shooter] created, id 8
+2020-06-03 00:22:34.705 WARNING FLIGHT: carrier technician [3: director] created, id 4
+2020-06-03 00:22:34.705 WARNING FLIGHT: carrier technician [3: white1] created, id 5
+2020-06-03 00:22:34.705 WARNING FLIGHT: carrier technician [3: white2] created, id 9
+2020-06-03 00:22:34.705 WARNING FLIGHT: carrier technician [3: green_hbb] created, id 6
+2020-06-03 00:22:34.705 WARNING FLIGHT: carrier technician [3: green_nw] created, id 7
+2020-06-03 00:22:34.711 WARNING FLIGHT: carrier technician [4: shooter] created, id 8
+2020-06-03 00:22:34.711 WARNING FLIGHT: carrier technician [4: director] created, id 9
+2020-06-03 00:22:34.711 WARNING FLIGHT: carrier technician [4: white1] created, id 10
+2020-06-03 00:22:34.711 WARNING FLIGHT: carrier technician [4: white2] created, id 11
+2020-06-03 00:22:34.711 WARNING FLIGHT: carrier technician [4: green_hbb] created, id 10
+2020-06-03 00:22:34.711 WARNING FLIGHT: carrier technician [4: green_nw] created, id 12
+2020-06-03 00:22:34.837 ERROR   wInfo: can't open Objects[AS32-31A] table
+2020-06-03 00:22:35.193 INFO    DCS: MissionSpawn:initScript
+2020-06-03 00:22:35.193 INFO    DCS: MissionSpawn:spawnCoalition red
+2020-06-03 00:22:35.193 INFO    DCS: MissionSpawn:spawnCoalition blue
+2020-06-03 00:22:35.193 INFO    DCS: MissionSpawn:spawnPlanes 2
+2020-06-03 00:22:35.344 ERROR   NGMODEL: Can't load lod //models/f-14b_damageparts_stabilizer.edm of model f-14b_damageparts_stabilizer. Reason: Model has invalid bounding box.
+2020-06-03 00:22:35.375 INFO    Scripting: event:type=mission start,t=28800,
+2020-06-03 00:22:35.430 INFO    EDTERRAINGRAPHICS41:     surface5 gc() LOD 0 0 squares
+2020-06-03 00:22:35.430 INFO    EDTERRAINGRAPHICS41:     surface5 gc() LOD 1 0 squares
+2020-06-03 00:22:35.430 INFO    EDTERRAINGRAPHICS41: surface5 gc() 0.434400 ms
+2020-06-03 00:22:35.503 INFO    NET: simulation is ready, state=ssPaused
+2020-06-03 00:22:35.756 INFO    VISUALIZER: Preload() camera=55377.743424, 6106.407200, -502814.763253 radius=150000.000000
+2020-06-03 00:22:35.756 INFO    EDTERRAINGRAPHICS41: ITerrainGraphicsImpl4::forceLoading(): pos=(55377.7, 6106.41, -502815), radius=150000
+2020-06-03 00:22:36.184 INFO    EDTERRAINGRAPHICS41: ClipmapGraphics::init("splatmap")
+2020-06-03 00:22:36.497 INFO    EDTERRAINGRAPHICS41: surface5 clean up LOD 0: left 4  released 0
+2020-06-03 00:22:36.497 INFO    EDTERRAINGRAPHICS41: surface5 clean up LOD 1: left 10  released 0
+2020-06-03 00:22:36.497 INFO    EDTERRAINGRAPHICS41: surface5 clean up 0.214600 ms
+2020-06-03 00:22:37.178 INFO    EDTERRAINGRAPHICS41: forestDistanceFactor has been changed to 0.500000. Update lod buffers.
+2020-06-03 00:22:37.178 INFO    EDTERRAINGRAPHICS41: InstanceManager2::updateObjectDeclBuffer()
+2020-06-03 00:22:37.178 INFO    EDTERRAINGRAPHICS41: InstanceManager2::updateObjectLodDeclBuffer()
+2020-06-03 00:22:37.869 INFO    VISUALIZER: Preload() finished
+2020-06-03 00:22:37.914 INFO    DCS: Screen: mission_online
+2020-06-03 00:22:37.914 INFO    Dispatcher: precache units resources in slots
+2020-06-03 00:22:37.966 ERROR   wInfo: negative weight of payload "LAU-115_2*LAU-127_CATM-9M"
+2020-06-03 00:22:38.107 INFO    Lua: Lua CPU usage: metric: average mission loading: 3.4757 %
+2020-06-03 00:22:38.107 INFO    Dispatcher: loadMission Done: Сontrol passed to the player
+2020-06-03 00:22:38.122 INFO    GRAPHICSVISTA: Creating Resource "Unicode" of type 1
+2020-06-03 00:22:38.638 ERROR   SOUND: can't load wave: "effects\aircrafts\engines\f14_rear_distant_02"
+2020-06-03 00:22:41.707 INFO    NET: onPlayerSlot(1, 22)
+2020-06-03 00:22:41.707 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 00:22:41.707 INFO    NET: release unit 
+2020-06-03 00:22:41.707 INFO    NET: client[1] occupied unit 22
+2020-06-03 00:22:44.238 INFO    DCS: MissionSpawn:spawnLocalPlayer 22,FA-18C_hornet
+2020-06-03 00:22:44.283 WARNING EDCORE: Source ./Mods/aircraft/FA-18C/Cockpit/Scripts/../Shape is already mounted to the same mount /models/.
+2020-06-03 00:22:49.099 INFO    Scripting: event:type=under control,initiatorPilotName=Stretch | 55FS,target=Pilot #001,t=28800,targetMissionID=22,
+2020-06-03 00:22:49.174 INFO    COCKPITBASE: lua state still active MACROS, 55 (status undefined)
+2020-06-03 00:22:49.174 INFO    COCKPITBASE: lua state still active TGP_INTERFACE, 62 (status undefined)
+2020-06-03 00:22:49.181 ERROR   Lua::Config: Call error world.onEvent:[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: attempt to call global 'tostring' (a nil value)
+stack traceback:
+	[C]: in function 'tostring'
+	[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: in function 'onEvent'
+	[string "Scripts/UI/RadioCommandDialogPanel/RadioCommandDialogsPanel.lua"]:1309: in function 'onEvent'
+	[string "Scripts/World/EventHandlers.lua"]:13: in function <[string "Scripts/World/EventHandlers.lua"]:11>.
+2020-06-03 00:22:49.186 WARNING FLIGHT: assigning aircraft Pilot #001 on runway 4, runway start: 1
+2020-06-03 00:22:49.186 WARNING FLIGHT: crew 4 wCarrierCrew::reset_LA()
+2020-06-03 00:22:49.186 WARNING FLIGHT: carrier technician [4: shooter] created, id 8
+2020-06-03 00:22:49.186 WARNING FLIGHT: carrier technician [4: director] created, id 9
+2020-06-03 00:22:49.186 WARNING FLIGHT: carrier technician [4: white1] created, id 10
+2020-06-03 00:22:49.186 WARNING FLIGHT: carrier technician [4: white2] created, id 11
+2020-06-03 00:22:49.186 WARNING FLIGHT: carrier technician [4: green_hbb] created, id 10
+2020-06-03 00:22:49.186 WARNING FLIGHT: carrier technician [4: green_nw] created, id 12
+2020-06-03 00:22:49.186 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #001 on runway 4
+2020-06-03 00:22:49.187 INFO    WORLDGENERAL: loaded from mission Scripts/World/birds.lua
+2020-06-03 00:22:49.187 INFO    DCS: dbox not found , skip
+2020-06-03 00:22:49.189 INFO    EDTERRAINGRAPHICS41:     surface5 gc() LOD 0 48 squares
+2020-06-03 00:22:49.189 INFO    EDTERRAINGRAPHICS41:     surface5 gc() LOD 1 48 squares
+2020-06-03 00:22:49.189 INFO    EDTERRAINGRAPHICS41: surface5 gc() 0.904700 ms
+2020-06-03 00:22:50.550 ERROR_ONCE DX11BACKEND: texture 'default.mr' not found. Asked from 'EDTERRAINGRAPHICS41'
+2020-06-03 00:22:54.036 INFO    NET: simResume: curTime=242.036105, syncDelay=0.500000, startTime=242.536105
+2020-06-03 00:22:54.036 INFO    NET: simulation starting, state=ssStarting
+2020-06-03 00:22:54.036 INFO    NET: syncStart at 242.536105:
+2020-06-03 00:22:54.557 INFO    NET: simulation started, state=ssRunning
+2020-06-03 00:22:54.606 INFO    EDCORE: (wcTanker)enterToState_:0
+2020-06-03 00:22:54.606 INFO    DCS: wcTanker::onEvent:4
+2020-06-03 00:22:54.606 INFO    EDCORE: (wcTanker)enterToState_:1
+2020-06-03 00:22:54.606 INFO    EDCORE: (wcTanker::Channel)enterToState_:0
+2020-06-03 00:22:54.606 INFO    EDCORE: (wcTanker::Channel)enterToState_:1
+2020-06-03 00:22:54.606 INFO    EDCORE: (wcTanker::Channel)enterToState_:0
+2020-06-03 00:22:54.606 INFO    EDCORE: (wcTanker::Channel)enterToState_:1
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110rearclose): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110reardistant): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110_front_flyby): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110_side_flyby): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110_rear_flyby): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110rearclose): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110reardistant): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110_front_flyby): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110_side_flyby): gain
+2020-06-03 00:22:57.081 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110_rear_flyby): gain
+2020-06-03 00:22:57.360 INFO    NET: accepting connection from 73.249.231.57:49852
+2020-06-03 00:22:57.361 INFO    NET: adding client[2]
+2020-06-03 00:22:57.431 INFO    NET: added client[2] name=Raamon addr=73.249.231.57:49852
+2020-06-03 00:22:58.605 INFO    NET: client[2] UDP port changed from 49852 to 63523
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110rearclose): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110reardistant): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110_front_flyby): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110_side_flyby): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110_rear_flyby): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110rearclose): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110reardistant): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110_front_flyby): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110_side_flyby): gain
+2020-06-03 00:22:58.760 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110_rear_flyby): gain
+2020-06-03 00:22:59.136 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110enginesidel): gain
+2020-06-03 00:22:59.136 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110enginesider): gain
+2020-06-03 00:22:59.136 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110enginesidel): gain
+2020-06-03 00:22:59.136 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110enginesider): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110rearclose): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110reardistant): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110_front_flyby): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110_side_flyby): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110_rear_flyby): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110rearclose): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110reardistant): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110_front_flyby): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110_side_flyby): gain
+2020-06-03 00:22:59.491 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110_rear_flyby): gain
+2020-06-03 00:23:01.521 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110enginesidel): gain
+2020-06-03 00:23:01.521 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110enginesider): gain
+2020-06-03 00:23:01.521 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110enginesidel): gain
+2020-06-03 00:23:01.521 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110enginesider): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110rearclose): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110reardistant): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110_front_flyby): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110_side_flyby): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110_rear_flyby): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110rearclose): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110reardistant): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110_front_flyby): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110_side_flyby): gain
+2020-06-03 00:23:15.981 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110_rear_flyby): gain
+2020-06-03 00:23:17.660 INFO    NET: client[2] is ready to start
+2020-06-03 00:23:17.661 INFO    NET: spawning client[2]
+2020-06-03 00:23:17.668 INFO    NET: client[2] started
+2020-06-03 00:23:22.181 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110enginesidel): gain
+2020-06-03 00:23:22.181 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110enginesider): gain
+2020-06-03 00:23:22.181 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110enginesidel): gain
+2020-06-03 00:23:22.181 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110enginesider): gain
+2020-06-03 00:23:24.872 WARNING DXGUI: Invalid blur type!
+2020-06-03 00:23:28.206 INFO    NET: onPlayerSlot(2, 23)
+2020-06-03 00:23:28.206 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 00:23:28.206 INFO    NET: release unit 
+2020-06-03 00:23:28.206 INFO    NET: client[2] occupied unit 23
+2020-06-03 00:23:31.982 INFO    NET: accepting connection from 174.85.92.108:51940
+2020-06-03 00:23:31.984 INFO    NET: adding client[3]
+2020-06-03 00:23:32.142 INFO    NET: rejecting client[3]: invalid password
+2020-06-03 00:23:32.230 INFO    NET: remove: client[3]
+2020-06-03 00:23:37.954 INFO    NET: accepting connection from 174.85.92.108:51943
+2020-06-03 00:23:37.968 INFO    NET: adding client[3]
+2020-06-03 00:23:38.037 INFO    NET: added client[3] name=Jambo72nd addr=174.85.92.108:51943
+2020-06-03 00:23:39.147 INFO    NET: client[3] UDP port changed from 51943 to 57053
+2020-06-03 00:23:59.120 INFO    Scripting: event:type=birth,initiatorPilotName=Raamon,place=CVN-73,t=28864.542,initiatorMissionID=23,
+2020-06-03 00:23:59.120 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 1
+2020-06-03 00:23:59.120 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 00:23:59.120 WARNING FLIGHT: carrier technician [2: shooter] created, id 4
+2020-06-03 00:23:59.120 WARNING FLIGHT: carrier technician [2: director] created, id 2
+2020-06-03 00:23:59.120 WARNING FLIGHT: carrier technician [2: white1] created, id 3
+2020-06-03 00:23:59.120 WARNING FLIGHT: carrier technician [2: white2] created, id 5
+2020-06-03 00:23:59.120 WARNING FLIGHT: carrier technician [2: green_hbb] created, id 6
+2020-06-03 00:23:59.120 WARNING FLIGHT: carrier technician [2: green_nw] created, id 7
+2020-06-03 00:23:59.120 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 00:24:06.148 INFO    NET: client[3] is ready to start
+2020-06-03 00:24:06.148 INFO    NET: spawning client[3]
+2020-06-03 00:24:06.156 INFO    NET: client[3] started
+2020-06-03 00:24:20.616 INFO    NET: onPlayerSlot(3, 29)
+2020-06-03 00:24:20.617 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 00:24:20.617 INFO    NET: release unit 
+2020-06-03 00:24:20.617 INFO    NET: client[3] occupied unit 29
+2020-06-03 00:24:33.172 INFO    Scripting: event:type=birth,initiatorPilotName=Jambo72nd,place=CVN-73,t=28898.597,initiatorMissionID=29,
+2020-06-03 00:24:33.172 WARNING FLIGHT: assigning aircraft Pilot #003 on runway 1, runway start: 1
+2020-06-03 00:24:33.172 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 00:24:33.172 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 00:24:33.172 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 00:24:33.172 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 00:24:33.172 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 00:24:33.172 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 00:24:33.172 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 00:24:33.173 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #003 on runway 1
+2020-06-03 00:27:47.683 INFO    Scripting: event:type=hit,initiatorPilotName=Stretch | 55FS,weapon=F/A-18C Lot 20,target=CVN_73,t=29093.12,initiatorMissionID=22,targetMissionID=3,
+2020-06-03 00:27:50.709 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=29096.14,initiatorMissionID=22,
+2020-06-03 00:28:01.588 WARNING FLIGHT: crew 4 wCarrierCrew::reset_LA()
+2020-06-03 00:28:16.045 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=29121.476,initiatorMissionID=23,
+2020-06-03 00:28:19.505 INFO    Scripting: event:type=takeoff,initiatorPilotName=Jambo72nd,place=CVN-73,t=29124.937,initiatorMissionID=29,
+2020-06-03 00:28:25.879 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 00:28:30.700 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 00:31:51.952 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110enginesidel): gain
+2020-06-03 00:31:51.952 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110enginesider): gain
+2020-06-03 00:31:51.952 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110enginesidel): gain
+2020-06-03 00:31:51.952 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110enginesider): gain
+2020-06-03 00:36:20.164 ERROR   SOUND: invalid source_params(woLA-16779521:aircrafts/engines/f110afterburnerrearclose): gain
+2020-06-03 00:36:21.767 WARNING LOG: 1 duplicate message(s) skipped.
+2020-06-03 00:36:21.767 ERROR   SOUND: invalid source_params(woLA-16779265:aircrafts/engines/f110afterburnerrearclose): gain
+2020-06-03 00:36:45.682 WARNING LOG: 1 duplicate message(s) skipped.
+2020-06-03 00:36:45.682 ERROR   SOUND: invalid source_params(woLA-16779009:aircrafts/engines/f110afterburnerrearclose): gain
+2020-06-03 00:38:34.974 WARNING LOG: 1 duplicate message(s) skipped.
+2020-06-03 00:38:34.974 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:38:34.974 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 00:38:34.974 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:38:34.975 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:38:34.975 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:38:34.975 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:38:34.975 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 00:38:34.975 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-begin"
+2020-06-03 00:38:34.975 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-continue"
+2020-06-03 00:38:34.975 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 00:38:34.975 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 00:38:34.976 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 00:38:34.976 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 00:38:34.976 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-end"
+2020-06-03 00:38:34.976 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 00:38:34.976 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-begin"
+2020-06-03 00:38:34.976 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:38:34.976 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-end"
+2020-06-03 00:38:34.976 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:38:52.047 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-continue"
+2020-06-03 00:38:52.491 ERROR   SOUND: invalid source_params(woLA-16778753:aircrafts/engines/f110afterburnerrearclose): gain
+2020-06-03 00:38:53.663 WARNING LOG: 1 duplicate message(s) skipped.
+2020-06-03 00:38:53.663 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 00:39:15.537 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\see_you"
+2020-06-03 00:39:58.168 INFO    Scripting: event:place=CVN-73,t=29823.6,type=land,initiatorMissionID=25,
+2020-06-03 00:40:00.516 INFO    Scripting: event:place=LSO: GRADE:_OK_ : WIRE# 3,t=29825.953,type=comment,
+2020-06-03 00:41:09.191 INFO    Scripting: event:place=CVN-73,t=29894.62,type=land,initiatorMissionID=26,
+2020-06-03 00:41:11.525 INFO    Scripting: event:place=LSO: GRADE:_OK_ : WIRE# 2,t=29896.953,type=comment,
+2020-06-03 00:41:20.339 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:41:20.340 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 00:41:20.340 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:41:20.340 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:41:20.340 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:41:20.340 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:41:20.340 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 00:41:20.340 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 00:41:20.341 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 00:41:20.341 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-begin"
+2020-06-03 00:41:20.341 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:41:20.341 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 00:41:20.341 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:41:38.647 INFO    Scripting: event:place=CVN-73,t=29924.08,type=engine shutdown,initiatorMissionID=25,
+2020-06-03 00:42:47.447 INFO    Scripting: event:place=CVN-73,t=29992.88,type=engine shutdown,initiatorMissionID=26,
+2020-06-03 00:42:47.913 INFO    Scripting: event:place=CVN-73,t=29993.34,type=land,initiatorMissionID=27,
+2020-06-03 00:42:50.273 INFO    Scripting: event:place=LSO: GRADE:--- : (EGTL)  WIRE# 1,t=29995.703,type=comment,
+2020-06-03 00:43:34.209 INFO    Scripting: event:place=CVN-73,t=30039.64,type=land,initiatorMissionID=28,
+2020-06-03 00:43:36.516 INFO    Scripting: event:place=LSO: GRADE:--- : (EGTL)  WIRE# 4,t=30041.953,type=comment,
+2020-06-03 00:43:56.494 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:43:56.494 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:43:56.494 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:43:56.494 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:43:56.494 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:43:56.494 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\established"
+2020-06-03 00:43:56.494 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 00:43:56.495 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 00:43:56.495 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-begin"
+2020-06-03 00:43:56.495 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:43:56.495 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:44:16.380 INFO    Scripting: event:place=CVN-73,t=30081.82,type=engine shutdown,initiatorMissionID=27,
+2020-06-03 00:44:59.126 INFO    Scripting: event:place=CVN-73,t=30124.56,type=engine shutdown,initiatorMissionID=28,
+2020-06-03 00:46:24.102 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:46:24.102 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:46:24.102 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:46:24.102 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:46:24.102 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:47:21.626 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:47:21.626 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:47:21.626 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:47:21.626 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:47:21.626 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:47:21.626 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 00:47:21.627 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 00:47:21.627 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:47:21.627 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-end"
+2020-06-03 00:47:21.627 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:47:40.296 INFO    Scripting: event:place=LSO: GRADE:WO  (DRIM)  (LURIM)  WO(AFU)IC ,t=30285.703,type=comment,
+2020-06-03 00:47:57.616 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:47:57.616 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:47:57.616 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:47:57.616 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:47:57.616 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:47:57.617 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 00:47:57.617 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 00:47:57.617 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:47:57.617 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 00:47:57.617 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:48:22.762 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=30328.191,initiatorMissionID=23,
+2020-06-03 00:48:27.106 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=30332.535,initiatorMissionID=23,
+2020-06-03 00:49:10.661 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:49:10.661 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:49:10.661 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:49:10.661 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:49:10.661 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:49:10.661 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 00:49:10.662 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 00:49:10.662 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:49:10.662 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 00:49:10.662 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:49:38.159 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=30403.58,initiatorMissionID=22,
+2020-06-03 00:50:36.629 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:50:36.630 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:50:36.630 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:50:36.630 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:50:36.630 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:50:36.630 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 00:50:36.630 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 00:50:36.631 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:50:36.631 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 00:50:36.631 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:50:57.018 INFO    Scripting: event:place=LSO: GRADE:WO  (DLX)  _LULX_  _LULIM_  (DLIM)  WO(AFU)IC ,t=30482.453,type=comment,
+2020-06-03 00:51:00.327 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\request takeoff"
+2020-06-03 00:52:26.475 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:52:26.475 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:52:26.475 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:52:26.475 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:52:26.475 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\request takeoff"
+2020-06-03 00:53:01.900 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:53:01.900 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:53:01.900 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 00:53:01.900 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:53:01.901 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:53:01.901 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 00:53:01.901 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 00:53:01.901 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:53:01.901 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 00:53:01.901 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:53:21.411 INFO    NET: onPlayerSlot(1, 30)
+2020-06-03 00:53:21.412 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 00:53:21.412 INFO    NET: release unit 22
+2020-06-03 00:53:21.412 INFO    Scripting: event:type=relinquished,initiatorPilotName=Stretch | 55FS,target=Pilot #001,t=30626.836,targetMissionID=22,
+2020-06-03 00:53:21.412 INFO    Scripting: event:type=pilot dead,t=30626.836,initiatorPilotName=Stretch | 55FS,initiatorMissionID=22,
+2020-06-03 00:53:21.412 INFO    Scripting: event:type=dead,t=30626.836,initiatorPilotName=Stretch | 55FS,initiatorMissionID=22,
+2020-06-03 00:53:21.438 INFO    NET: client[1] occupied unit 30
+2020-06-03 00:53:22.018 INFO    NET: onPlayerSlot(1, 22)
+2020-06-03 00:53:22.019 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 00:53:22.019 INFO    NET: release unit 30
+2020-06-03 00:53:22.019 INFO    NET: client[1] occupied unit 22
+2020-06-03 00:53:24.118 INFO    DCS: MissionSpawn:spawnLocalPlayer 22,FA-18C_hornet
+2020-06-03 00:53:24.131 WARNING EDCORE: Source ./Mods/aircraft/FA-18C/Cockpit/Scripts/../Shape is already mounted to the same mount /models/.
+2020-06-03 00:53:27.598 INFO    Scripting: event:type=under control,initiatorPilotName=Stretch | 55FS,target=Pilot #001,t=30629.547,targetMissionID=22,
+2020-06-03 00:53:27.625 INFO    COCKPITBASE: lua state still active MACROS, 55 (status undefined)
+2020-06-03 00:53:27.625 INFO    COCKPITBASE: lua state still active TGP_INTERFACE, 62 (status undefined)
+2020-06-03 00:53:27.627 INFO    Scripting: event:type=engine startup,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=30629.547,initiatorMissionID=22,
+2020-06-03 00:53:27.628 INFO    Scripting: event:type=birth,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=30629.547,initiatorMissionID=22,
+2020-06-03 00:53:27.628 ERROR   Lua::Config: Call error world.onEvent:[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: attempt to call global 'tostring' (a nil value)
+stack traceback:
+	[C]: in function 'tostring'
+	[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: in function 'onEvent'
+	[string "Scripts/UI/RadioCommandDialogPanel/RadioCommandDialogsPanel.lua"]:1309: in function 'onEvent'
+	[string "Scripts/World/EventHandlers.lua"]:13: in function <[string "Scripts/World/EventHandlers.lua"]:11>.
+2020-06-03 00:53:27.628 WARNING FLIGHT: crew 4 wCarrierCrew::reset_LA()
+2020-06-03 00:53:27.628 WARNING FLIGHT: carrier technician [4: shooter] created, id 8
+2020-06-03 00:53:27.628 WARNING FLIGHT: carrier technician [4: director] created, id 9
+2020-06-03 00:53:27.628 WARNING FLIGHT: carrier technician [4: white1] created, id 10
+2020-06-03 00:53:27.628 WARNING FLIGHT: carrier technician [4: white2] created, id 11
+2020-06-03 00:53:27.628 WARNING FLIGHT: carrier technician [4: green_hbb] created, id 10
+2020-06-03 00:53:27.628 WARNING FLIGHT: carrier technician [4: green_nw] created, id 12
+2020-06-03 00:53:27.628 WARNING FLIGHT: assigning aircraft Pilot #001 on runway 4, runway start: 1
+2020-06-03 00:53:27.628 WARNING FLIGHT: crew 4 wCarrierCrew::reset_LA()
+2020-06-03 00:53:27.629 WARNING FLIGHT: carrier technician [4: shooter] created, id 8
+2020-06-03 00:53:27.629 WARNING FLIGHT: carrier technician [4: director] created, id 9
+2020-06-03 00:53:27.629 WARNING FLIGHT: carrier technician [4: white1] created, id 10
+2020-06-03 00:53:27.629 WARNING FLIGHT: carrier technician [4: white2] created, id 11
+2020-06-03 00:53:27.629 WARNING FLIGHT: carrier technician [4: green_hbb] created, id 10
+2020-06-03 00:53:27.629 WARNING FLIGHT: carrier technician [4: green_nw] created, id 12
+2020-06-03 00:53:27.629 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #001 on runway 4
+2020-06-03 00:53:27.629 INFO    WORLDGENERAL: loaded from mission Scripts/World/birds.lua
+2020-06-03 00:53:28.712 WARNING DXGUI: Invalid blur type!
+2020-06-03 00:53:31.466 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=30636.891,initiatorMissionID=23,
+2020-06-03 00:53:35.947 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=30641.369,initiatorMissionID=23,
+2020-06-03 00:54:18.165 INFO    NET: onPlayerSlot(1, 30)
+2020-06-03 00:54:18.165 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 00:54:18.165 INFO    NET: release unit 22
+2020-06-03 00:54:18.165 INFO    Scripting: event:type=relinquished,initiatorPilotName=Stretch | 55FS,target=Pilot #001,t=30683.592,targetMissionID=22,
+2020-06-03 00:54:18.165 INFO    Scripting: event:type=pilot dead,t=30683.592,initiatorPilotName=Stretch | 55FS,initiatorMissionID=22,
+2020-06-03 00:54:18.165 INFO    Scripting: event:type=dead,t=30683.592,initiatorPilotName=Stretch | 55FS,initiatorMissionID=22,
+2020-06-03 00:54:18.166 WARNING FLIGHT: crew 4 wCarrierCrew::reset_LA()
+2020-06-03 00:54:18.166 WARNING FLIGHT: carrier technician [4: shooter] created, id 8
+2020-06-03 00:54:18.166 WARNING FLIGHT: carrier technician [4: director] created, id 9
+2020-06-03 00:54:18.166 WARNING FLIGHT: carrier technician [4: white1] created, id 10
+2020-06-03 00:54:18.166 WARNING FLIGHT: carrier technician [4: white2] created, id 11
+2020-06-03 00:54:18.166 WARNING FLIGHT: carrier technician [4: green_hbb] created, id 10
+2020-06-03 00:54:18.166 WARNING FLIGHT: carrier technician [4: green_nw] created, id 12
+2020-06-03 00:54:18.189 INFO    NET: client[1] occupied unit 30
+2020-06-03 00:54:20.780 INFO    DCS: MissionSpawn:spawnLocalPlayer 30,FA-18C_hornet
+2020-06-03 00:54:20.793 WARNING EDCORE: Source ./Mods/aircraft/FA-18C/Cockpit/Scripts/../Shape is already mounted to the same mount /models/.
+2020-06-03 00:54:24.263 INFO    Scripting: event:type=under control,initiatorPilotName=Stretch | 55FS,target=Pilot #006,t=30686.212,targetMissionID=30,
+2020-06-03 00:54:24.289 INFO    COCKPITBASE: lua state still active MACROS, 55 (status undefined)
+2020-06-03 00:54:24.290 INFO    COCKPITBASE: lua state still active TGP_INTERFACE, 62 (status undefined)
+2020-06-03 00:54:24.291 INFO    Scripting: event:type=engine startup,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=30686.212,initiatorMissionID=30,
+2020-06-03 00:54:24.292 INFO    Scripting: event:type=birth,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=30686.212,initiatorMissionID=30,
+2020-06-03 00:54:24.292 ERROR   Lua::Config: Call error world.onEvent:[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: attempt to call global 'tostring' (a nil value)
+stack traceback:
+	[C]: in function 'tostring'
+	[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: in function 'onEvent'
+	[string "Scripts/UI/RadioCommandDialogPanel/RadioCommandDialogsPanel.lua"]:1309: in function 'onEvent'
+	[string "Scripts/World/EventHandlers.lua"]:13: in function <[string "Scripts/World/EventHandlers.lua"]:11>.
+2020-06-03 00:54:24.292 WARNING FLIGHT: crew 3 wCarrierCrew::reset_LA()
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: shooter] created, id 8
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: director] created, id 4
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: white1] created, id 5
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: white2] created, id 9
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: green_hbb] created, id 6
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: green_nw] created, id 7
+2020-06-03 00:54:24.293 WARNING FLIGHT: assigning aircraft Pilot #006 on runway 3, runway start: 1
+2020-06-03 00:54:24.293 WARNING FLIGHT: crew 3 wCarrierCrew::reset_LA()
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: shooter] created, id 8
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: director] created, id 4
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: white1] created, id 5
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: white2] created, id 9
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: green_hbb] created, id 6
+2020-06-03 00:54:24.293 WARNING FLIGHT: carrier technician [3: green_nw] created, id 7
+2020-06-03 00:54:24.293 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #006 on runway 3
+2020-06-03 00:54:24.294 INFO    WORLDGENERAL: loaded from mission Scripts/World/birds.lua
+2020-06-03 00:54:25.586 WARNING DXGUI: Invalid blur type!
+2020-06-03 00:54:50.076 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:54:50.076 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:54:50.076 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 00:54:50.076 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 00:54:50.076 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:54:50.076 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 00:54:50.077 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 00:54:50.077 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-continue"
+2020-06-03 00:54:50.077 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:54:50.077 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-end"
+2020-06-03 00:54:50.077 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:54:55.311 INFO    NET: onPlayerSlot(1, 22)
+2020-06-03 00:54:55.312 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 00:54:55.312 INFO    NET: release unit 30
+2020-06-03 00:54:55.312 INFO    Scripting: event:type=relinquished,initiatorPilotName=Stretch | 55FS,target=Pilot #006,t=30720.737,targetMissionID=30,
+2020-06-03 00:54:55.312 INFO    Scripting: event:type=pilot dead,t=30720.737,initiatorPilotName=Stretch | 55FS,initiatorMissionID=30,
+2020-06-03 00:54:55.312 INFO    Scripting: event:type=dead,t=30720.737,initiatorPilotName=Stretch | 55FS,initiatorMissionID=30,
+2020-06-03 00:54:55.312 WARNING FLIGHT: crew 3 wCarrierCrew::reset_LA()
+2020-06-03 00:54:55.312 WARNING FLIGHT: carrier technician [3: shooter] created, id 8
+2020-06-03 00:54:55.312 WARNING FLIGHT: carrier technician [3: director] created, id 4
+2020-06-03 00:54:55.312 WARNING FLIGHT: carrier technician [3: white1] created, id 5
+2020-06-03 00:54:55.312 WARNING FLIGHT: carrier technician [3: white2] created, id 9
+2020-06-03 00:54:55.312 WARNING FLIGHT: carrier technician [3: green_hbb] created, id 6
+2020-06-03 00:54:55.312 WARNING FLIGHT: carrier technician [3: green_nw] created, id 7
+2020-06-03 00:54:55.337 INFO    NET: client[1] occupied unit 22
+2020-06-03 00:55:12.496 INFO    NET: onPlayerSlot(1, 30)
+2020-06-03 00:55:12.496 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 00:55:12.496 INFO    NET: release unit 22
+2020-06-03 00:55:12.496 INFO    NET: client[1] occupied unit 30
+2020-06-03 00:55:14.772 INFO    Scripting: event:place=LSO: GRADE:WO  WX  WO(AFU)IC ,t=30740.203,type=comment,
+2020-06-03 00:55:20.595 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=30746.025,initiatorMissionID=23,
+2020-06-03 00:55:37.783 INFO    DCS: MissionSpawn:spawnLocalPlayer 30,FA-18C_hornet
+2020-06-03 00:55:37.796 WARNING EDCORE: Source ./Mods/aircraft/FA-18C/Cockpit/Scripts/../Shape is already mounted to the same mount /models/.
+2020-06-03 00:55:41.271 INFO    Scripting: event:type=under control,initiatorPilotName=Stretch | 55FS,target=Pilot #006,t=30763.214,targetMissionID=30,
+2020-06-03 00:55:41.297 INFO    COCKPITBASE: lua state still active MACROS, 55 (status undefined)
+2020-06-03 00:55:41.297 INFO    COCKPITBASE: lua state still active TGP_INTERFACE, 62 (status undefined)
+2020-06-03 00:55:41.298 INFO    Scripting: event:type=engine startup,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=30763.214,initiatorMissionID=30,
+2020-06-03 00:55:41.299 INFO    Scripting: event:type=birth,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=30763.214,initiatorMissionID=30,
+2020-06-03 00:55:41.299 ERROR   Lua::Config: Call error world.onEvent:[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: attempt to call global 'tostring' (a nil value)
+stack traceback:
+	[C]: in function 'tostring'
+	[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: in function 'onEvent'
+	[string "Scripts/UI/RadioCommandDialogPanel/RadioCommandDialogsPanel.lua"]:1309: in function 'onEvent'
+	[string "Scripts/World/EventHandlers.lua"]:13: in function <[string "Scripts/World/EventHandlers.lua"]:11>.
+2020-06-03 00:55:41.299 WARNING FLIGHT: crew 3 wCarrierCrew::reset_LA()
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: shooter] created, id 8
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: director] created, id 4
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: white1] created, id 5
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: white2] created, id 9
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: green_hbb] created, id 6
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: green_nw] created, id 7
+2020-06-03 00:55:41.300 WARNING FLIGHT: assigning aircraft Pilot #006 on runway 3, runway start: 1
+2020-06-03 00:55:41.300 WARNING FLIGHT: crew 3 wCarrierCrew::reset_LA()
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: shooter] created, id 8
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: director] created, id 4
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: white1] created, id 5
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: white2] created, id 9
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: green_hbb] created, id 6
+2020-06-03 00:55:41.300 WARNING FLIGHT: carrier technician [3: green_nw] created, id 7
+2020-06-03 00:55:41.300 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #006 on runway 3
+2020-06-03 00:55:41.301 INFO    WORLDGENERAL: loaded from mission Scripts/World/birds.lua
+2020-06-03 00:55:46.633 WARNING DXGUI: Invalid blur type!
+2020-06-03 00:56:23.771 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 1, runway start: 0
+2020-06-03 00:56:23.771 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 1
+2020-06-03 00:57:14.339 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=30859.774,initiatorMissionID=30,
+2020-06-03 00:57:24.983 WARNING FLIGHT: crew 3 wCarrierCrew::reset_LA()
+2020-06-03 00:57:29.150 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:57:29.150 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 00:57:29.150 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:57:29.150 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:57:29.151 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 00:57:29.151 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 00:57:29.151 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 00:57:29.151 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-begin"
+2020-06-03 00:57:29.151 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-continue"
+2020-06-03 00:57:29.151 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-end"
+2020-06-03 00:57:29.151 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 00:57:29.152 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 00:57:29.152 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 00:57:29.152 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:57:29.152 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 00:57:29.152 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 00:57:29.152 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-begin"
+2020-06-03 00:57:29.153 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 00:57:29.153 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 00:57:30.721 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 00:57:45.927 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 00:57:45.927 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\see_you"
+2020-06-03 00:58:51.310 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=30956.737,initiatorMissionID=23,
+2020-06-03 00:59:02.233 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 00:59:16.663 INFO    Scripting: event:type=relinquished,initiatorPilotName=Jambo72nd,target=Pilot #003,t=30982.093,targetMissionID=29,
+2020-06-03 00:59:16.664 INFO    NET: remove: client[3]
+2020-06-03 00:59:28.773 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 00:59:28.774 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 00:59:28.774 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 00:59:28.774 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 00:59:28.774 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 00:59:28.774 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 00:59:28.774 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 00:59:28.774 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 00:59:28.774 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 00:59:28.775 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 00:59:28.775 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 00:59:28.775 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-continue"
+2020-06-03 00:59:28.775 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:00:32.750 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31058.174,initiatorMissionID=30,
+2020-06-03 01:00:33.773 INFO    Scripting: event:place=LSO: GRADE:--- : (NX)  _WX_  _DRX_  _LURX_  (DRIM)  (LURIM)  WIRE# 1[BC],t=31059.203,type=comment,
+2020-06-03 01:00:43.032 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:00:43.032 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 01:00:43.032 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:00:43.033 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:00:43.033 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:00:43.033 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-end"
+2020-06-03 01:00:43.033 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 01:00:43.033 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 01:00:43.033 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-continue"
+2020-06-03 01:00:43.033 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 01:00:43.033 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 01:00:43.034 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 01:00:43.034 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 01:00:43.034 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:00:43.034 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:00:43.034 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-begin"
+2020-06-03 01:00:43.034 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-end"
+2020-06-03 01:00:43.034 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:00:54.484 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 01:01:11.995 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 01:01:11.995 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:01:11.995 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:01:11.995 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 01:01:11.995 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:01:11.995 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-continue"
+2020-06-03 01:01:11.996 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 01:01:22.018 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\request takeoff"
+2020-06-03 01:03:15.386 ERROR   DX11BACKEND: Can't find precompiled shader model/def_material.fx:BINORMAL_SIZE=2;BLEND_MODE=0;DIFFUSE_UV=tc0;DIRECTX11=true;METROUGH_MAP;NORMAL_MAP_UV=tc0;NORMAL_SIZE=3;SELF_ILLUMINATION_UV=tc0;SPECULAR_UV=tc0;TANGENT_SIZE=4;TEXCOORD0_SIZE=2;USE_DCS_DEFERRED=1;.
+2020-06-03 01:03:15.386 INFO    DX11BACKEND: Compile shader: model/def_material.fx:BINORMAL_SIZE=2;BLEND_MODE=0;DIFFUSE_UV=tc0;DIRECTX11=true;METROUGH_MAP;NORMAL_MAP_UV=tc0;NORMAL_SIZE=3;SELF_ILLUMINATION_UV=tc0;SPECULAR_UV=tc0;TANGENT_SIZE=4;TEXCOORD0_SIZE=2;USE_DCS_DEFERRED=1;
+2020-06-03 01:03:19.769 ALERT   DX11BACKEND: Error: Can't find precompiled shader for effect model/def_material.fx:BINORMAL_SIZE=2;BLEND_MODE=0;DIFFUSE_UV=tc0;DIRECTX11=true;METROUGH_MAP;NORMAL_MAP_UV=tc0;NORMAL_SIZE=3;SELF_ILLUMINATION_UV=tc0;SPECULAR_UV=tc0;TANGENT_SIZE=4;TEXCOORD0_SIZE=2;USE_DCS_DEFERRED=1;.
+Recompilation process will take some time, please wait
+(this situation should not occur on end user PC, if there is no manual shader editing)
+2020-06-03 01:03:20.101 ERROR   DX11BACKEND: Can't find precompiled shader model/def_material.fx:BLEND_MODE=1;DIFFUSE_UV=tc0;DIRECTX11=true;METROUGH_MAP;NORMAL_SIZE=3;SELF_ILLUMINATION_UV=tc0;SPECULAR_UV=tc0;TEXCOORD0_SIZE=2;USE_DCS_DEFERRED=1;.
+2020-06-03 01:03:20.101 INFO    DX11BACKEND: Compile shader: model/def_material.fx:BLEND_MODE=1;DIFFUSE_UV=tc0;DIRECTX11=true;METROUGH_MAP;NORMAL_SIZE=3;SELF_ILLUMINATION_UV=tc0;SPECULAR_UV=tc0;TEXCOORD0_SIZE=2;USE_DCS_DEFERRED=1;
+2020-06-03 01:03:24.212 ALERT   DX11BACKEND: Error: Can't find precompiled shader for effect model/def_material.fx:BLEND_MODE=1;DIFFUSE_UV=tc0;DIRECTX11=true;METROUGH_MAP;NORMAL_SIZE=3;SELF_ILLUMINATION_UV=tc0;SPECULAR_UV=tc0;TEXCOORD0_SIZE=2;USE_DCS_DEFERRED=1;.
+Recompilation process will take some time, please wait
+(this situation should not occur on end user PC, if there is no manual shader editing)
+2020-06-03 01:03:25.755 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:03:25.755 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:03:25.755 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:03:25.755 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:03:25.755 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:03:25.755 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:03:25.756 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 01:03:25.756 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-continue"
+2020-06-03 01:03:25.756 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:03:25.756 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:03:25.756 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:03:56.743 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=31262.172,initiatorMissionID=23,
+2020-06-03 01:04:09.096 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:04:09.096 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:04:09.096 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:04:09.096 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:04:09.096 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\request takeoff"
+2020-06-03 01:04:44.764 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:04:44.764 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:04:44.764 WARNING FLIGHT: assigning aircraft Pilot #006 on runway 1, runway start: 0
+2020-06-03 01:04:44.764 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #006 on runway 1
+2020-06-03 01:06:30.007 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31415.434,initiatorMissionID=30,
+2020-06-03 01:06:39.357 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=31424.783,initiatorMissionID=23,
+2020-06-03 01:06:41.063 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:06:49.866 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:06:50.741 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:06:50.741 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 01:06:50.741 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:06:50.741 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:06:50.741 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:06:50.741 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:06:50.742 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 01:06:50.742 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-begin"
+2020-06-03 01:06:50.742 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-continue"
+2020-06-03 01:06:50.742 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 01:06:50.742 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 01:06:50.742 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 01:06:50.742 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:06:50.743 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:06:50.743 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:06:50.743 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-end"
+2020-06-03 01:06:50.743 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:06:52.314 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 01:07:07.195 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\see_you"
+2020-06-03 01:07:25.506 INFO    NET: accepting connection from 174.85.92.108:54273
+2020-06-03 01:07:25.508 INFO    NET: adding client[3]
+2020-06-03 01:07:25.620 INFO    NET: added client[3] name=Jambo72nd addr=174.85.92.108:54273
+2020-06-03 01:07:26.699 INFO    NET: client[3] UDP port changed from 54273 to 52776
+2020-06-03 01:07:44.745 INFO    NET: client[3] is ready to start
+2020-06-03 01:07:44.745 INFO    NET: spawning client[3]
+2020-06-03 01:07:44.753 INFO    NET: client[3] started
+2020-06-03 01:07:50.170 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:07:50.170 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 01:07:50.170 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:07:50.170 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:07:50.171 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:07:50.171 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-end"
+2020-06-03 01:07:50.171 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 01:07:50.171 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-begin"
+2020-06-03 01:07:50.171 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-end"
+2020-06-03 01:07:50.171 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 01:07:50.171 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:07:50.172 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 01:07:50.172 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 01:07:50.172 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:07:50.172 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-begin"
+2020-06-03 01:07:50.172 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:07:50.172 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 01:07:50.173 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:07:52.553 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 01:07:52.553 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:07:52.553 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 01:07:52.553 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:08:02.421 INFO    NET: onPlayerSlot(3, 29)
+2020-06-03 01:08:02.421 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:08:02.421 INFO    NET: release unit 
+2020-06-03 01:08:02.421 INFO    NET: client[3] occupied unit 29
+2020-06-03 01:08:12.110 INFO    Scripting: event:type=birth,initiatorPilotName=Jambo72nd,place=CVN-73,t=31517.538,initiatorMissionID=29,
+2020-06-03 01:08:12.110 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:08:12.110 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:08:12.110 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:08:12.110 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:08:12.110 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:08:12.110 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:08:12.110 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:08:12.111 WARNING FLIGHT: assigning aircraft Pilot #003 on runway 1, runway start: 1
+2020-06-03 01:08:12.111 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:08:12.111 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:08:12.111 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:08:12.111 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:08:12.111 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:08:12.111 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:08:12.111 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:08:12.111 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #003 on runway 1
+2020-06-03 01:09:13.220 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31578.654,initiatorMissionID=30,
+2020-06-03 01:09:17.355 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31582.794,initiatorMissionID=30,
+2020-06-03 01:10:22.345 INFO    Scripting: event:type=takeoff,initiatorPilotName=Jambo72nd,place=CVN-73,t=31647.772,initiatorMissionID=29,
+2020-06-03 01:10:30.286 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:10:30.286 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:10:30.287 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:10:30.287 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:10:30.287 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:10:30.287 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:10:30.287 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:10:30.287 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:10:30.287 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:10:30.288 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:10:34.094 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:10:45.517 INFO    Scripting: event:place=LSO: GRADE:B  (NX)  _WX_  _DRX_  _LURX_  (LURIM)  3PTSIW  BIW ,t=31670.953,type=comment,
+2020-06-03 01:10:46.242 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31671.674,initiatorMissionID=30,
+2020-06-03 01:10:50.304 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31675.734,initiatorMissionID=30,
+2020-06-03 01:11:44.889 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=31730.318,initiatorMissionID=23,
+2020-06-03 01:11:55.020 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:11:55.021 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 01:11:55.021 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:11:55.021 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:11:55.021 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:11:55.021 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:11:55.021 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 01:11:55.021 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-continue"
+2020-06-03 01:11:55.022 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:11:55.022 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 01:11:55.022 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 01:11:55.022 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 01:11:55.022 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:11:55.022 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 01:11:55.022 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:11:55.023 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-begin"
+2020-06-03 01:11:55.023 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-end"
+2020-06-03 01:11:55.023 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:11:56.584 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 01:12:09.487 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:12:31.057 INFO    Scripting: event:place=LSO: GRADE:B  SLOX  (LLIW)  3PTSIW  BIW ,t=31776.474,type=comment,
+2020-06-03 01:12:31.057 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31776.474,initiatorMissionID=30,
+2020-06-03 01:12:34.553 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31779.994,initiatorMissionID=30,
+2020-06-03 01:13:40.029 INFO    Lua: Lua CPU usage: metric: average mission execution: 1.2287 %
+2020-06-03 01:13:40.029 INFO    NET: simulation paused, modelTime = 3045.452000
+2020-06-03 01:13:44.368 INFO    NET: simResume: curTime=3292.368516, syncDelay=0.500000, startTime=3292.868516
+2020-06-03 01:13:44.368 INFO    NET: simulation starting, state=ssStarting
+2020-06-03 01:13:44.368 INFO    NET: starting client[2]
+2020-06-03 01:13:44.368 INFO    NET: starting client[3]
+2020-06-03 01:13:44.368 INFO    NET: syncStart at 3292.868516:
+2020-06-03 01:13:44.887 INFO    NET: simulation started, state=ssRunning
+2020-06-03 01:13:52.998 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_lso\messages\easy with the nose"
+2020-06-03 01:14:09.407 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 1, runway start: 0
+2020-06-03 01:14:09.407 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 1
+2020-06-03 01:14:09.831 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:14:09.831 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:14:09.831 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:14:09.832 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:14:09.832 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:14:09.832 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:14:09.832 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:14:09.897 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 1, runway start: 0
+2020-06-03 01:14:09.897 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 1
+2020-06-03 01:14:10.141 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:14:10.141 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:14:10.141 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:14:10.141 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:14:10.141 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:14:10.141 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:14:10.141 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:14:10.150 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 1, runway start: 0
+2020-06-03 01:14:10.150 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 1
+2020-06-03 01:14:10.230 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31870.774,initiatorMissionID=30,
+2020-06-03 01:14:10.432 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:14:10.432 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:14:10.432 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:14:10.432 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:14:10.432 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:14:10.432 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:14:10.432 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:14:10.652 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 1, runway start: 0
+2020-06-03 01:14:10.652 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 1
+2020-06-03 01:14:11.052 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:14:11.052 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:14:11.052 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:14:11.052 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:14:11.052 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:14:11.052 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:14:11.052 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:14:11.144 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 1, runway start: 0
+2020-06-03 01:14:11.144 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 1
+2020-06-03 01:14:14.453 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31875.014,initiatorMissionID=30,
+2020-06-03 01:15:41.653 INFO    Scripting: event:place=LSO: GRADE:B  WX  (NX)  WO(AFU)TL  (EGTL)  3PTSIW  _DRIM_  _DRIC_  _TMRDIC_  _TMRDAR_  BIW [BC],t=31962.203,type=comment,
+2020-06-03 01:15:41.809 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31962.354,initiatorMissionID=30,
+2020-06-03 01:15:46.098 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=31966.654,initiatorMissionID=30,
+2020-06-03 01:15:46.200 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=31966.75,initiatorMissionID=23,
+2020-06-03 01:15:57.877 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:16:46.665 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:16:46.665 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:16:46.665 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:16:46.665 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:16:46.666 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:16:46.666 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:16:46.666 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-begin"
+2020-06-03 01:16:46.666 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:16:46.666 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:16:46.666 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:16:57.265 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_lso\messages\easy with the nose"
+2020-06-03 01:16:59.590 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 01:16:59.590 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:16:59.590 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-end"
+2020-06-03 01:16:59.590 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 01:16:59.591 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-begin"
+2020-06-03 01:16:59.591 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 01:16:59.591 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 01:16:59.591 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 01:16:59.591 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 01:16:59.591 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 01:16:59.591 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:16:59.592 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 01:16:59.592 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-end"
+2020-06-03 01:17:09.908 INFO    Scripting: event:place=LSO: GRADE:WO  WX  (NX)  WO(AFU)IC ,t=32050.453,type=comment,
+2020-06-03 01:17:11.063 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 01:17:28.571 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:17:28.571 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:17:31.642 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 01:17:31.642 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:17:31.643 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 01:17:31.643 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:17:31.643 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 01:17:31.643 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:17:31.643 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 01:17:31.643 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-end"
+2020-06-03 01:18:25.820 INFO    Scripting: event:failureDisplayName=Radar altimeter total failure,type=failure,initiatorPilotName=Stretch | 55FS,t=32126.374,failure=RALT_FAILURE_TOTAL,initiatorMissionID=30,
+2020-06-03 01:18:25.820 INFO    Scripting: event:failureDisplayName=Radar altimeter transmitter,type=failure,initiatorPilotName=Stretch | 55FS,t=32126.374,failure=RALT_FAILURE_TRANSMITTER,initiatorMissionID=30,
+2020-06-03 01:18:25.820 INFO    Scripting: event:failureDisplayName=Radar altimeter receiver,type=failure,initiatorPilotName=Stretch | 55FS,t=32126.374,failure=RALT_FAILURE_RECEIVER,initiatorMissionID=30,
+2020-06-03 01:18:25.870 INFO    Scripting: event:failureDisplayName=MC 1 FAILURE,type=failure,initiatorPilotName=Stretch | 55FS,t=32126.394,failure=Failure_Comp_MC1,initiatorMissionID=30,
+2020-06-03 01:18:25.870 INFO    Scripting: event:type=pilot dead,t=32126.394,initiatorPilotName=Stretch | 55FS,initiatorMissionID=30,
+2020-06-03 01:18:25.870 INFO    Scripting: event:amount=0,t=32126.394,type=score,initiatorMissionID=22,
+2020-06-03 01:18:25.875 INFO    Scripting: event:type=crash,t=32126.428,initiatorPilotName=Stretch | 55FS,initiatorMissionID=30,
+2020-06-03 01:18:25.921 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:18:25.921 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:18:25.921 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:18:25.922 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:18:25.922 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:18:25.988 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 01:18:26.055 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 01:18:26.055 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:18:26.055 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 01:18:26.055 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:18:26.055 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 01:18:26.055 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:18:26.055 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 01:18:26.056 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-end"
+2020-06-03 01:19:51.187 ALERT   WRADIO: Error in wMessage::buildSpeech(), event = wMsgLeaderHornetBall: [string "./Scripts/Speech/common.lua"]:3385: attempt to index a nil value
+stack traceback:
+	[C]: ?
+	[string "./Scripts/Speech/common.lua"]:3385: in function 'make'
+	[string "./Scripts/Speech/common.lua"]:3138: in function 'make'
+	[string "Scripts/Speech/speech.lua"]:179: in function <[string "Scripts/Speech/speech.lua"]:165>
+2020-06-03 01:20:11.408 INFO    Scripting: event:place=LSO: GRADE:WO  LULX  WO(AFU)IC ,t=32231.953,type=comment,
+2020-06-03 01:20:47.115 INFO    NET: onPlayerSlot(1, 22)
+2020-06-03 01:20:47.115 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:20:47.115 INFO    NET: release unit 30
+2020-06-03 01:20:47.116 INFO    NET: client[1] occupied unit 22
+2020-06-03 01:20:50.026 INFO    DCS: MissionSpawn:spawnLocalPlayer 22,FA-18C_hornet
+2020-06-03 01:20:50.039 WARNING EDCORE: Source ./Mods/aircraft/FA-18C/Cockpit/Scripts/../Shape is already mounted to the same mount /models/.
+2020-06-03 01:20:53.521 INFO    Scripting: event:type=under control,initiatorPilotName=Stretch | 55FS,target=Pilot #001,t=32270.581,targetMissionID=22,
+2020-06-03 01:20:53.549 INFO    COCKPITBASE: lua state still active MACROS, 55 (status undefined)
+2020-06-03 01:20:53.550 INFO    COCKPITBASE: lua state still active TGP_INTERFACE, 62 (status undefined)
+2020-06-03 01:20:53.551 INFO    Scripting: event:type=engine startup,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=32270.581,initiatorMissionID=22,
+2020-06-03 01:20:53.552 INFO    Scripting: event:type=birth,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=32270.581,initiatorMissionID=22,
+2020-06-03 01:20:53.552 ERROR   Lua::Config: Call error world.onEvent:[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: attempt to call global 'tostring' (a nil value)
+stack traceback:
+	[C]: in function 'tostring'
+	[string "Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua"]:590: in function 'onEvent'
+	[string "Scripts/UI/RadioCommandDialogPanel/RadioCommandDialogsPanel.lua"]:1309: in function 'onEvent'
+	[string "Scripts/World/EventHandlers.lua"]:13: in function <[string "Scripts/World/EventHandlers.lua"]:11>.
+2020-06-03 01:20:53.552 WARNING FLIGHT: crew 4 wCarrierCrew::reset_LA()
+2020-06-03 01:20:53.552 WARNING FLIGHT: carrier technician [4: shooter] created, id 8
+2020-06-03 01:20:53.552 WARNING FLIGHT: carrier technician [4: director] created, id 9
+2020-06-03 01:20:53.552 WARNING FLIGHT: carrier technician [4: white1] created, id 10
+2020-06-03 01:20:53.552 WARNING FLIGHT: carrier technician [4: white2] created, id 11
+2020-06-03 01:20:53.552 WARNING FLIGHT: carrier technician [4: green_hbb] created, id 10
+2020-06-03 01:20:53.552 WARNING FLIGHT: carrier technician [4: green_nw] created, id 12
+2020-06-03 01:20:53.553 WARNING FLIGHT: assigning aircraft Pilot #001 on runway 4, runway start: 1
+2020-06-03 01:20:53.553 WARNING FLIGHT: crew 4 wCarrierCrew::reset_LA()
+2020-06-03 01:20:53.553 WARNING FLIGHT: carrier technician [4: shooter] created, id 8
+2020-06-03 01:20:53.553 WARNING FLIGHT: carrier technician [4: director] created, id 9
+2020-06-03 01:20:53.553 WARNING FLIGHT: carrier technician [4: white1] created, id 10
+2020-06-03 01:20:53.553 WARNING FLIGHT: carrier technician [4: white2] created, id 11
+2020-06-03 01:20:53.553 WARNING FLIGHT: carrier technician [4: green_hbb] created, id 10
+2020-06-03 01:20:53.553 WARNING FLIGHT: carrier technician [4: green_nw] created, id 12
+2020-06-03 01:20:53.553 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #001 on runway 4
+2020-06-03 01:20:53.553 INFO    WORLDGENERAL: loaded from mission Scripts/World/birds.lua
+2020-06-03 01:20:55.354 WARNING DXGUI: Invalid blur type!
+2020-06-03 01:20:59.119 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:20:59.119 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 01:20:59.119 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:20:59.120 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:20:59.120 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:20:59.120 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 01:20:59.120 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 01:20:59.120 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-begin"
+2020-06-03 01:20:59.120 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-continue"
+2020-06-03 01:20:59.120 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-end"
+2020-06-03 01:20:59.120 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 01:20:59.121 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 01:20:59.121 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 01:20:59.121 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 01:20:59.121 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:20:59.121 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\8-begin"
+2020-06-03 01:20:59.121 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:20:59.121 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:21:00.669 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 01:21:17.631 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:21:17.631 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:21:26.159 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:21:26.159 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-continue"
+2020-06-03 01:21:26.159 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-end"
+2020-06-03 01:21:56.979 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:21:56.979 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:21:56.980 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:21:56.980 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 01:21:56.980 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:21:56.980 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\see_you"
+2020-06-03 01:21:56.980 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:21:58.692 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=32339.24,initiatorMissionID=23,
+2020-06-03 01:22:00.009 INFO    Scripting: event:place=LSO: GRADE:(OK) : WIRE# 2[BC],t=32340.56,type=comment,
+2020-06-03 01:22:00.977 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:22:00.977 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:22:00.978 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:22:00.978 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 01:22:00.978 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-continue"
+2020-06-03 01:22:00.978 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:22:00.978 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-end"
+2020-06-03 01:22:05.743 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\request takeoff"
+2020-06-03 01:22:20.087 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 01:22:20.088 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 01:22:54.026 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=32394.581,initiatorMissionID=22,
+2020-06-03 01:23:00.144 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 1, runway start: 0
+2020-06-03 01:23:00.144 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 1
+2020-06-03 01:23:04.831 WARNING FLIGHT: crew 4 wCarrierCrew::reset_LA()
+2020-06-03 01:24:17.099 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:24:17.099 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 01:24:17.099 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:24:17.100 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:24:17.100 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:24:17.100 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-end"
+2020-06-03 01:24:17.100 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 01:24:17.100 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 01:24:17.100 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-continue"
+2020-06-03 01:24:17.100 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-end"
+2020-06-03 01:24:17.101 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 01:24:17.101 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 01:24:17.101 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-begin"
+2020-06-03 01:24:17.101 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:24:17.101 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-end"
+2020-06-03 01:24:17.101 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:24:17.101 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-begin"
+2020-06-03 01:24:17.102 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:24:18.664 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 01:24:34.233 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:24:34.234 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\see_you"
+2020-06-03 01:24:40.357 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=32500.907,initiatorMissionID=23,
+2020-06-03 01:24:51.811 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:25:30.687 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:25:30.687 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:25:30.687 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:25:30.687 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:25:30.687 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:26:43.566 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:26:43.566 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:26:43.567 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:26:43.567 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:26:43.567 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:26:43.567 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:26:43.567 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:26:43.567 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:26:43.567 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-end"
+2020-06-03 01:26:43.568 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:27:55.069 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=32695.619,initiatorMissionID=23,
+2020-06-03 01:27:59.836 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=32700.386,initiatorMissionID=23,
+2020-06-03 01:28:20.757 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:28:20.757 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:28:20.758 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:28:20.758 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:28:20.758 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:28:20.758 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:28:20.758 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:28:20.758 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:28:20.758 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\6-end"
+2020-06-03 01:28:20.759 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:28:43.282 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=32743.841,initiatorMissionID=22,
+2020-06-03 01:28:47.418 INFO    Scripting: event:type=takeoff,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=32747.981,initiatorMissionID=22,
+2020-06-03 01:29:04.435 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:29:04.435 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:29:04.435 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:29:04.436 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:29:04.436 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:29:04.436 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:29:04.436 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:29:04.436 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:29:04.436 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\4-end"
+2020-06-03 01:29:04.436 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:29:17.335 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\clara"
+2020-06-03 01:29:36.159 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=32796.708,initiatorMissionID=23,
+2020-06-03 01:29:52.276 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:29:52.277 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:29:52.277 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:29:52.277 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:29:52.277 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:29:52.277 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:29:52.277 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:29:52.277 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:29:52.278 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:29:52.278 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:30:16.877 INFO    Scripting: event:type=land,initiatorPilotName=Stretch | 55FS,place=CVN-73,t=32837.421,initiatorMissionID=22,
+2020-06-03 01:30:17.900 INFO    Scripting: event:place=LSO: GRADE:C : (NX)  _WX_  SLOX  WIRE# 3 _EGIW_ ,t=32838.453,type=comment,
+2020-06-03 01:30:19.454 INFO    Lua: Lua CPU usage: metric: average mission execution: 1.2736 %
+2020-06-03 01:30:19.454 INFO    NET: simulation paused, modelTime = 4039.999000
+2020-06-03 01:30:37.865 INFO    NET: simResume: curTime=4305.865964, syncDelay=0.500000, startTime=4306.365964
+2020-06-03 01:30:37.865 INFO    NET: simulation starting, state=ssStarting
+2020-06-03 01:30:37.865 INFO    NET: starting client[2]
+2020-06-03 01:30:37.865 INFO    NET: starting client[3]
+2020-06-03 01:30:37.865 INFO    NET: syncStart at 4306.365964:
+2020-06-03 01:30:38.369 INFO    NET: simulation started, state=ssRunning
+2020-06-03 01:31:09.844 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 1, runway start: 0
+2020-06-03 01:31:09.844 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 1
+2020-06-03 01:32:03.770 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:32:03.770 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:32:03.770 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-end"
+2020-06-03 01:32:03.770 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:32:03.771 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\abort inbound"
+2020-06-03 01:32:13.652 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:32:13.652 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\marshal"
+2020-06-03 01:32:13.653 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\mom"
+2020-06-03 01:32:13.653 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-begin"
+2020-06-03 01:32:13.653 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\5-continue"
+2020-06-03 01:32:13.653 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\3-end"
+2020-06-03 01:32:13.653 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\for"
+2020-06-03 01:32:13.653 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\angels"
+2020-06-03 01:32:13.653 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:32:13.654 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\7-begin"
+2020-06-03 01:32:13.654 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:32:13.654 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:32:13.654 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:32:15.218 ERROR   SOUND: can't load wave: "speech\eng\common\atc_navy_marshal\digits\point-continue"
+2020-06-03 01:32:32.450 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 01:32:32.450 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:32:32.451 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 01:32:32.451 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:32:40.850 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=32962.463,initiatorMissionID=23,
+2020-06-03 01:32:52.527 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:33:02.437 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\2-continue"
+2020-06-03 01:33:02.437 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\see_you"
+2020-06-03 01:33:06.425 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:33:06.426 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:33:06.426 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:34:32.478 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:34:32.478 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 01:34:32.478 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:34:32.479 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:34:32.479 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:34:32.479 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:34:32.479 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 01:34:32.479 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:34:32.479 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:34:32.479 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:34:32.480 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 01:34:32.480 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:35:27.270 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:35:27.270 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\tower"
+2020-06-03 01:35:27.270 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:35:27.271 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:35:27.271 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:35:27.271 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:35:27.271 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\overhead"
+2020-06-03 01:35:27.271 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\state"
+2020-06-03 01:35:27.271 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:35:27.271 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:35:27.272 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 01:35:27.272 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:35:53.560 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=33155.176,initiatorMissionID=23,
+2020-06-03 01:35:56.844 INFO    Scripting: event:place=LSO: GRADE: NC : No proper communications,t=33158.453,type=comment,
+2020-06-03 01:36:40.844 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:36:40.844 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:36:41.181 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:36:41.181 WARNING FLIGHT: carrier technician [2: shooter] created, id 4
+2020-06-03 01:36:41.181 WARNING FLIGHT: carrier technician [2: director] created, id 2
+2020-06-03 01:36:41.181 WARNING FLIGHT: carrier technician [2: white1] created, id 3
+2020-06-03 01:36:41.181 WARNING FLIGHT: carrier technician [2: white2] created, id 5
+2020-06-03 01:36:41.181 WARNING FLIGHT: carrier technician [2: green_hbb] created, id 6
+2020-06-03 01:36:41.181 WARNING FLIGHT: carrier technician [2: green_nw] created, id 7
+2020-06-03 01:36:41.825 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:36:41.825 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:36:42.092 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:36:42.093 WARNING FLIGHT: carrier technician [2: shooter] created, id 4
+2020-06-03 01:36:42.093 WARNING FLIGHT: carrier technician [2: director] created, id 2
+2020-06-03 01:36:42.093 WARNING FLIGHT: carrier technician [2: white1] created, id 3
+2020-06-03 01:36:42.093 WARNING FLIGHT: carrier technician [2: white2] created, id 5
+2020-06-03 01:36:42.093 WARNING FLIGHT: carrier technician [2: green_hbb] created, id 6
+2020-06-03 01:36:42.093 WARNING FLIGHT: carrier technician [2: green_nw] created, id 7
+2020-06-03 01:36:42.845 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:36:42.845 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:36:43.066 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:36:43.066 WARNING FLIGHT: carrier technician [2: shooter] created, id 4
+2020-06-03 01:36:43.066 WARNING FLIGHT: carrier technician [2: director] created, id 2
+2020-06-03 01:36:43.066 WARNING FLIGHT: carrier technician [2: white1] created, id 3
+2020-06-03 01:36:43.066 WARNING FLIGHT: carrier technician [2: white2] created, id 5
+2020-06-03 01:36:43.066 WARNING FLIGHT: carrier technician [2: green_hbb] created, id 6
+2020-06-03 01:36:43.066 WARNING FLIGHT: carrier technician [2: green_nw] created, id 7
+2020-06-03 01:36:43.825 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:36:43.825 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:36:44.269 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:36:44.269 WARNING FLIGHT: carrier technician [2: shooter] created, id 4
+2020-06-03 01:36:44.269 WARNING FLIGHT: carrier technician [2: director] created, id 2
+2020-06-03 01:36:44.269 WARNING FLIGHT: carrier technician [2: white1] created, id 3
+2020-06-03 01:36:44.269 WARNING FLIGHT: carrier technician [2: white2] created, id 5
+2020-06-03 01:36:44.270 WARNING FLIGHT: carrier technician [2: green_hbb] created, id 6
+2020-06-03 01:36:44.270 WARNING FLIGHT: carrier technician [2: green_nw] created, id 7
+2020-06-03 01:36:44.825 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:36:44.825 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:36:45.178 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:36:45.178 WARNING FLIGHT: carrier technician [2: shooter] created, id 4
+2020-06-03 01:36:45.178 WARNING FLIGHT: carrier technician [2: director] created, id 2
+2020-06-03 01:36:45.178 WARNING FLIGHT: carrier technician [2: white1] created, id 3
+2020-06-03 01:36:45.178 WARNING FLIGHT: carrier technician [2: white2] created, id 5
+2020-06-03 01:36:45.178 WARNING FLIGHT: carrier technician [2: green_hbb] created, id 6
+2020-06-03 01:36:45.178 WARNING FLIGHT: carrier technician [2: green_nw] created, id 7
+2020-06-03 01:36:45.825 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:36:45.825 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:37:22.780 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_start"
+2020-06-03 01:37:22.780 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-begin"
+2020-06-03 01:37:22.780 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-continue"
+2020-06-03 01:37:22.780 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\0-end"
+2020-06-03 01:37:22.780 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\delimeter"
+2020-06-03 01:37:22.780 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\h_b"
+2020-06-03 01:37:22.781 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\9-begin"
+2020-06-03 01:37:22.781 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\point-continue"
+2020-06-03 01:37:22.781 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\digits\1-end"
+2020-06-03 01:37:22.781 ERROR   SOUND: can't load wave: "speech\eng\common\disabled_player\messages\_end"
+2020-06-03 01:37:38.704 INFO    NET: onPlayerSlot(1, )
+2020-06-03 01:37:38.704 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:37:38.704 INFO    NET: release unit 22
+2020-06-03 01:37:38.705 INFO    Scripting: event:type=relinquished,initiatorPilotName=Stretch | 55FS,target=Pilot #001,t=33260.32,targetMissionID=22,
+2020-06-03 01:37:38.705 INFO    Scripting: event:type=pilot dead,t=33260.32,initiatorPilotName=Stretch | 55FS,initiatorMissionID=22,
+2020-06-03 01:37:38.705 INFO    Scripting: event:type=dead,t=33260.32,initiatorPilotName=Stretch | 55FS,initiatorMissionID=22,
+2020-06-03 01:37:38.731 INFO    NET: client[1] occupied unit 
+2020-06-03 01:38:11.065 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=33292.685,initiatorMissionID=23,
+2020-06-03 01:38:21.489 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:39:14.393 INFO    Scripting: event:type=land,initiatorPilotName=Jambo72nd,place=CVN-73,t=33356.012,initiatorMissionID=29,
+2020-06-03 01:39:16.834 INFO    Scripting: event:place=LSO: GRADE:C : (DLX)  _LULX_  _FX_  _LULIM_  (DLIM)  _LULIC_  _LOIC_  _PIC_  _PPPIC_  _LOAR_  WO(AFU)TL  3PTSIW  _EGIW_  WIRE# 3[BC],t=33358.453,type=comment,
+2020-06-03 01:39:19.889 INFO    Lua: Lua CPU usage: metric: average mission execution: 1.0479 %
+2020-06-03 01:39:19.889 INFO    NET: simulation paused, modelTime = 4561.500000
+2020-06-03 01:39:35.144 INFO    NET: simResume: curTime=4843.144809, syncDelay=0.500000, startTime=4843.644809
+2020-06-03 01:39:35.144 INFO    NET: simulation starting, state=ssStarting
+2020-06-03 01:39:35.144 INFO    NET: starting client[2]
+2020-06-03 01:39:35.144 INFO    NET: starting client[3]
+2020-06-03 01:39:35.144 INFO    NET: syncStart at 4843.644809:
+2020-06-03 01:39:35.654 INFO    NET: simulation started, state=ssRunning
+2020-06-03 01:41:01.160 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=33446.991,initiatorMissionID=23,
+2020-06-03 01:41:43.611 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:41:43.611 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:42:12.468 INFO    NET: onPlayerSlot(3, )
+2020-06-03 01:42:12.468 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:42:12.468 INFO    NET: release unit 29
+2020-06-03 01:42:12.468 INFO    Scripting: event:type=relinquished,initiatorPilotName=Jambo72nd,target=Pilot #003,t=33518.303,targetMissionID=29,
+2020-06-03 01:42:12.469 INFO    NET: client[3] occupied unit 
+2020-06-03 01:42:18.147 INFO    NET: onPlayerSlot(3, 30)
+2020-06-03 01:42:18.148 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:42:18.148 INFO    NET: release unit 
+2020-06-03 01:42:18.148 INFO    NET: client[3] occupied unit 30
+2020-06-03 01:42:22.857 INFO    NET: onPlayerSlot(3, 29)
+2020-06-03 01:42:22.858 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:42:22.858 INFO    NET: release unit 30
+2020-06-03 01:42:22.858 INFO    Scripting: event:type=relinquished,initiatorPilotName=PLAYER,target=,t=33528.691,targetMissionID=,
+2020-06-03 01:42:22.858 INFO    NET: client[3] occupied unit 29
+2020-06-03 01:42:31.572 INFO    Scripting: event:type=birth,initiatorPilotName=Jambo72nd,place=CVN-73,t=33537.403,initiatorMissionID=29,
+2020-06-03 01:42:31.572 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:42:31.572 WARNING FLIGHT: assigning aircraft Pilot #003 on runway 1, runway start: 1
+2020-06-03 01:42:31.572 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:42:31.572 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:42:31.572 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #003 on runway 1
+2020-06-03 01:43:16.645 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=33582.477,initiatorMissionID=23,
+2020-06-03 01:43:27.468 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:44:58.871 ALERT   WRADIO: Error in wMessage::buildSpeech(), event = wMsgLeaderHornetBall: [string "./Scripts/Speech/common.lua"]:3364: attempt to index field 'receiver' (a nil value)
+stack traceback:
+	[C]: ?
+	[string "./Scripts/Speech/common.lua"]:3364: in function 'make'
+	[string "./Scripts/Speech/common.lua"]:3138: in function 'make'
+	[string "Scripts/Speech/speech.lua"]:179: in function <[string "Scripts/Speech/speech.lua"]:165>
+2020-06-03 01:45:28.684 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=33714.519,initiatorMissionID=23,
+2020-06-03 01:45:44.583 INFO    NET: onPlayerSlot(3, )
+2020-06-03 01:45:44.583 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:45:44.583 INFO    NET: release unit 29
+2020-06-03 01:45:44.583 INFO    Scripting: event:type=relinquished,initiatorPilotName=Jambo72nd,target=Pilot #003,t=33730.414,targetMissionID=29,
+2020-06-03 01:45:44.583 INFO    NET: client[3] occupied unit 
+2020-06-03 01:45:44.695 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:45:44.695 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:45:44.695 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:45:44.695 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:45:44.695 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:45:44.695 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:45:44.695 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:45:48.703 INFO    NET: onPlayerSlot(3, 29)
+2020-06-03 01:45:48.703 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:45:48.703 INFO    NET: release unit 
+2020-06-03 01:45:48.703 INFO    NET: client[3] occupied unit 29
+2020-06-03 01:45:56.594 INFO    Scripting: event:type=birth,initiatorPilotName=Jambo72nd,place=CVN-73,t=33742.426,initiatorMissionID=29,
+2020-06-03 01:45:56.594 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:45:56.594 WARNING FLIGHT: assigning aircraft Pilot #003 on runway 1, runway start: 1
+2020-06-03 01:45:56.594 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:45:56.594 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:45:56.595 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:45:56.595 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #003 on runway 1
+2020-06-03 01:46:21.614 WARNING FLIGHT: assigning aircraft Pilot #002 on runway 2, runway start: 0
+2020-06-03 01:46:21.614 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #002 on runway 2
+2020-06-03 01:46:33.817 INFO    Scripting: event:type=takeoff,initiatorPilotName=Jambo72nd,place=CVN-73,t=33779.648,initiatorMissionID=29,
+2020-06-03 01:46:45.093 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:47:43.636 INFO    Scripting: event:type=takeoff,initiatorPilotName=Raamon,place=CVN-73,t=33849.47,initiatorMissionID=23,
+2020-06-03 01:47:54.100 WARNING FLIGHT: crew 2 wCarrierCrew::reset_LA()
+2020-06-03 01:48:30.845 INFO    NET: onPlayerSlot(3, )
+2020-06-03 01:48:30.846 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:48:30.846 INFO    NET: release unit 29
+2020-06-03 01:48:30.846 INFO    Scripting: event:type=relinquished,initiatorPilotName=Jambo72nd,target=Pilot #003,t=33896.681,targetMissionID=29,
+2020-06-03 01:48:30.846 INFO    NET: client[3] occupied unit 
+2020-06-03 01:48:32.624 INFO    NET: onPlayerSlot(3, 29)
+2020-06-03 01:48:32.624 INFO    NET: passed onPlayerTryChangeSlot
+2020-06-03 01:48:32.624 INFO    NET: release unit 
+2020-06-03 01:48:32.625 INFO    NET: client[3] occupied unit 29
+2020-06-03 01:48:40.437 INFO    Scripting: event:type=birth,initiatorPilotName=Jambo72nd,place=CVN-73,t=33906.27,initiatorMissionID=29,
+2020-06-03 01:48:40.437 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:48:40.437 WARNING FLIGHT: assigning aircraft Pilot #003 on runway 1, runway start: 1
+2020-06-03 01:48:40.437 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: shooter] created, id 0
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: director] created, id 0
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: white1] created, id 1
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: white2] created, id 2
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: green_hbb] created, id 3
+2020-06-03 01:48:40.437 WARNING FLIGHT: carrier technician [1: green_nw] created, id 1
+2020-06-03 01:48:40.437 WARNING FLIGHT: wCarrierCrew::set_LA() assigned aircraft Pilot #003 on runway 1
+2020-06-03 01:49:10.895 INFO    Scripting: event:type=takeoff,initiatorPilotName=Jambo72nd,place=CVN-73,t=33936.73,initiatorMissionID=29,
+2020-06-03 01:49:22.502 WARNING FLIGHT: crew 1 wCarrierCrew::reset_LA()
+2020-06-03 01:49:42.246 ALERT   WRADIO: Error in wMessage::buildSpeech(), event = wMsgLeaderHornetBall: [string "./Scripts/Speech/common.lua"]:3364: attempt to index field 'receiver' (a nil value)
+stack traceback:
+	[C]: ?
+	[string "./Scripts/Speech/common.lua"]:3364: in function 'make'
+	[string "./Scripts/Speech/common.lua"]:3138: in function 'make'
+	[string "Scripts/Speech/speech.lua"]:179: in function <[string "Scripts/Speech/speech.lua"]:165>
+2020-06-03 01:50:15.138 INFO    Scripting: event:type=land,initiatorPilotName=Raamon,place=CVN-73,t=34000.97,initiatorMissionID=23,
+2020-06-03 01:51:15.448 INFO    Scripting: event:type=relinquished,initiatorPilotName=Jambo72nd,target=Pilot #003,t=34061.283,targetMissionID=29,
+2020-06-03 01:51:15.448 INFO    NET: remove: client[3]
+2020-06-03 01:51:32.389 INFO    NET: remove: client[2]
+2020-06-03 01:51:32.392 INFO    NET: server has stopped
+2020-06-03 01:51:32.422 INFO    Dispatcher: Stop
+2020-06-03 01:51:38.522 INFO    Config: netview stopped
+2020-06-03 01:51:38.547 INFO    DCS: wcTanker::onEvent:5
+2020-06-03 01:51:38.547 INFO    EDCORE: (wcTanker::Channel)enterToState_:6
+2020-06-03 01:51:38.547 WARNING LOG: 1 duplicate message(s) skipped.
+2020-06-03 01:51:38.547 INFO    EDCORE: (wcTanker)enterToState_:3
+2020-06-03 01:51:38.566 INFO    TERRAIN: lSystem::CleanScenes()
+2020-06-03 01:51:38.572 INFO    VISUALIZER: StopSimulation
+2020-06-03 01:51:38.575 INFO    VISUALIZER: Stopped collection of statistic.
+2020-06-03 01:51:38.586 INFO    EDCORE: (dDispatcher)enterToState_:3
+2020-06-03 01:51:38.644 INFO    EDCORE: (dDispatcher)enterToState_:5
+2020-06-03 01:51:38.676 INFO    DCS: application shutdown
+2020-06-03 01:51:39.147 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 0
+2020-06-03 01:51:39.150 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 1
+2020-06-03 01:51:39.151 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 2
+2020-06-03 01:51:39.319 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 3
+2020-06-03 01:51:39.467 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 4
+2020-06-03 01:51:39.476 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 5
+2020-06-03 01:51:39.480 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 6
+2020-06-03 01:51:39.484 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 7
+2020-06-03 01:51:39.484 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 8
+2020-06-03 01:51:39.489 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 9
+2020-06-03 01:51:39.489 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 10
+2020-06-03 01:51:39.491 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 11
+2020-06-03 01:51:39.491 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 12
+2020-06-03 01:51:39.492 INFO    EDOBJECTS: lTypeObjectManagerImpl::clear 13
+2020-06-03 01:51:40.098 INFO    VISUALIZER: SceneManager_Implement::~SceneManager_Implement()
+2020-06-03 01:51:40.099 INFO    VISUALIZER: TerrainRenderer::release
+2020-06-03 01:51:40.182 WARNING LOG: 1 duplicate message(s) skipped.
+2020-06-03 01:51:40.182 INFO    TERRAIN: lSystem::exit()
+2020-06-03 01:51:40.182 INFO    TERRAIN: lSystem::CleanScenes()
+2020-06-03 01:51:43.817 INFO    DX11BACKEND: DX11Renderer::shutdown()
+2020-06-03 01:51:44.282 INFO    DX11BACKEND: NVIDIA API exit OK
+=== Log closed.

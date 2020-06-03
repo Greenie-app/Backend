@@ -1,0 +1,19 @@
+---
+:concurrency: 5
+:pidfile: tmp/pids/sidekiq.pid
+production:
+  :concurrency: 20
+  :queues:
+  - greenie_production_default
+  - greenie_production_active_storage_analysis
+  - greenie_production_active_storage_purge
+development:
+  :queues:
+  - greenie_development_default
+  - greenie_development_active_storage_analysis
+  - greenie_development_active_storage_purge
+cypress:
+  :queues:
+  - greenie_cypress_default
+  - greenie_cypress_active_storage_analysis
+  - greenie_cypress_active_storage_purge

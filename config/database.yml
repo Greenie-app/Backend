@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: greenie
+
+development:
+  <<: *default
+  database: greenie_development
+
+test: &test
+  <<: *default
+  database: greenie_test
+  owner: greenie
+  username: <%= ENV.fetch('RAILS_TEST_DB_USERNAME') { 'tmorgan' } %>
+  port: <%= ENV.fetch('PGPORT') { 5432 } %>
+
+cypress: *test
+
+production:
+  <<: *default
+  database: greenie_production

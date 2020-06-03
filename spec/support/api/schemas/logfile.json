@@ -1,0 +1,25 @@
+{
+  "$schema":    "http://json-schema.org/draft-07/schema#",
+  "id":         "file:/logfile.json#",
+  "title":      "Logfile",
+  "type":       "object",
+  "properties": {
+    "state": {
+      "type": "string"
+    },
+    "progress": {
+      "type": "number"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "$ref": "file:/file.json#"
+      }
+    }
+  },
+  "required": ["state", "progress", "created_at", "files"]
+}

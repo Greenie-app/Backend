@@ -1,0 +1,18 @@
+{
+  "$schema":    "http://json-schema.org/draft-07/schema#",
+  "id":         "file:/file.json#",
+  "title":      "File",
+  "type":       "object",
+  "properties": {
+    "filename": {
+      "type": "string"
+    },
+    "byte_size": {
+      "type": "number"
+    }
+  },
+  "required":   [
+    "filename",
+    "byte_size"
+  ]
+}

@@ -1,0 +1,16 @@
+development:
+  frontend: 'http://localhost:5100'
+  backend: 'http://localhost:5100'
+  cable: 'ws://localhost:28080/cable'
+cypress:
+  frontend: 'http://localhost:5100'
+  backend: 'http://localhost:5100'
+  cable: 'ws://localhost:28080/cable'
+test:
+  frontend: 'http://frontend.example.com'
+  backend: 'http://backend.example.com'
+  cable: 'ws://backend.example.com/cable'
+production:
+  frontend: 'https://greenie.app'
+  backend: 'https://app.greenie.app'
+  cable: 'wss://app.greenie.app/cable'
