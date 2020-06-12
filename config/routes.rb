@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   match '*path', via: :options, to: ->(_) { [204, {'Content-Type' => 'text/plain'}] }
 
-  if Rails.env.development?
-    require 'sidekiq/web'
-    Sidekiq::Web.set :session_secret, Rails.application.secrets[:secret_key_base]
-    mount Sidekiq::Web => '/sidekiq'
+  require 'sidekiq/web'
+  Sidekiq::Web.use Rack::Auth::Basic do |username, password|
+    ActiveSupport::SecurityUtils.secure_compare(::Digest::SHA256.hexdigest(username), ::Digest::SHA256.hexdigest(Rails.application.credentials.sidekiq_web[:user])) &
+        ActiveSupport::SecurityUtils.secure_compare(::Digest::SHA256.hexdigest(password), ::Digest::SHA256.hexdigest(Rails.application.credentials.sidekiq_web[:password]))
   end
+  mount Sidekiq::Web, at: '/sidekiq'
 
   if Rails.env.cypress?
     require 'reset_cypress'
