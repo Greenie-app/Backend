@@ -7,5 +7,5 @@ class ApplicationJob < ActiveJob::Base
   retry_on ActiveRecord::Deadlocked
 
   # Most jobs are safe to ignore if the underlying records are no longer available
-  discard_on ActiveJob::DeserializationError
+  discard_on ActiveJob::DeserializationError, ActiveStorage::FileNotFoundError
 end
