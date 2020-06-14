@@ -19,6 +19,12 @@
 class ApplicationController < ActionController::API
   include ActionController::MimeResponds
 
+  # Default per-page value for {#paginate}.
+  DEFAULT_PER_PAGE = 50
+
+  # Max per-page value for {#paginate}.
+  MAX_PER_PAGE = 200
+
   before_bugsnag_notify :add_user_info_to_bugsnag
   before_action :configure_permitted_parameters, if: :devise_controller?
 
@@ -32,9 +38,6 @@ class ApplicationController < ActionController::API
   end
 
   protected
-
-  DEFAULT_PER_PAGE = 50
-  MAX_PER_PAGE     = 100
 
   # Paginates records for use with the Bootstrap-Vue `b-pagination` component.
   # Constrains the response cardinality according to the query parameters:
