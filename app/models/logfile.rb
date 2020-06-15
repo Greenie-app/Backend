@@ -73,6 +73,6 @@ class Logfile < ApplicationRecord
   end
 
   def enqueue_process_job
-    LogfileProcessorJob.perform_later self
+    LogfileProcessorJob.set(wait: 10.seconds).perform_later self
   end
 end
