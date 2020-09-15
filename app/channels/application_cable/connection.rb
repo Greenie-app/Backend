@@ -5,8 +5,8 @@ module ApplicationCable
   # The base Action Cable connection class. Handles authenticating WebSocket
   # connections.
   #
-  # Connections are identified by a {User}'s JSON web token (JWT). When making a
-  # request to `/cable`, pass the JWT as a query parameter
+  # Connections are identified by a {Squadron}'s JSON web token (JWT). When
+  # making a request to `/cable`, pass the JWT as a query parameter
   # (`/cable?jwt=abc123`).
 
   class Connection < ActionCable::Connection::Base

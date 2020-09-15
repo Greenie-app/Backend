@@ -2,14 +2,14 @@
 # - connect-src 'https://sessions.bugsnag.com'
 #
 # AWS assets require:
-# - img-src 'https://avfacts.s3.us-west-1.amazonaws.com'
+# - img-src 'https://avfacts.s3.us-west-2.amazonaws.com'
 # - media-src <cloudfront url>
 #
 # Vue.js in development requires:
 # - connect-src 'ws://localhost:3035' 'http://localhost:3035'
 
 extra_image_sources = %w[
-    https://avfacts.s3.us-west-1.amazonaws.com
+    https://avfacts.s3.us-west-2.amazonaws.com
 ]
 extra_script_sources = [
 ]
