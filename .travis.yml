@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.7.1
+- 2.7.2
 node_js:
 - 12.14.1
 services:

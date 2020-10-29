@@ -17,7 +17,7 @@ append :linked_files, 'config/master.key'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets',
        'node_modules', 'public/packs', 'public/assets'
 
-set :rvm_ruby_version, "2.7.1@#{fetch :application}"
+set :rvm_ruby_version, "2.7.2@#{fetch :application}"
 
 set :sidekiq_config, 'config/sidekiq.yml'
 
