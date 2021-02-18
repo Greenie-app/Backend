@@ -54,9 +54,9 @@ class Squadron < ApplicationRecord
   end
 
   def boarding_rate(days=50)
-    matching_passes = passes.where(Pass.arel_attribute(:time).gteq(days.days.ago.beginning_of_day))
+    matching_passes = passes.where(Pass.arel_table[:time].gteq(days.days.ago.beginning_of_day))
 
-    attempts = matching_passes.where(Pass.arel_attribute(:trap).not_eq(nil)).count
+    attempts = matching_passes.where(Pass.arel_table[:trap].not_eq(nil)).count
     return nil if attempts.zero?
 
     traps = matching_passes.where(trap: true).count

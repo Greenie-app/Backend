@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :logfile do
     transient do
-      files { [Rails.root.join('spec', 'fixtures', 'dcs.log')] }
+      files { [Rails.root.join('spec', 'fixtures', 'files', 'dcs.log')] }
     end
 
     association :squadron

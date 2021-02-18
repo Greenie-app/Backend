@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :squadron do
     transient do
-      image { Rails.root.join('spec', 'fixtures', 'image.png') }
+      image { Rails.root.join('spec', 'fixtures', 'files', 'image.png') }
     end
 
     sequence(:username) { |i| "squadron-#{i}" }

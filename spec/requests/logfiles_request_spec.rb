@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Logfiles routes', type: :request do
+  include ActionDispatch::TestProcess::FixtureFile
+
   let(:squadron) { FactoryBot.create :squadron }
 
   before(:each) { login_as squadron }
@@ -35,7 +37,8 @@ RSpec.describe 'Logfiles routes', type: :request do
 
   describe 'POST /squadron/logfiles' do
     it "uploads a logfile" do
-      api_request :post, '/squadron/logfiles.json', params: {logfile: {files: [fixture_file_upload('dcs.log', 'text/plain')]}}
+      file = fixture_file_upload('dcs.log', 'text/plain')
+      api_request :post, '/squadron/logfiles.json', params: {logfile: {files: [file]}}
       expect(response).to have_http_status(:success)
       expect(squadron.logfiles.count).to eq(1)
       expect(response).to match_json_schema('logfile')
