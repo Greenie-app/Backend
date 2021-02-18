@@ -5,6 +5,7 @@ node_js:
 - 12.14.1
 services:
 - postgresql
+- redis-server
 addons:
   postgresql: "12"
   apt:
