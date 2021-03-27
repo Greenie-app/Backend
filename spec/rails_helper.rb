@@ -9,6 +9,9 @@ require 'rspec/rails'
 require 'json_expressions/rspec'
 require 'json_matchers/rspec'
 
+DEFAULT_TIME = ActiveSupport::TimeZone['America/Los_Angeles'].
+    local(1982, 10, 19, 12, 13)
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
@@ -32,7 +35,6 @@ rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
   exit 1
 end
-
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
@@ -65,7 +67,13 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
-  # DatabaseCleaner
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Devise::Test::IntegrationHelpers, type: :request
+
+  # Webmock
+  config.before(:suite) { WebMock.disable_net_connect! }
+
+  # Database Cleaner
   config.before :suite do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with :truncation
@@ -74,23 +82,10 @@ RSpec.configure do |config|
     DatabaseCleaner.cleaning { example.run }
   end
 
-  # TimeCop
+  # Timecop
   config.around :each do |example|
     Timecop.freeze(Time.current) { example.run }
   end
-
-  # FakeFS
-  # config.around :each do |example|
-  #   FakeFS.with_fresh do
-  #     FakeFS::FileSystem.clone Gem.loaded_specs['ffaker'].full_gem_path
-  #     FakeFS::FileSystem.clone Rails.root.join('spec', 'fixtures').to_s
-  #
-  #     example.run
-  #   end
-  # end
-
-  # WebMock
-  WebMock.disable_net_connect!
 
   # Active Storage
   config.after :suite do
@@ -100,7 +95,7 @@ RSpec.configure do |config|
   end
 end
 
-def login_as(squadron, password: 'password123')
+def login_squadron(squadron, password: 'password123')
   post '/login.json',
        params: {squadron: {username: squadron.username, password: password}}
 
@@ -108,10 +103,10 @@ def login_as(squadron, password: 'password123')
   @jwt = response.headers['Authorization']
 end
 
-def api_request(meth, path, opts={})
+def api_request(*args, **opts)
   raise "Not authorized" unless @jwt.present?
 
-  send meth, path, opts.deep_merge(headers: {'Authorization' => @jwt})
+  send *args, **(opts.deep_merge(headers: {'Authorization' => @jwt}))
 end
 
 JsonMatchers.schema_root = Rails.root.join('spec', 'support', 'api', 'schemas')

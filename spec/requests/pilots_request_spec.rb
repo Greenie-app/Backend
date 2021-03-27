@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Pilots routes', type: :request do
   let(:squadron) { FactoryBot.create :squadron }
 
-  before(:each) { login_as squadron }
+  before(:each) { login_squadron squadron }
 
   describe 'POST /squadron/pilots/:id/merge' do
     let(:predator) { FactoryBot.create :pilot, squadron: squadron }

@@ -5,7 +5,7 @@ RSpec.describe 'Logfiles routes', type: :request do
 
   let(:squadron) { FactoryBot.create :squadron }
 
-  before(:each) { login_as squadron }
+  before(:each) { login_squadron squadron }
 
   describe 'GET /squadron/logfiles' do
     before :each do

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Passes routes', type: :request do
   let(:squadron) { FactoryBot.create :squadron }
 
-  before(:each) { login_as squadron }
+  before(:each) { login_squadron squadron }
 
   describe 'GET /squadrons/:squadron_id/passes' do
     before :each do

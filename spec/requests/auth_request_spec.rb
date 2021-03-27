@@ -20,7 +20,7 @@ RSpec.describe 'Auth routes', type: :request do
   describe 'PATCH /squadron/password' do
     let(:squadron) { FactoryBot.create :squadron }
 
-    before(:each) { login_as squadron }
+    before(:each) { login_squadron squadron }
 
     it "updates a password" do
       api_request :patch, '/squadron/password.json',
@@ -43,7 +43,7 @@ RSpec.describe 'Auth routes', type: :request do
   describe 'PUT /squadron/password' do
     let(:squadron) { FactoryBot.create :squadron }
 
-    before(:each) { login_as squadron }
+    before(:each) { login_squadron squadron }
 
     it "updates a password" do
       api_request :put, '/squadron/password.json',
@@ -66,7 +66,7 @@ RSpec.describe 'Auth routes', type: :request do
   describe 'DELETE /squadron' do
     let(:squadron) { FactoryBot.create :squadron }
 
-    before(:each) { login_as squadron }
+    before(:each) { login_squadron squadron }
 
     it "deletes a squadron" do
       api_request :delete, '/squadron.json'
@@ -78,7 +78,7 @@ RSpec.describe 'Auth routes', type: :request do
   describe 'POST /forgot_password' do
     let(:squadron) { FactoryBot.create :squadron }
 
-    before(:each) { login_as squadron }
+    before(:each) { login_squadron squadron }
 
     it "creates and emails a reset token" do
       post '/forgot_password.json', params: {squadron: {email: squadron.email}}
@@ -142,7 +142,7 @@ RSpec.describe 'Auth routes', type: :request do
   describe 'DELETE /logout' do
     let(:squadron) { FactoryBot.create :squadron }
 
-    before(:each) { login_as squadron }
+    before(:each) { login_squadron squadron }
 
     it "logs out a user" do
       api_request :delete, '/logout.json'

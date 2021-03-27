@@ -1,11 +1,11 @@
 language: ruby
 rvm:
-- 2.7.2
+- 3.0
 node_js:
-- 12.14.1
+- 15
 services:
 - postgresql
-- redis-server
+- redis
 addons:
   postgresql: "12"
   apt:
