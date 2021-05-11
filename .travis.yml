@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 3.0
+- 3.0.1
 node_js:
 - 15
 services:
