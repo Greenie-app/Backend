@@ -20,7 +20,7 @@ class ApplicationController < ActionController::API
   include ActionController::MimeResponds
 
   # Default per-page value for {#paginate}.
-  DEFAULT_PER_PAGE = 50
+  DEFAULT_PER_PAGE = 10
 
   # Max per-page value for {#paginate}.
   MAX_PER_PAGE = 200
