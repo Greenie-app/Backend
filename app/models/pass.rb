@@ -50,7 +50,7 @@
 # | `notes` | Additional LSO notes. Typically formatted using the standard LSO shorthand. |
 
 class Pass < ApplicationRecord
-  enum grade: %i[cut no_grade bolter fair ok perfect technique_waveoff foul_deck_waveoff own_waveoff]
+  enum grade: %i[cut no_grade bolter fair ok perfect technique_waveoff foul_deck_waveoff pattern_waveoff own_waveoff]
 
   belongs_to :squadron
   belongs_to :pilot, optional: true
@@ -105,7 +105,9 @@ class Pass < ApplicationRecord
   end
 
   def default_trap
-    !bolter? && !technique_waveoff? && !foul_deck_waveoff? && !own_waveoff?
+    !bolter? &&
+      !technique_waveoff? && !foul_deck_waveoff? && !pattern_waveoff? &&
+      !own_waveoff?
   end
 
   def default_score
