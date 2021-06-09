@@ -68,5 +68,5 @@ class Squadron < ApplicationRecord
     passes.where(pilot_id: nil).count
   end
 
-  def to_param() username end
+  def to_param = username
 end

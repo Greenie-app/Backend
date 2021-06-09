@@ -5,7 +5,7 @@
 
 # Read more: https://github.com/cyu/rack-cors
 
-Rails.application.config.middleware.insert_before 0, Rack::Cors, debug: true do
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins Rails.application.config.urls.frontend
     resource '*', expose: %w[Authorization], methods: :any

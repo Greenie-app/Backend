@@ -22,5 +22,5 @@ class Pilot < ApplicationRecord
             uniqueness: {scope: :squadron_id}
 
   # @private
-  def to_param() name end
+  def to_param = name
 end

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
   match '*path', via: :options, to: ->(_) { [204, {'Content-Type' => 'text/plain'}] }
 
   if Rails.env.cypress?
@@ -47,7 +49,7 @@ Rails.application.routes.draw do
   direct :edit_squadron_password do |args|
     URI.join(
         Rails.application.config.urls.frontend,
-        '/#/reset_password/' + args[:reset_password_token]
+        "/#/reset_password/#{args[:reset_password_token]}"
     ).to_s
   end
 end

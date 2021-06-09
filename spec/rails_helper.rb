@@ -106,7 +106,7 @@ end
 def api_request(*args, **opts)
   raise "Not authorized" unless @jwt.present?
 
-  send *args, **(opts.deep_merge(headers: {'Authorization' => @jwt}))
+  send(*args, **opts.deep_merge(headers: {'Authorization' => @jwt}))
 end
 
 JsonMatchers.schema_root = Rails.root.join('spec', 'support', 'api', 'schemas')
