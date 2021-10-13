@@ -23,7 +23,13 @@ set :sidekiq_config, 'config/sidekiq.yml'
 
 set :bugsnag_api_key, Rails.application.credentials.bugsnag_api_key
 
-set :passenger_restart_with_sudo, true
+namespace :deploy do
+  task :restart do
+    on roles(:app) do
+      sudo 'systemctl', 'restart', 'rails-greenie'
+    end
+  end
+end
 
 namespace :sidekiq do
   task :restart do
@@ -33,4 +39,5 @@ namespace :sidekiq do
   end
 end
 
+after 'deploy:finished', 'deploy:restart'
 after 'deploy:finished', 'sidekiq:restart'
