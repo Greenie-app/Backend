@@ -1,22 +1,20 @@
-default: &default
+shared:
   adapter: postgresql
   encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 5 } %>
   username: greenie
 
 development:
-  <<: *default
   database: greenie_development
 
 test: &test
-  <<: *default
-  database: greenie_test
+  host: localhost
+  username: <%= ENV.fetch('POSTGRES_USER') { 'tmorgan' } %>
   owner: greenie
-  username: <%= ENV.fetch('RAILS_TEST_DB_USERNAME') { 'tmorgan' } %>
-  port: <%= ENV.fetch('PGPORT') { 5432 } %>
+  password: <%= ENV.fetch('POSTGRES_PASSWORD') { '' } %>
+  database: <%= ENV.fetch('POSTGRES_DB') { 'greenie_test' } %>
 
 cypress: *test
 
 production:
-  <<: *default
   database: greenie_production
