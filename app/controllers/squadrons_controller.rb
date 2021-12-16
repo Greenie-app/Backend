@@ -43,7 +43,7 @@ class SquadronsController < ApplicationController
   private
 
   def find_squadron
-    @squadron = Squadron.find_by_username!(params[:id])
+    @squadron = Squadron.find_by!(username: params[:id])
   end
 
   def set_squadron

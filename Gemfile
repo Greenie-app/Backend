@@ -5,7 +5,7 @@ ruby '3.0.3'
 # FRAMEWORK
 gem 'bootsnap'
 gem 'rack-cors'
-gem 'rails'
+gem 'rails', '<7'
 gem 'sidekiq'
 
 # MODELS

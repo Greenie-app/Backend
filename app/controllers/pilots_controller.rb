@@ -3,7 +3,7 @@
 
 class PilotsController < ApplicationController
   before_action :authenticate_squadron!
-  before_action :find_pilot, except: :create
+  before_action :find_pilot
 
   # Merges two pilots. Transfers all {Pass}es from the "prey" to the "predator",
   # and then deletes the "prey".
@@ -24,7 +24,7 @@ class PilotsController < ApplicationController
   # | `other` | The name of the "prey". |
 
   def merge
-    prey = current_squadron.pilots.find_by_name!(params[:other])
+    prey = current_squadron.pilots.find_by!(name: params[:other])
     prey.passes.update_all pilot_id: @pilot.id
     prey.destroy!
 
@@ -74,7 +74,7 @@ class PilotsController < ApplicationController
   private
 
   def find_pilot
-    @pilot = current_squadron.pilots.find_by_name!(params[:id])
+    @pilot = current_squadron.pilots.find_by!(name: params[:id])
   end
 
   def pilot_params

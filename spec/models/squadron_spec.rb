@@ -8,7 +8,7 @@ RSpec.describe Squadron, type: :model do
       FactoryBot.create_list :pass, 3, squadron: squadron, trap: true
       FactoryBot.create_list :pass, 2, squadron: squadron, trap: false
       FactoryBot.create_list :pass, 1, squadron: squadron, trap: nil
-      Pass.last.update_column :trap, nil
+      Pass.last.update trap: nil
 
       expect(squadron.boarding_rate).to eq(0.6)
     end

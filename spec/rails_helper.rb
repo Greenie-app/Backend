@@ -104,7 +104,7 @@ def login_squadron(squadron, password: 'password123')
 end
 
 def api_request(*args, **opts)
-  raise "Not authorized" unless @jwt.present?
+  raise "Not authorized" if @jwt.blank?
 
   send(*args, **opts.deep_merge(headers: {'Authorization' => @jwt}))
 end

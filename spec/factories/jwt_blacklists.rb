@@ -1,4 +1,3 @@
 FactoryBot.define do
-  factory :jwt_blacklist do
-  end
+  factory :jwt_blacklist
 end

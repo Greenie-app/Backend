@@ -135,7 +135,7 @@ class PassesController < ApplicationController
   private
 
   def find_squadron
-    @squadron = Squadron.find_by_username!(params[:squadron_id])
+    @squadron = Squadron.find_by!(username: params[:squadron_id])
   end
 
   def set_squadron

@@ -50,7 +50,7 @@
 # | `notes` | Additional LSO notes. Typically formatted using the standard LSO shorthand. |
 
 class Pass < ApplicationRecord
-  enum grade: %i[cut no_grade bolter fair ok perfect technique_waveoff foul_deck_waveoff pattern_waveoff own_waveoff]
+  enum grade: {cut: 0, no_grade: 1, bolter: 2, fair: 3, ok: 4, perfect: 5, technique_waveoff: 6, foul_deck_waveoff: 7, pattern_waveoff: 8, own_waveoff: 9}
 
   belongs_to :squadron
   belongs_to :pilot, optional: true
