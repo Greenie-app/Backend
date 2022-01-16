@@ -1,19 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe 'Pilots routes', type: :request do
-  let(:squadron) { FactoryBot.create :squadron }
+  let(:squadron) { create :squadron }
 
   before(:each) { login_squadron squadron }
 
   describe 'POST /squadron/pilots/:id/merge' do
-    let(:predator) { FactoryBot.create :pilot, squadron: squadron }
-    let(:prey) { FactoryBot.create :pilot, squadron: squadron }
+    let(:predator) { create :pilot, squadron: squadron }
+    let(:prey) { create :pilot, squadron: squadron }
 
     before(:each) do
-      @prey_passes        = FactoryBot.create_list(:pass, 4, squadron: squadron, pilot: prey)
+      @prey_passes        = create_list(:pass, 4, squadron: squadron, pilot: prey)
       @red_herring_passes = [
-          FactoryBot.create(:pass, squadron: squadron),
-          FactoryBot.create(:pass, with_pilot: true)
+          create(:pass, squadron: squadron),
+          create(:pass, with_pilot: true)
       ]
     end
 
@@ -25,28 +25,28 @@ RSpec.describe 'Pilots routes', type: :request do
     end
 
     it "responds with 404 for an unauthorized predator pilot" do
-      api_request :post, "/squadron/pilots/#{FactoryBot.create(:pilot).to_param}/merge.json?other_id=#{prey.to_param}"
+      api_request :post, "/squadron/pilots/#{create(:pilot).to_param}/merge.json?other_id=#{prey.to_param}"
       expect(response).to have_http_status(:not_found)
     end
 
     it "responds with 404 for an unauthorized prey pilot" do
-      api_request :post, "/squadron/pilots/#{predator.to_param}/merge.json?other_id=#{FactoryBot.create(:pilot).to_param}"
+      api_request :post, "/squadron/pilots/#{predator.to_param}/merge.json?other_id=#{create(:pilot).to_param}"
       expect(response).to have_http_status(:not_found)
     end
   end
 
   describe 'PATCH /squadron/pilots/:id' do
-    let(:pilot) { FactoryBot.create :pilot, squadron: squadron }
+    let(:pilot) { create :pilot, squadron: squadron }
 
     it "updates a pilot" do
       api_request :patch, "/squadron/pilots/#{pilot.to_param}.json",
-                  params: {pilot: FactoryBot.attributes_for(:pilot)}
+                  params: {pilot: attributes_for(:pilot)}
       expect(response).to have_http_status(:success)
     end
 
     it "renders validation errors" do
       api_request :patch, "/squadron/pilots/#{pilot.to_param}.json",
-                  params: {pilot: FactoryBot.attributes_for(:pilot).merge(name: ' ')}
+                  params: {pilot: attributes_for(:pilot).merge(name: ' ')}
       expect(response.body).to match_json_expression(
                                    errors: {
                                        name: ["can’t be blank"]
@@ -55,14 +55,14 @@ RSpec.describe 'Pilots routes', type: :request do
     end
 
     it "responds with 404 for an unauthorized pilot" do
-      api_request :patch, "/squadron/pilots/#{FactoryBot.create(:pilot).to_param}.json",
-                  params: {pilot: FactoryBot.attributes_for(:pilot)}
+      api_request :patch, "/squadron/pilots/#{create(:pilot).to_param}.json",
+                  params: {pilot: attributes_for(:pilot)}
       expect(response).to have_http_status(:not_found)
     end
   end
 
   describe 'DELETE /squadron/pilots/:id' do
-    let(:pilot) { FactoryBot.create :pilot, squadron: squadron }
+    let(:pilot) { create :pilot, squadron: squadron }
 
     it "deletes a pilot" do
       api_request :delete, "/squadron/pilots/#{pilot.to_param}.json"
@@ -71,7 +71,7 @@ RSpec.describe 'Pilots routes', type: :request do
     end
 
     it "responds with 404 for an unauthorized pilot" do
-      pilot = FactoryBot.create(:pilot)
+      pilot = create(:pilot)
       api_request :delete, "/squadron/pilots/#{pilot.to_param}.json"
       expect(response).to have_http_status(:not_found)
       expect { pilot.reload }.not_to raise_error

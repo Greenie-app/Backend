@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe 'Passes routes', type: :request do
-  let(:squadron) { FactoryBot.create :squadron }
+  let(:squadron) { create :squadron }
 
   before(:each) { login_squadron squadron }
 
   describe 'GET /squadrons/:squadron_id/passes' do
     before :each do
-      FactoryBot.create_list :pass, 10, squadron: squadron
+      create_list :pass, 10, squadron: squadron
     end
 
     it "lists passes" do
@@ -34,7 +34,7 @@ RSpec.describe 'Passes routes', type: :request do
   end
 
   describe 'GET /squadrons/:squadron_id/passes/:id' do
-    let(:pass) { FactoryBot.create :pass, squadron: squadron }
+    let(:pass) { create :pass, squadron: squadron }
 
     it "shows a pass" do
       api_request :get, "/squadrons/#{squadron.to_param}/passes/#{pass.to_param}.json"
@@ -44,18 +44,18 @@ RSpec.describe 'Passes routes', type: :request do
     end
 
     it "responds with 404 for an unauthorized pass" do
-      other_pass = FactoryBot.create(:pass)
+      other_pass = create(:pass)
       api_request :get, "/squadrons/#{squadron.to_param}/passes/#{other_pass.to_param}.json"
       expect(response).to have_http_status(:not_found)
     end
   end
 
   describe 'POST /squadron/passes' do
-    let(:pilot) { FactoryBot.create :pilot, squadron: squadron }
+    let(:pilot) { create :pilot, squadron: squadron }
 
     it "creates a pass" do
       api_request :post, '/squadron/passes.json',
-                  params: {pass: FactoryBot.attributes_for(:pass)}
+                  params: {pass: attributes_for(:pass)}
 
       expect(response).to have_http_status(:success)
       expect(squadron.passes.count).to eq(1)
@@ -64,7 +64,7 @@ RSpec.describe 'Passes routes', type: :request do
 
     it "associates an existing pilot with a pass" do
       api_request :post, '/squadron/passes.json',
-                  params: {pass: FactoryBot.attributes_for(:pass).merge(pilot: pilot.name)}
+                  params: {pass: attributes_for(:pass).merge(pilot: pilot.name)}
 
       expect(response).to have_http_status(:success)
       expect(squadron.passes.count).to eq(1)
@@ -75,7 +75,7 @@ RSpec.describe 'Passes routes', type: :request do
 
     it "creates a new pilot with a pass" do
       api_request :post, '/squadron/passes.json',
-                  params: {pass: FactoryBot.attributes_for(:pass).merge(pilot: 'Newpilot')}
+                  params: {pass: attributes_for(:pass).merge(pilot: 'Newpilot')}
 
       expect(response).to have_http_status(:success)
       expect(squadron.passes.count).to eq(1)
@@ -86,7 +86,7 @@ RSpec.describe 'Passes routes', type: :request do
 
     it "renders validation errors" do
       api_request :post, '/squadron/passes.json',
-                  params: {pass: FactoryBot.attributes_for(:pass).merge(time: ' ')}
+                  params: {pass: attributes_for(:pass).merge(time: ' ')}
 
       expect(response).to have_http_status(:unprocessable_entity)
       expect(response.body).
@@ -95,12 +95,12 @@ RSpec.describe 'Passes routes', type: :request do
   end
 
   describe 'PATCH /squadron/passes/:id' do
-    let(:pass) { FactoryBot.create :pass, squadron: squadron }
-    let(:pilot) { FactoryBot.create :pilot, squadron: squadron }
+    let(:pass) { create :pass, squadron: squadron }
+    let(:pilot) { create :pilot, squadron: squadron }
 
     it "updates a pass" do
       api_request :patch, "/squadron/passes/#{pass.to_param}.json",
-                  params: {pass: FactoryBot.attributes_for(:pass)}
+                  params: {pass: attributes_for(:pass)}
 
       expect(response).to have_http_status(:success)
       expect(response).to match_json_schema('pass')
@@ -108,7 +108,7 @@ RSpec.describe 'Passes routes', type: :request do
 
     it "creates a new pilot with an updated pass" do
       api_request :patch, "/squadron/passes/#{pass.to_param}.json",
-                  params: {pass: FactoryBot.attributes_for(:pass).merge(pilot: 'Newpilot')}
+                  params: {pass: attributes_for(:pass).merge(pilot: 'Newpilot')}
 
       expect(response).to have_http_status(:success)
       expect(response).to match_json_schema('pass')
@@ -117,7 +117,7 @@ RSpec.describe 'Passes routes', type: :request do
 
     it "associates an existing pilot with an updated pass" do
       api_request :patch, "/squadron/passes/#{pass.to_param}.json",
-                  params: {pass: FactoryBot.attributes_for(:pass).merge(pilot: pilot.name)}
+                  params: {pass: attributes_for(:pass).merge(pilot: pilot.name)}
 
       expect(response).to have_http_status(:success)
       expect(response).to match_json_schema('pass')
@@ -126,7 +126,7 @@ RSpec.describe 'Passes routes', type: :request do
 
     it "renders validation errors" do
       api_request :patch, "/squadron/passes/#{pass.to_param}.json",
-                  params: {pass: FactoryBot.attributes_for(:pass).merge(wire: '5')}
+                  params: {pass: attributes_for(:pass).merge(wire: '5')}
 
       expect(response).to have_http_status(:unprocessable_entity)
       expect(response.body).
@@ -134,15 +134,15 @@ RSpec.describe 'Passes routes', type: :request do
     end
 
     it "responds with 404 for an unauthorized pass" do
-      other_pass = FactoryBot.create(:pass)
+      other_pass = create(:pass)
       api_request :patch, "/squadron/passes/#{other_pass.to_param}.json",
-                  params: {pass: FactoryBot.attributes_for(:pass)}
+                  params: {pass: attributes_for(:pass)}
       expect(response).to have_http_status(:not_found)
     end
   end
 
   describe 'DELETE /squadron/passes/:id' do
-    let(:pass) { FactoryBot.create :pass, squadron: squadron }
+    let(:pass) { create :pass, squadron: squadron }
 
     it "deletes a pass" do
       api_request :delete, "/squadron/passes/#{pass.to_param}.json"
@@ -151,7 +151,7 @@ RSpec.describe 'Passes routes', type: :request do
     end
 
     it "responds with 404 for an unauthorized pass" do
-      other_pass = FactoryBot.create(:pass)
+      other_pass = create(:pass)
       api_request :delete, "/squadron/passes/#{other_pass.to_param}.json"
       expect(response).to have_http_status(:not_found)
       expect { other_pass.reload }.not_to raise_error
@@ -160,9 +160,9 @@ RSpec.describe 'Passes routes', type: :request do
 
   describe 'DELETE /squadron/passes/unknown' do
     it "deletes all passes with unknown pilots" do
-      unknown_passes = FactoryBot.create_list(:pass, 3, squadron: squadron, pilot: nil)
-      known_pass     = FactoryBot.create(:pass, squadron: squadron, with_pilot: true)
-      other_squadron = FactoryBot.create(:pass, with_pilot: true)
+      unknown_passes = create_list(:pass, 3, squadron: squadron, pilot: nil)
+      known_pass     = create(:pass, squadron: squadron, with_pilot: true)
+      other_squadron = create(:pass, with_pilot: true)
 
       api_request :delete, '/squadron/passes/unknown.json'
       expect(response).to have_http_status(:success)

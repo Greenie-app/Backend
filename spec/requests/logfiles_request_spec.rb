@@ -3,13 +3,13 @@ require 'rails_helper'
 RSpec.describe 'Logfiles routes', type: :request do
   include ActionDispatch::TestProcess::FixtureFile
 
-  let(:squadron) { FactoryBot.create :squadron }
+  let(:squadron) { create :squadron }
 
   before(:each) { login_squadron squadron }
 
   describe 'GET /squadron/logfiles' do
     before :each do
-      FactoryBot.create_list :logfile, 10, squadron: squadron
+      create_list :logfile, 10, squadron: squadron
     end
 
     it "lists logfiles" do

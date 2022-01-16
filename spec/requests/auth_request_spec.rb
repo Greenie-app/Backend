@@ -3,13 +3,13 @@ require 'rails_helper'
 RSpec.describe 'Auth routes', type: :request do
   describe 'POST /squadrons' do
     it "signs up a new squadron" do
-      post '/squadrons.json', params: {squadron: FactoryBot.attributes_for(:squadron)}
+      post '/squadrons.json', params: {squadron: attributes_for(:squadron)}
       expect(response).to have_http_status(:success)
       expect(response.body).to match_json_schema('squadron')
     end
 
     it "responds with validation errors" do
-      post '/squadrons.json', params: {squadron: FactoryBot.attributes_for(:squadron).merge(name: ' ')}
+      post '/squadrons.json', params: {squadron: attributes_for(:squadron).merge(name: ' ')}
       expect(response).to have_http_status(:unprocessable_entity)
       expect(response.body).to match_json_expression(
                                    errors: {name: ["can’t be blank"]}
@@ -18,7 +18,7 @@ RSpec.describe 'Auth routes', type: :request do
   end
 
   describe 'PATCH /squadron/password' do
-    let(:squadron) { FactoryBot.create :squadron }
+    let(:squadron) { create :squadron }
 
     before(:each) { login_squadron squadron }
 
@@ -41,7 +41,7 @@ RSpec.describe 'Auth routes', type: :request do
   end
 
   describe 'PUT /squadron/password' do
-    let(:squadron) { FactoryBot.create :squadron }
+    let(:squadron) { create :squadron }
 
     before(:each) { login_squadron squadron }
 
@@ -64,7 +64,7 @@ RSpec.describe 'Auth routes', type: :request do
   end
 
   describe 'DELETE /squadron' do
-    let(:squadron) { FactoryBot.create :squadron }
+    let(:squadron) { create :squadron }
 
     before(:each) { login_squadron squadron }
 
@@ -76,7 +76,7 @@ RSpec.describe 'Auth routes', type: :request do
   end
 
   describe 'POST /forgot_password' do
-    let(:squadron) { FactoryBot.create :squadron }
+    let(:squadron) { create :squadron }
 
     before(:each) { login_squadron squadron }
 
@@ -96,7 +96,7 @@ RSpec.describe 'Auth routes', type: :request do
   end
 
   describe 'PATCH /forgot_password' do
-    let(:squadron) { FactoryBot.create :squadron }
+    let(:squadron) { create :squadron }
     let :token do
       post '/forgot_password.json', params: {squadron: {email: squadron.email}}
       ActionMailer::Base.deliveries.first.body.to_s.
@@ -120,7 +120,7 @@ RSpec.describe 'Auth routes', type: :request do
   end
 
   describe 'POST /login' do
-    let(:squadron) { FactoryBot.create :squadron }
+    let(:squadron) { create :squadron }
 
     it "logs in a squadron by username" do
       post '/login.json', params: {squadron: {username: squadron.username, password: 'password123'}}
@@ -140,7 +140,7 @@ RSpec.describe 'Auth routes', type: :request do
   end
 
   describe 'DELETE /logout' do
-    let(:squadron) { FactoryBot.create :squadron }
+    let(:squadron) { create :squadron }
 
     before(:each) { login_squadron squadron }
 

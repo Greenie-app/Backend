@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe FileProcessorJob, type: :job do
-  let(:logfile) { FactoryBot.create :logfile }
+  let(:logfile) { create :logfile }
 
   it "processes the file and increments completed_count" do
     expect(logfile.completed_files).to eq(0)

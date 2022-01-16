@@ -4,8 +4,8 @@ RSpec.describe Logfile, type: :model do
   include ActiveJob::TestHelper
 
   describe '#process!' do
-    let(:squadron) { FactoryBot.create :squadron }
-    let(:logfile) { FactoryBot.create :logfile, squadron: squadron }
+    let(:squadron) { create :squadron }
+    let(:logfile) { create :logfile, squadron: squadron }
 
     it "processes log files and creates passes" do
       logfile.tap do |logfile|
@@ -39,7 +39,7 @@ RSpec.describe Logfile, type: :model do
 
   describe '#recalculate_state!' do
     let :logfile do
-      FactoryBot.create :logfile, files: [file_fixture('dcs.log')]*3
+      create :logfile, files: [file_fixture('dcs.log')]*3
     end
 
     it "returns pending if no jobs have been completed yet" do
@@ -68,7 +68,7 @@ RSpec.describe Logfile, type: :model do
 
   describe '#progress' do
     let :logfile do
-      FactoryBot.create :logfile, files: [file_fixture('dcs.log')]*4
+      create :logfile, files: [file_fixture('dcs.log')]*4
     end
 
     it "returns the progress as a fraction" do
