@@ -6,13 +6,13 @@ RSpec.describe 'Pilots routes', type: :request do
   before(:each) { login_squadron squadron }
 
   describe 'POST /squadron/pilots/:id/merge' do
-    let(:predator) { create :pilot, squadron: squadron }
-    let(:prey) { create :pilot, squadron: squadron }
+    let(:predator) { create :pilot, squadron: }
+    let(:prey) { create :pilot, squadron: }
 
     before(:each) do
-      @prey_passes        = create_list(:pass, 4, squadron: squadron, pilot: prey)
+      @prey_passes        = create_list(:pass, 4, squadron:, pilot: prey)
       @red_herring_passes = [
-          create(:pass, squadron: squadron),
+          create(:pass, squadron:),
           create(:pass, with_pilot: true)
       ]
     end
@@ -20,8 +20,8 @@ RSpec.describe 'Pilots routes', type: :request do
     it "merges two pilots" do
       api_request :post, "/squadron/pilots/#{predator.to_param}/merge.json?other=#{prey.to_param}"
       expect(response).to have_http_status(:success)
-      expect(@prey_passes.all? { |pass| pass.reload.pilot_id == predator.id }).to eq(true)
-      expect(@red_herring_passes.all? { |pass| pass.reload.pilot_id == predator.id }).to eq(false)
+      expect(@prey_passes.all? { |pass| pass.reload.pilot_id == predator.id }).to be(true)
+      expect(@red_herring_passes.all? { |pass| pass.reload.pilot_id == predator.id }).to be(false)
     end
 
     it "responds with 404 for an unauthorized predator pilot" do
@@ -36,7 +36,7 @@ RSpec.describe 'Pilots routes', type: :request do
   end
 
   describe 'PATCH /squadron/pilots/:id' do
-    let(:pilot) { create :pilot, squadron: squadron }
+    let(:pilot) { create :pilot, squadron: }
 
     it "updates a pilot" do
       api_request :patch, "/squadron/pilots/#{pilot.to_param}.json",
@@ -62,7 +62,7 @@ RSpec.describe 'Pilots routes', type: :request do
   end
 
   describe 'DELETE /squadron/pilots/:id' do
-    let(:pilot) { create :pilot, squadron: squadron }
+    let(:pilot) { create :pilot, squadron: }
 
     it "deletes a pilot" do
       api_request :delete, "/squadron/pilots/#{pilot.to_param}.json"

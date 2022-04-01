@@ -86,7 +86,7 @@ class Pass < ApplicationRecord
   def self.create_from_log_entry(squadron, timestamp, grade, pilot: nil, ship: nil, aircraft: nil)
     pilot_record = pilot ? squadron.pilots.find_or_create_by!(name: pilot) : nil
     squadron.passes.create!(pilot_id:      pilot_record&.id,
-                            squadron:      squadron,
+                            squadron:,
                             time:          timestamp,
                             ship_name:     ship,
                             aircraft_type: aircraft,

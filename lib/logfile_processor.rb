@@ -72,9 +72,9 @@ class LogfileProcessor
 
   def process_landing_line(timestamp, message)
     if (matches = message.match(/^Scripting: event:type=land,initiatorPilotName=(?<name>.+?),place=(?<ship>.+?),t=[0-9.]+,initiatorMissionID=(?<id>\d+),$/))
-      @last_landing = {timestamp: timestamp, name: matches[:name], ship: matches[:ship], id: matches[:id].to_i}
+      @last_landing = {timestamp:, name: matches[:name], ship: matches[:ship], id: matches[:id].to_i}
     elsif /^Scripting: event:place=.+?,t=[0-9.]+,type=land,initiatorMissionID=\d+,$/.match?(message)
-      @last_landing = {timestamp: timestamp, ai: true}
+      @last_landing = {timestamp:, ai: true}
     end
   end
 
@@ -92,8 +92,8 @@ class LogfileProcessor
 
     Pass.create_from_log_entry record.squadron,
                                timestamp, grade,
-                               pilot:    pilot,
+                               pilot:,
                                ship:     landing ? landing[:ship] : nil,
-                               aircraft: aircraft
+                               aircraft:
   end
 end

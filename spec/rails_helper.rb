@@ -99,7 +99,7 @@ end
 
 def login_squadron(squadron, password: 'password123')
   post '/login.json',
-       params: {squadron: {username: squadron.username, password: password}}
+       params: {squadron: {username: squadron.username, password:}}
 
   expect(response).to have_http_status(:success)
   @jwt = response.headers['Authorization']

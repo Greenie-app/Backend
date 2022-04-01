@@ -9,7 +9,7 @@ RSpec.describe 'Logfiles routes', type: :request do
 
   describe 'GET /squadron/logfiles' do
     before :each do
-      create_list :logfile, 10, squadron: squadron
+      create_list :logfile, 10, squadron:
     end
 
     it "lists logfiles" do

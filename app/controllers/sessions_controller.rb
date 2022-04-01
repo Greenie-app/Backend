@@ -4,6 +4,11 @@ class SessionsController < Devise::SessionsController
 
   private
 
+  def sign_in(resource_or_scope, *args)
+    options = args.extract_options!
+    super resource_or_scope, *args, options.merge(store: false)
+  end
+
   def respond_with(resource, _opts={})
     @squadron = resource
     render 'squadrons/show'

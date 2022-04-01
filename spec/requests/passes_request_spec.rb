@@ -7,7 +7,7 @@ RSpec.describe 'Passes routes', type: :request do
 
   describe 'GET /squadrons/:squadron_id/passes' do
     before :each do
-      create_list :pass, 10, squadron: squadron
+      create_list :pass, 10, squadron:
     end
 
     it "lists passes" do
@@ -34,7 +34,7 @@ RSpec.describe 'Passes routes', type: :request do
   end
 
   describe 'GET /squadrons/:squadron_id/passes/:id' do
-    let(:pass) { create :pass, squadron: squadron }
+    let(:pass) { create :pass, squadron: }
 
     it "shows a pass" do
       api_request :get, "/squadrons/#{squadron.to_param}/passes/#{pass.to_param}.json"
@@ -51,7 +51,7 @@ RSpec.describe 'Passes routes', type: :request do
   end
 
   describe 'POST /squadron/passes' do
-    let(:pilot) { create :pilot, squadron: squadron }
+    let(:pilot) { create :pilot, squadron: }
 
     it "creates a pass" do
       api_request :post, '/squadron/passes.json',
@@ -95,8 +95,8 @@ RSpec.describe 'Passes routes', type: :request do
   end
 
   describe 'PATCH /squadron/passes/:id' do
-    let(:pass) { create :pass, squadron: squadron }
-    let(:pilot) { create :pilot, squadron: squadron }
+    let(:pass) { create :pass, squadron: }
+    let(:pilot) { create :pilot, squadron: }
 
     it "updates a pass" do
       api_request :patch, "/squadron/passes/#{pass.to_param}.json",
@@ -142,7 +142,7 @@ RSpec.describe 'Passes routes', type: :request do
   end
 
   describe 'DELETE /squadron/passes/:id' do
-    let(:pass) { create :pass, squadron: squadron }
+    let(:pass) { create :pass, squadron: }
 
     it "deletes a pass" do
       api_request :delete, "/squadron/passes/#{pass.to_param}.json"
@@ -160,8 +160,8 @@ RSpec.describe 'Passes routes', type: :request do
 
   describe 'DELETE /squadron/passes/unknown' do
     it "deletes all passes with unknown pilots" do
-      unknown_passes = create_list(:pass, 3, squadron: squadron, pilot: nil)
-      known_pass     = create(:pass, squadron: squadron, with_pilot: true)
+      unknown_passes = create_list(:pass, 3, squadron:, pilot: nil)
+      known_pass     = create(:pass, squadron:, with_pilot: true)
       other_squadron = create(:pass, with_pilot: true)
 
       api_request :delete, '/squadron/passes/unknown.json'

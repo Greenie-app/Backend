@@ -152,7 +152,7 @@ class PassesController < ApplicationController
                                                :trap, :wire, :notes, :pilot)
 
     if (name = pass_params[:pilot]).present?
-      pass_params[:pilot_id] = @squadron.pilots.find_or_create_by!(name: name).id
+      pass_params[:pilot_id] = @squadron.pilots.find_or_create_by!(name:).id
     end
     pass_params.delete 'pilot'
 

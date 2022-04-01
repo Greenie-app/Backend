@@ -5,7 +5,7 @@ RSpec.describe Logfile, type: :model do
 
   describe '#process!' do
     let(:squadron) { create :squadron }
-    let(:logfile) { create :logfile, squadron: squadron }
+    let(:logfile) { create :logfile, squadron: }
 
     it "processes log files and creates passes" do
       logfile.tap do |logfile|

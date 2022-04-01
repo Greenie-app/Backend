@@ -45,7 +45,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.0"
+          ruby-version: "3.1"
           bundler-cache: true
       - name: Create test database
         env:
@@ -72,7 +72,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.0"
+          ruby-version: "3.1"
           bundler-cache: true
       - name: Run Rubocop
         run: |

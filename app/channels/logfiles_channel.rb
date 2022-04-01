@@ -13,7 +13,7 @@ class LogfilesChannel < ApplicationCable::Channel
 
     # @private
     def encode(logfile)
-      ApplicationController.render(partial: 'logfiles/logfile', locals: {logfile: logfile})
+      ApplicationController.render(partial: 'logfiles/logfile', locals: {logfile:})
     end
   end
 end
