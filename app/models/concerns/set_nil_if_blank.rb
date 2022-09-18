@@ -7,7 +7,7 @@ module SetNilIfBlank
   #   `#blank?`.
   #   @param [Symbol] field The name of a field to set nil if blank.
 
-  def set_nil_if_blank(*fields) # rubocop:disable Naming/AccessorMethodName
+  def set_nil_if_blank(*fields)
     fields.each do |field|
       before_validation { |obj| obj.send :"#{field}=", nil if obj.send(field).blank? }
     end

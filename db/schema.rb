@@ -37,7 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2021_12_16_203846) do
   end
 
   create_table "active_storage_variant_records", force: :cascade do |t|
-    t.integer "blob_id", null: false
+    t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
@@ -49,7 +49,7 @@ ActiveRecord::Schema[7.0].define(version: 2021_12_16_203846) do
   end
 
   create_table "logfiles", force: :cascade do |t|
-    t.integer "squadron_id", null: false
+    t.bigint "squadron_id", null: false
     t.integer "completed_files", default: 0, null: false
     t.integer "failed_files", default: 0, null: false
     t.integer "state", default: 0, null: false
@@ -59,8 +59,8 @@ ActiveRecord::Schema[7.0].define(version: 2021_12_16_203846) do
   end
 
   create_table "passes", force: :cascade do |t|
-    t.integer "squadron_id", null: false
-    t.integer "pilot_id"
+    t.bigint "squadron_id", null: false
+    t.bigint "pilot_id"
     t.datetime "time", precision: nil, null: false
     t.string "ship_name"
     t.string "aircraft_type"
@@ -74,7 +74,7 @@ ActiveRecord::Schema[7.0].define(version: 2021_12_16_203846) do
   end
 
   create_table "pilots", force: :cascade do |t|
-    t.integer "squadron_id", null: false
+    t.bigint "squadron_id", null: false
     t.string "name", null: false
     t.index ["squadron_id", "name"], name: "index_pilots_on_squadron_id_and_name", unique: true
     t.index ["squadron_id"], name: "index_pilots_on_squadron_id"
