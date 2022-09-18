@@ -9,7 +9,7 @@ RSpec.describe FileProcessorJob, type: :job do
     expect(logfile.completed_files).to eq(1)
   end
 
-  it "processes increments failed_count for errors" do
+  it "processes increments failed_count for errors" do # rubocop:disable RSpec/NoExpectationExample
     skip "No support in Sidekiq"
   end
 end

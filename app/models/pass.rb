@@ -140,7 +140,7 @@ class Pass < ApplicationRecord
 
   def self.waveoff_grade(notes)
     matches = notes.match(/WO\((.+?)\)/) or return :technique_waveoff
-    return matches[1] == 'FD' ? :foul_deck_waveoff : :technique_waveoff
+    return (matches[1] == 'FD') ? :foul_deck_waveoff : :technique_waveoff
   end
   private_class_method :waveoff_grade
 
