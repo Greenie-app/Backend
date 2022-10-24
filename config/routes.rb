@@ -1,32 +1,34 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  match '*path', via: :options, to: ->(_) { [204, {'Content-Type' => 'text/plain'}] }
+  match "*path", via: :options, to: ->(_) { [204, {"Content-Type" => "text/plain"}] }
 
   if Rails.env.cypress?
-    require 'reset_cypress'
-    require 'cypress_emails'
-    get '/cypress/reset' => ResetCypress.new
-    get '/cypress/emails' => CypressEmails.new
+    require "reset_cypress"
+    require "cypress_emails"
+    get "/cypress/reset" => ResetCypress.new
+    get "/cypress/emails" => CypressEmails.new
   end
 
   if Rails.env.production?
-    mount ActionCable.server => '/cable'
+    mount ActionCable.server => "/cable"
   end
 
   devise_for :squadrons, skip: :all
   devise_scope :squadron do
-    post 'login' => 'sessions#create'
-    delete 'logout' => 'sessions#destroy'
-    post 'squadrons' => 'registrations#create'
-    delete 'squadron' => 'registrations#destroy'
-    patch 'squadron/password' => 'registrations#update'
-    put 'squadron/password' => 'registrations#update'
-    get 'registration/cancel' => 'registrations#cancel'
+    post "login" => "sessions#create"
+    delete "logout" => "sessions#destroy"
+    post "squadrons" => "registrations#create"
+    delete "squadron" => "registrations#destroy"
+    patch "squadron/password" => "registrations#update"
+    put "squadron/password" => "registrations#update"
+    get "registration/cancel" => "registrations#cancel"
 
-    post 'forgot_password' => 'passwords#create'
-    patch 'forgot_password' => 'passwords#update'
-    put 'forgot_password' => 'passwords#update'
+    post "forgot_password" => "passwords#create"
+    patch "forgot_password" => "passwords#update"
+    put "forgot_password" => "passwords#update"
   end
 
   resources :squadrons, only: :show do
@@ -50,6 +52,6 @@ Rails.application.routes.draw do
     URI.join(
         Rails.application.config.urls.frontend,
         "/#/reset_password/#{args[:reset_password_token]}"
-    ).to_s
+      ).to_s
   end
 end

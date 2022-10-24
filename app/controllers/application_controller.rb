@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # @abstract
 #
 # Abstract superclass for Greenie controllers. All responses are JSON. Typical
@@ -65,9 +67,9 @@ class ApplicationController < ActionController::API
 
     @count    = count_scope.count
 
-    response.headers['X-Page']      = @page.to_s
-    response.headers['X-Per-Page']  = @per_page.to_s
-    response.headers['X-Count']     = @count.to_s
+    response.headers["X-Page"]      = @page.to_s
+    response.headers["X-Per-Page"]  = @per_page.to_s
+    response.headers["X-Count"]     = @count.to_s
 
     return scope.offset(@per_page * (@page - 1)).limit(@per_page)
   end

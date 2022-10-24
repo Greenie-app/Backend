@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # `extend` a model with this module to add {#set_nil_if_blank}.
 
 module SetNilIfBlank

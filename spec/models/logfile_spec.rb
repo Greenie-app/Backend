@@ -1,9 +1,11 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
-RSpec.describe Logfile, type: :model do
+require "rails_helper"
+
+RSpec.describe Logfile do
   include ActiveJob::TestHelper
 
-  describe '#process!' do
+  describe "#process!" do
     let(:squadron) { create :squadron }
     let(:logfile) { create :logfile, squadron: }
 
@@ -37,38 +39,38 @@ RSpec.describe Logfile, type: :model do
     end
   end
 
-  describe '#recalculate_state!' do
+  describe "#recalculate_state!" do
     let :logfile do
-      create :logfile, files: [file_fixture('dcs.log')]*3
+      create :logfile, files: [file_fixture("dcs.log")]*3
     end
 
     it "returns pending if no jobs have been completed yet" do
       logfile.recalculate_state!
-      expect(logfile.state).to eq('pending')
+      expect(logfile.state).to eq("pending")
     end
 
     it "returns in_progress if some jobs have been completed" do
       logfile.update completed_files: 1
       logfile.recalculate_state!
-      expect(logfile.state).to eq('in_progress')
+      expect(logfile.state).to eq("in_progress")
     end
 
     it "returns complete if all jobs have been completed" do
       logfile.update completed_files: 3
       logfile.recalculate_state!
-      expect(logfile.state).to eq('complete')
+      expect(logfile.state).to eq("complete")
     end
 
     it "returns failed if any job failed" do
       logfile.update failed_files: 1
       logfile.recalculate_state!
-      expect(logfile.state).to eq('failed')
+      expect(logfile.state).to eq("failed")
     end
   end
 
-  describe '#progress' do
+  describe "#progress" do
     let :logfile do
-      create :logfile, files: [file_fixture('dcs.log')]*4
+      create :logfile, files: [file_fixture("dcs.log")]*4
     end
 
     it "returns the progress as a fraction" do

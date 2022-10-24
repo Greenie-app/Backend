@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # @private
 class RegistrationsController < Devise::RegistrationsController
   respond_to :json

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A pass is an attempt by a pilot at landing at a carrier. A pass can result in
 # either a trap (where a wire is caught and the airplane stops) or a miss. A
 # miss is either a bolter (where the aircraft touches down on the deck but does
@@ -112,13 +114,13 @@ class Pass < ApplicationRecord
 
   def default_score
     case grade
-      when 'perfect' then 5.0
-      when 'ok' then 4.0
-      when 'fair' then 3.0
-      when 'bolter' then 2.5
-      when 'no_grade' then 2.0
-      when 'technique_waveoff' then 1.0
-      when 'cut' then 0.0
+      when "perfect" then 5.0
+      when "ok" then 4.0
+      when "fair" then 3.0
+      when "bolter" then 2.5
+      when "no_grade" then 2.0
+      when "technique_waveoff" then 1.0
+      when "cut" then 0.0
       else nil
     end
   end
@@ -126,13 +128,13 @@ class Pass < ApplicationRecord
   def self.grade_for_notes(notes)
     matches = notes.match(/GRADE:(.+?)\s/) or return nil
     case matches[1].strip
-      when '_OK_' then :perfect
-      when 'OK' then :ok
-      when '(OK)' then :fair
-      when 'B' then :bolter
-      when '---' then :no_grade
-      when 'WO' then waveoff_grade(notes)
-      when 'C' then :cut
+      when "_OK_" then :perfect
+      when "OK" then :ok
+      when "(OK)" then :fair
+      when "B" then :bolter
+      when "---" then :no_grade
+      when "WO" then waveoff_grade(notes)
+      when "C" then :cut
       else nil
     end
   end
@@ -140,7 +142,7 @@ class Pass < ApplicationRecord
 
   def self.waveoff_grade(notes)
     matches = notes.match(/WO\((.+?)\)/) or return :technique_waveoff
-    return (matches[1] == 'FD') ? :foul_deck_waveoff : :technique_waveoff
+    return (matches[1] == "FD") ? :foul_deck_waveoff : :technique_waveoff
   end
   private_class_method :waveoff_grade
 
@@ -152,9 +154,8 @@ class Pass < ApplicationRecord
 
   def pilot_must_be_same_squadron
     return unless pilot
+    return unless pilot.squadron_id != squadron_id
 
-    if pilot.squadron_id != squadron_id
-      errors.add :pilot_id, :unknown
-    end
+    errors.add :pilot_id, :unknown
   end
 end

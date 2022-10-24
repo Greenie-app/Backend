@@ -1,6 +1,8 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
-RSpec.describe FileProcessorJob, type: :job do
+require "rails_helper"
+
+RSpec.describe FileProcessorJob do
   let(:logfile) { create :logfile }
 
   it "processes the file and increments completed_count" do
@@ -9,7 +11,7 @@ RSpec.describe FileProcessorJob, type: :job do
     expect(logfile.completed_files).to eq(1)
   end
 
-  it "processes increments failed_count for errors" do # rubocop:disable RSpec/NoExpectationExample
+  it "processes increments failed_count for errors" do
     skip "No support in Sidekiq"
   end
 end

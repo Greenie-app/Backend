@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Rack application that an endpoint allowing the Cypress front-end to reset the
 # database before each E2E test run. Only mounted in the `cypress` environment.
 
@@ -18,7 +20,7 @@ class ResetCypress
   end
 
   def response
-    [200, {'Content-Type' => 'text/plain'}, ["Cypress reset finished"]]
+    [200, {"Content-Type" => "text/plain"}, ["Cypress reset finished"]]
   end
 
   def models
@@ -30,10 +32,10 @@ class ResetCypress
   end
 
   def reset_emails
-    Dir.glob(maildir.join('*').to_s).each { |f| FileUtils.rm f }
+    Dir.glob(maildir.join("*").to_s).each { |f| FileUtils.rm f }
   end
 
   def maildir
-    Rails.root.join('tmp', 'mails')
+    Rails.root.join("tmp", "mails")
   end
 end

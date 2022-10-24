@@ -1,7 +1,9 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
-RSpec.describe Squadron, type: :model do
-  describe '#boarding_rate' do
+require "rails_helper"
+
+RSpec.describe Squadron do
+  describe "#boarding_rate" do
     let(:squadron) { create :squadron }
 
     it "returns the number of traps over the number of attempts" do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative "boot"
 
 require "rails/all"
@@ -27,7 +29,7 @@ module Greenie
     config.generators do |g|
       g.test_framework :rspec, fixture: true, views: false
       g.integration_tool :rspec
-      g.fixture_replacement :factory_bot, dir: 'spec/factories'
+      g.fixture_replacement :factory_bot, dir: "spec/factories"
     end
 
     # Use a real queuing backend for Active Job (and separate queues per environment).
@@ -39,7 +41,7 @@ module Greenie
     config.action_cable.url                     = config.urls.cable
     config.action_cable.allowed_request_origins = [config.urls.frontend]
 
-    config.time_zone                      = 'UTC'
+    config.time_zone                      = "UTC"
     config.active_record.default_timezone = :utc
 
     backend                                      = URI.parse(Rails.application.config.urls.backend)

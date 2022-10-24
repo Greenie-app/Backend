@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Container module for Action Cable classes.
 
 module ApplicationCable
@@ -26,7 +28,7 @@ module ApplicationCable
     private
 
     def find_verified_squadron
-      Squadron.find_by!(username: jwt['u'])
+      Squadron.find_by!(username: jwt["u"])
     end
 
     def token_decoder

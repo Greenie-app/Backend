@@ -1,2 +1,4 @@
-brew 'postgresql'
-brew 'redis'
+# frozen_string_literal: true
+
+brew "postgresql"
+brew "redis"

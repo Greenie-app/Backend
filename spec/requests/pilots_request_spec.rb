@@ -1,11 +1,13 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
-RSpec.describe 'Pilots routes', type: :request do
+require "rails_helper"
+
+RSpec.describe "Pilots routes" do
   let(:squadron) { create :squadron }
 
   before(:each) { login_squadron squadron }
 
-  describe 'POST /squadron/pilots/:id/merge' do
+  describe "POST /squadron/pilots/:id/merge" do
     let(:predator) { create :pilot, squadron: }
     let(:prey) { create :pilot, squadron: }
 
@@ -35,7 +37,7 @@ RSpec.describe 'Pilots routes', type: :request do
     end
   end
 
-  describe 'PATCH /squadron/pilots/:id' do
+  describe "PATCH /squadron/pilots/:id" do
     let(:pilot) { create :pilot, squadron: }
 
     it "updates a pilot" do
@@ -46,12 +48,12 @@ RSpec.describe 'Pilots routes', type: :request do
 
     it "renders validation errors" do
       api_request :patch, "/squadron/pilots/#{pilot.to_param}.json",
-                  params: {pilot: attributes_for(:pilot).merge(name: ' ')}
+                  params: {pilot: attributes_for(:pilot).merge(name: " ")}
       expect(response.body).to match_json_expression(
                                    errors: {
                                        name: ["can’t be blank"]
                                    }
-)
+                                 )
     end
 
     it "responds with 404 for an unauthorized pilot" do
@@ -61,7 +63,7 @@ RSpec.describe 'Pilots routes', type: :request do
     end
   end
 
-  describe 'DELETE /squadron/pilots/:id' do
+  describe "DELETE /squadron/pilots/:id" do
     let(:pilot) { create :pilot, squadron: }
 
     it "deletes a pilot" do

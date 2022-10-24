@@ -18,19 +18,19 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'donotreply@greenie.app'
+  config.mailer_sender = "donotreply@greenie.app"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 
   # Configure the parent class responsible to send e-mails.
-  config.parent_mailer = 'ApplicationMailer'
+  config.parent_mailer = "ApplicationMailer"
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
-  require 'devise/orm/active_record'
+  require "devise/orm/active_record"
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -302,11 +302,11 @@ Devise.setup do |config|
   config.jwt do |jwt|
     jwt.secret = Rails.application.credentials.devise[:jwt_secret_key]
     jwt.dispatch_requests = [
-        ['POST', /^\/login\.json$/],
-        ['POST', /^\/squadrons\.json$/]
+        ["POST", %r{^/login\.json$}],
+        ["POST", %r{^/squadrons\.json$}]
     ]
     jwt.revocation_requests = [
-        ['DELETE', /^\/logout\.json$/]
+        ["DELETE", %r{^/logout\.json$}]
     ]
     jwt.expiration_time = 1.day.to_i
   end

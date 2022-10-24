@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # RESTful API controller for working with {Pass}es.
 
 class PassesController < ApplicationController
@@ -154,7 +156,7 @@ class PassesController < ApplicationController
     if (name = pass_params[:pilot]).present?
       pass_params[:pilot_id] = @squadron.pilots.find_or_create_by!(name:).id
     end
-    pass_params.delete 'pilot'
+    pass_params.delete "pilot"
 
     return pass_params
   end

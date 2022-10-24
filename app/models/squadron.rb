@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A Squadron is an account that can log into the website, create Passes flown by
 # Pilots, and view those passes on a greenie board. Squadron authentication is
 # handled by Devise. There is one account shared by the whole squadron,
@@ -45,7 +47,7 @@ class Squadron < ApplicationRecord
             length:     {maximum: 20},
             format:     {with: /\A[a-z0-9_\-]+\z/i}
   validates :image,
-            content_type: /\Aimage\/.*\z/,
+            content_type: %r{\Aimage/.*\z},
             size:         {less_than: 100.megabytes}
 
   # @private

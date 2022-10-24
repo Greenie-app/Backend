@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # RESTful API controller for working with {Logfile}s.
 
 class LogfilesController < ApplicationController

@@ -1,4 +1,6 @@
-require 'logfile_processor'
+# frozen_string_literal: true
+
+require "logfile_processor"
 
 # The Logfile model links to one or more dcs.log files uploaded for a Squadron.
 # The Logfile class has a one-to-many relationship to the `files` association

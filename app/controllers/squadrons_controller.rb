@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # RESTful API controller for working with {Squadron}s, either the current user's
 # squadron or a squadron referenced by username.
 

@@ -1,77 +1,79 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-ruby '3.1.2'
+source "https://rubygems.org"
+
+ruby "3.1.2"
 
 # FRAMEWORK
-gem 'bootsnap'
-gem 'rack-cors'
-gem 'rails'
-gem 'sidekiq'
+gem "bootsnap"
+gem "rack-cors"
+gem "rails"
+gem "sidekiq"
 
 # MODELS
-gem 'active_storage_validations'
-gem 'image_processing'
-gem 'pg'
+gem "active_storage_validations"
+gem "image_processing"
+gem "pg"
 
 # CONTROLLERS
-gem 'responders'
+gem "responders"
 
 # VIEWS
-gem 'jbuilder'
-gem 'redis'
+gem "jbuilder"
+gem "redis"
 
 # AUTH
-gem 'devise'
-gem 'devise-jwt'
+gem "devise"
+gem "devise-jwt"
 
 # ERRORS
-gem 'bugsnag'
+gem "bugsnag"
 
 group :development do
-  gem 'listen'
-  gem 'puma'
+  gem "listen"
+  gem "puma"
 
   # DEVELOPMENT
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'spring'
-  gem 'spring-watcher-listen'
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "spring"
+  gem "spring-watcher-listen"
 
   # DEPLOYMENT
-  gem 'bcrypt_pbkdf', require: false
-  gem 'bugsnag-capistrano', require: false
-  gem 'capistrano', require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano-nvm', require: false
-  gem 'capistrano-rails', require: false
-  gem 'capistrano-rvm', require: false
-  gem 'ed25519', require: false
+  gem "bcrypt_pbkdf", require: false
+  gem "bugsnag-capistrano", require: false
+  gem "capistrano", require: false
+  gem "capistrano-bundler", require: false
+  gem "capistrano-nvm", require: false
+  gem "capistrano-rails", require: false
+  gem "capistrano-rvm", require: false
+  gem "ed25519", require: false
 end
 
 group :test do
   # SPECS
-  gem 'boolean'
-  gem 'json_expressions'
-  gem 'json_matchers'
-  gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem "boolean"
+  gem "json_expressions"
+  gem "json_matchers"
+  gem "rails-controller-testing"
+  gem "rspec-rails"
 
   # FACTORIES
-  gem 'factory_bot_rails'
-  gem 'ffaker'
+  gem "factory_bot_rails"
+  gem "ffaker"
 
   # ISOLATION
-  gem 'database_cleaner'
-  gem 'timecop'
-  gem 'webmock'
+  gem "database_cleaner"
+  gem "timecop"
+  gem "webmock"
 end
 
 group :doc do
-  gem 'redcarpet', require: nil
-  gem 'yard', require: nil
+  gem "redcarpet", require: nil
+  gem "yard", require: nil
 end
 
 group :production do
   # STORAGE
-  gem 'aws-sdk-s3', require: false
+  gem "aws-sdk-s3", require: false
 end

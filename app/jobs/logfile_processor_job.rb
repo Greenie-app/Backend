@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This job spawns {FileProcessorJob}s for each dcs.log file attached to a
 # {Logfile} record.
 

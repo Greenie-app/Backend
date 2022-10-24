@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A pilot is a member of a Squadron that flies Passes. Pilots are uniquely
 # identified by their name and have no other characteristics.
 #

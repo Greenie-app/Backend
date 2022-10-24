@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
-require 'spec_helper'
-ENV['RAILS_ENV'] ||= 'test'
-require File.expand_path('../config/environment', __dir__)
+require "spec_helper"
+ENV["RAILS_ENV"] ||= "test"
+require File.expand_path("../config/environment", __dir__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
-require 'rspec/rails'
+require "rspec/rails"
 # Add additional requires below this line. Rails is not loaded until this point!
-require 'json_expressions/rspec'
-require 'json_matchers/rspec'
+require "json_expressions/rspec"
+require "json_matchers/rspec"
 
-DEFAULT_TIME = ActiveSupport::TimeZone['America/Los_Angeles'].
+DEFAULT_TIME = ActiveSupport::TimeZone["America/Los_Angeles"].
     local(1982, 10, 19, 12, 13)
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -91,24 +93,24 @@ RSpec.configure do |config|
 
   # Active Storage
   config.after :suite do
-    Rails.root.join('tmp', 'storage').children.select(&:directory?).each do |entry|
-      FileUtils.rm_r Rails.root.join('tmp', 'storage', entry.to_s).to_s
+    Rails.root.join("tmp", "storage").children.select(&:directory?).each do |entry|
+      FileUtils.rm_r Rails.root.join("tmp", "storage", entry.to_s).to_s
     end
   end
 end
 
-def login_squadron(squadron, password: 'password123')
-  post '/login.json',
+def login_squadron(squadron, password: "password123")
+  post "/login.json",
        params: {squadron: {username: squadron.username, password:}}
 
   expect(response).to have_http_status(:success)
-  @jwt = response.headers['Authorization']
+  @jwt = response.headers["Authorization"]
 end
 
 def api_request(*args, **opts)
   raise "Not authorized" if @jwt.blank?
 
-  send(*args, **opts.deep_merge(headers: {'Authorization' => @jwt}))
+  send(*args, **opts.deep_merge(headers: {"Authorization" => @jwt}))
 end
 
-JsonMatchers.schema_root = Rails.root.join('spec', 'support', 'api', 'schemas')
+JsonMatchers.schema_root = Rails.root.join("spec", "support", "api", "schemas")

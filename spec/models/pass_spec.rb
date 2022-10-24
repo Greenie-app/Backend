@@ -1,7 +1,9 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
-RSpec.describe Pass, type: :model do
-  context '[defaults]' do
+require "rails_helper"
+
+RSpec.describe Pass do
+  context "[defaults]" do
     it "sets a default value for `trap`" do
       expect(create(:pass, grade: :bolter)).not_to be_trap
       expect(create(:pass, grade: :fair)).to be_trap

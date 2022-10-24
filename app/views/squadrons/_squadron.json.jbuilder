@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 json.call squadron, :id, :name, :username, :email, :created_at, :updated_at
 
 json.boarding_rate((defined?(boarding_rate) && boarding_rate) ?

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This job processes the individual dcs.log files of a {Logfile} using
 # {LogfileProcessor}.
 
@@ -13,5 +15,5 @@ class FileProcessorJob < ApplicationJob
     file.record.increment! :completed_files
     file.record.recalculate_state!(save: true)
   end
-  #TODO increment failed_files when job fails; decrement upon retry
+  #TODO: increment failed_files when job fails; decrement upon retry
 end

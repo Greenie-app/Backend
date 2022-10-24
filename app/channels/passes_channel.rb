@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Action Cable channel for transmitting changes to {Pass} records.
 
 class PassesChannel < ApplicationCable::Channel
@@ -13,7 +15,7 @@ class PassesChannel < ApplicationCable::Channel
 
     # @private
     def encode(pass, boarding_rate: nil, unknown_pass_count: nil)
-      ApplicationController.render partial: 'passes/pass',
+      ApplicationController.render partial: "passes/pass",
                                    locals:  {
                                        pass:,
                                        include_squadron:   true,

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Action Cable channel for transmitting changes to {Logfile} records.
 
 class LogfilesChannel < ApplicationCable::Channel
@@ -13,7 +15,7 @@ class LogfilesChannel < ApplicationCable::Channel
 
     # @private
     def encode(logfile)
-      ApplicationController.render(partial: 'logfiles/logfile', locals: {logfile:})
+      ApplicationController.render(partial: "logfiles/logfile", locals: {logfile:})
     end
   end
 end

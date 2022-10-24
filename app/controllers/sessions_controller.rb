@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # @private
 class SessionsController < Devise::SessionsController
   respond_to :json
@@ -11,7 +13,7 @@ class SessionsController < Devise::SessionsController
 
   def respond_with(resource, _opts={})
     @squadron = resource
-    render 'squadrons/show'
+    render "squadrons/show"
   end
 
   def respond_to_on_destroy

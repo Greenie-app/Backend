@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # RESTful API controller for working with {Pilot}s. Pilots are always queried by
 # their `name`, not their database ID.
 

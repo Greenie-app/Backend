@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :pass do
     transient do
@@ -12,7 +14,7 @@ FactoryBot.define do
     aircraft_type { %w[FA-18C_hornet F14].sample }
 
     grade { Pass.grades.keys.sample }
-    wire { grade.to_s.include?('waveoff') ? nil : rand(1..4) }
+    wire { grade.to_s.include?("waveoff") ? nil : rand(1..4) }
     notes { "WO  (DRIM)  (LURIM)  WO(AFU)IC" }
 
     after :build do |pass, evaluator|

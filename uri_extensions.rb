@@ -1,4 +1,6 @@
-require 'uri'
+# frozen_string_literal: true
+
+require "uri"
 
 # @private
 class URI::Generic
