@@ -45,7 +45,7 @@ class Squadron < ApplicationRecord
             presence:   true,
             uniqueness: {case_sensitive: false},
             length:     {maximum: 20},
-            format:     {with: /\A[a-z0-9_\-]+\z/i}
+            format:     {with: /\A[a-z0-9_-]+\z/i}
   validates :image,
             content_type: %r{\Aimage/.*\z},
             size:         {less_than: 100.megabytes}
