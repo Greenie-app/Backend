@@ -82,7 +82,6 @@ class Pass < ApplicationRecord
 
   before_validation :set_defaults, on: :create
   after_commit { PassesChannel.broadcast_to squadron, PassesChannel::Coder.encode(self) }
-  after_destroy_commit { PassesChannel.broadcast_to squadron, PassesChannel::Coder.encode(self) }
 
   # @private
   def self.create_from_log_entry(squadron, timestamp, grade, pilot: nil, ship: nil, aircraft: nil)
