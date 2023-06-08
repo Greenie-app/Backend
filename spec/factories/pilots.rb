@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :pilot do
-    association :squadron
+    squadron
 
     sequence(:name) { |i| "pilot-#{i}" }
   end

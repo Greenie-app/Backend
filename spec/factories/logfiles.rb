@@ -6,7 +6,7 @@ FactoryBot.define do
       files { [Rails.root.join("spec", "fixtures", "files", "dcs.log")] }
     end
 
-    association :squadron
+    squadron
 
     after :build do |logfile, evaluator|
       evaluator.files.each do |file|

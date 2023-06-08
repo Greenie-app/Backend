@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.2.1"
+ruby "3.2.2"
 
 # FRAMEWORK
 gem "bootsnap"
@@ -34,7 +34,6 @@ group :development do
   gem "puma"
 
   # DEVELOPMENT
-  gem "better_errors"
   gem "binding_of_caller"
   gem "spring"
   gem "spring-watcher-listen"

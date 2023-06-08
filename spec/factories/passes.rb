@@ -6,7 +6,7 @@ FactoryBot.define do
       with_pilot { false }
     end
 
-    association :squadron
+    squadron
 
     time { rand(1.month).seconds.ago }
 

@@ -36,7 +36,7 @@ later.
 
 ### Installation and Running
 
-Greenie.app required Ruby 3.1, PostgreSQL, and Redis. (If you use Homebrew,
+Greenie.app required Ruby 3.2, PostgreSQL, and Redis. (If you use Homebrew,
 you can install those dependencies with `brew install`.) After cloning the
 repository, run `bundle install` to install all gem requirements. Run
 `rails db:create db:migrate` to create the development database.
@@ -50,10 +50,10 @@ not part of the Gemfile and should be `gem install`ed manually.)
 An example Foreman script that accomplishes all of this:
 
 ```
-backend: cd Backend && rvm 3.1.1@greenie exec rails server
+backend: cd Backend && rvm 3.2.2@greenie exec rails server
 frontend: cd Frontend && yarn serve
-workers: cd Backend && rvm 3.1.1@greenie exec bundle exec sidekiq -C config/sidekiq.yml
-cable: cd Backend && rvm 3.1.1@greenie exec ./bin/cable
+workers: cd Backend && rvm 3.2.2@greenie exec bundle exec sidekiq -C config/sidekiq.yml
+cable: cd Backend && rvm 3.2.2@greenie exec ./bin/cable
 mail: mailcatcher -f
 ```
 
@@ -74,10 +74,10 @@ An example Foreman script that launches all necessary processes and starts the
 E2E test application:
 
 ```
-backend: cd Backend && rvm 3.1.1@greenie exec rails server -e cypress -b localhost
+backend: cd Backend && rvm 3.2.2@greenie exec rails server -e cypress -b localhost
 frontend: cd Frontend && yarn run test:e2e
-workers: cd Backend && redis-cli flushall && rvm 3.1.1@greenie exec bundle exec sidekiq -C config/sidekiq.yml -e cypress
-cable: cd Backend && rvm 3.1.1@greenie exec ./bin/cable -e cypress
+workers: cd Backend && redis-cli flushall && rvm 3.2.2@greenie exec bundle exec sidekiq -C config/sidekiq.yml -e cypress
+cable: cd Backend && rvm 3.2.2@greenie exec ./bin/cable -e cypress
 ```
 
 #### Deployment
