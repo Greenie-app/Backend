@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:13.5
+        image: postgres:15
         env:
           POSTGRES_DB: greenie_test
           POSTGRES_USER: greenie
