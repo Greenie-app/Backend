@@ -16,7 +16,5 @@ class SessionsController < Devise::SessionsController
     render "squadrons/show"
   end
 
-  def respond_to_on_destroy
-    head :no_content
-  end
+  def respond_to_on_destroy = head :no_content
 end

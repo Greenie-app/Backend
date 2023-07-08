@@ -107,10 +107,10 @@ def login_squadron(squadron, password: "password123")
   @jwt = response.headers["Authorization"]
 end
 
-def api_request(*args, **opts)
+def api_request(*, **opts)
   raise "Not authorized" if @jwt.blank?
 
-  send(*args, **opts.deep_merge(headers: {"Authorization" => @jwt}))
+  send(*, **opts.deep_merge(headers: {"Authorization" => @jwt}))
 end
 
 JsonMatchers.schema_root = Rails.root.join("spec", "support", "api", "schemas")

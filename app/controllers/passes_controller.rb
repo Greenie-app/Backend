@@ -40,9 +40,7 @@ class PassesController < ApplicationController
   # | `squadron_id` | The username of a {Squadron}. |
   # | `id` | The ID of a {Pass}. |
 
-  def show
-    respond_with @pass
-  end
+  def show = respond_with @pass
 
   # Creates a new Pass for the Squadron associated with the request JWT.
   #

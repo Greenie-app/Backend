@@ -20,9 +20,7 @@ class SquadronsController < ApplicationController
   #
   # | `id` | A Squadron username. |
 
-  def show
-    respond_with @squadron
-  end
+  def show = respond_with @squadron
 
   # Updates the current user's squadron data.
   #

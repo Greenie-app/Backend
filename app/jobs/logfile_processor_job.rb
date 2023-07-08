@@ -10,7 +10,5 @@ class LogfileProcessorJob < ApplicationJob
   #
   # @param [Logfile] logfile The logfile.
 
-  def perform(logfile)
-    logfile.process!
-  end
+  def perform(logfile) = logfile.process!
 end

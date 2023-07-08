@@ -32,7 +32,7 @@ class Logfile < ApplicationRecord
 
   before_save :recalculate_state!
   after_create_commit :enqueue_process_job
-  after_commit { LogfilesChannel.broadcast_to squadron, LogfilesChannel::Coder.encode(self) }
+  after_commit(on: :create) { LogfilesChannel.broadcast_to squadron, LogfilesChannel::Coder.encode(self) }
 
   validates :files,
             attached:     true,
@@ -42,17 +42,17 @@ class Logfile < ApplicationRecord
   # Creates {FileProcessorJob}s for each file attached to this record.
 
   def process!
-    files.each do |attachment|
-      FileProcessorJob.perform_later attachment
-    end
+    files.each { FileProcessorJob.perform_later _1 }
+  end
+
+  def process_now!
+    files.each { FileProcessorJob.new(_1).perform_now }
   end
 
   # @return [Float] The number of completed files, as a fraction of the total
   #   file count.
 
-  def progress
-    completed_files.to_f/files.count
-  end
+  def progress = completed_files.to_f/files.count
 
   # Recalculates the value of the `state` property.
   #

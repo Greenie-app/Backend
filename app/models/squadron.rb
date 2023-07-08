@@ -51,9 +51,7 @@ class Squadron < ApplicationRecord
             size:         {less_than: 100.megabytes}
 
   # @private
-  def jwt_payload
-    {u: username}
-  end
+  def jwt_payload = {u: username}
 
   def boarding_rate(days=50)
     matching_passes = passes.where(Pass.arel_table[:time].gteq(days.days.ago.beginning_of_day))
@@ -66,9 +64,7 @@ class Squadron < ApplicationRecord
     return traps.to_f / attempts
   end
 
-  def unknown_pass_count
-    passes.where(pilot_id: nil).count
-  end
+  def unknown_pass_count = passes.where(pilot_id: nil).count
 
   def to_param = username
 end

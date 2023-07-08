@@ -21,24 +21,16 @@ class CypressEmails
     return request.query_parameters["email"]
   end
 
-  def maildir
-    Rails.root.join("tmp", "mails")
-  end
+  def maildir = Rails.root.join("tmp", "mails")
 
-  def mailfile(email)
-    maildir.join(email)
-  end
+  def mailfile(email) = maildir.join(email)
 
   def emails_for(email)
     file = mailfile(email)
     file.file? ? file.read : ""
   end
 
-  def response(body)
-    [200, {"Content-Type" => "text/plain"}, [body]]
-  end
+  def response(body) = [200, {"Content-Type" => "text/plain"}, [body]]
 
-  def bad_request
-    [400, {"Content-Type" => "text/plain"}, ["No email given"]]
-  end
+  def bad_request = [400, {"Content-Type" => "text/plain"}, ["No email given"]]
 end

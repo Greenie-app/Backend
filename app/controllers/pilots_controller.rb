@@ -79,7 +79,5 @@ class PilotsController < ApplicationController
     @pilot = current_squadron.pilots.find_by!(name: params[:id])
   end
 
-  def pilot_params
-    params.require(:pilot).permit(:name)
-  end
+  def pilot_params = params.require(:pilot).permit(:name)
 end

@@ -27,9 +27,7 @@ module ApplicationCable
 
     private
 
-    def find_verified_squadron
-      Squadron.find_by!(username: jwt["u"])
-    end
+    def find_verified_squadron = Squadron.find_by!(username: jwt["u"])
 
     def token_decoder
       @token_decoder ||= Warden::JWTAuth::TokenDecoder.new

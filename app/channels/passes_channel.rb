@@ -5,9 +5,7 @@
 class PassesChannel < ApplicationCable::Channel
 
   # @private
-  def subscribed
-    stream_for current_squadron, coder: nil
-  end
+  def subscribed = stream_for current_squadron, coder: nil
 
   # @private
   module Coder
