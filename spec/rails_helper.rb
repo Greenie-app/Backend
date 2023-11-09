@@ -39,6 +39,7 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
+  config.include ActiveSupport::Testing::TimeHelpers
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   # config.fixture_path = "#{::Rails.root}/spec/fixtures"
@@ -86,10 +87,7 @@ RSpec.configure do |config|
     DatabaseCleaner.cleaning { example.run }
   end
 
-  # Timecop
-  config.around :each do |example|
-    Timecop.freeze(Time.current) { example.run }
-  end
+  config.before(:each) { freeze_time }
 
   # Active Storage
   config.after :suite do

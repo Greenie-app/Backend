@@ -63,7 +63,6 @@ group :test do
 
   # ISOLATION
   gem "database_cleaner"
-  gem "timecop"
   gem "webmock"
 end
 
