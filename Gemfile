@@ -2,7 +2,8 @@
 
 source "https://rubygems.org"
 
-ruby "3.2.2"
+ruby "3.3.3"
+gem "net-pop", github: "ruby/net-pop" # 3.3.3 hack fix
 
 # FRAMEWORK
 gem "bootsnap"
