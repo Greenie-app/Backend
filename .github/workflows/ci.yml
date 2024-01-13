@@ -5,7 +5,7 @@
 # This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
 # For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
 
-name: Ruby
+name: CI
 
 on:
   push:
@@ -41,11 +41,11 @@ jobs:
         ports:
           - "6379:6379"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2"
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Create test database
         env:
@@ -68,11 +68,11 @@ jobs:
     name: Linters
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2"
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Run Rubocop
         run: |
@@ -87,11 +87,4 @@ jobs:
           mv .rubocop2.yml .rubocop.yml
           rubocop --parallel
       - name: Run Brakeman
-        run: |
-          #gem install brakeman
-          git clone https://github.com/presidentbeef/brakeman.git
-          pushd brakeman
-          gem build brakeman.gemspec
-          gem install brakeman*.gem
-          popd
-          brakeman -q -w2
+        uses: artplan1/brakeman-action@v1
