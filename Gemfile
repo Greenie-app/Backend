@@ -40,14 +40,7 @@ group :development do
   gem "spring-watcher-listen"
 
   # DEPLOYMENT
-  gem "bcrypt_pbkdf", require: false
-  gem "bugsnag-capistrano", require: false
-  gem "capistrano", require: false
-  gem "capistrano-bundler", require: false
-  gem "capistrano-nvm", require: false
-  gem "capistrano-rails", require: false
-  gem "capistrano-rvm", require: false
-  gem "ed25519", require: false
+  gem "dockerfile-rails"
 end
 
 group :test do
