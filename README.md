@@ -50,10 +50,10 @@ not part of the Gemfile and should be `gem install`ed manually.)
 An example Foreman script that accomplishes all of this:
 
 ```
-backend: cd Backend && rvm 3.3.3@greenie exec rails server
+backend: cd Backend && rvm 3.3.4@greenie exec rails server
 frontend: cd Frontend && yarn serve
-workers: cd Backend && rvm 3.3.3@greenie exec bundle exec sidekiq -C config/sidekiq.yml
-cable: cd Backend && rvm 3.3.3@greenie exec ./bin/cable
+workers: cd Backend && rvm 3.3.4@greenie exec bundle exec sidekiq -C config/sidekiq.yml
+cable: cd Backend && rvm 3.3.4@greenie exec ./bin/cable
 mail: mailcatcher -f
 ```
 
