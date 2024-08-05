@@ -74,10 +74,10 @@ An example Foreman script that launches all necessary processes and starts the
 E2E test application:
 
 ```
-backend: cd Backend && rvm 3.3.0@greenie exec rails server -e cypress -b localhost
+backend: cd Backend && rvm 3.3.4@greenie exec rails server -e cypress -b localhost
 frontend: cd Frontend && yarn run test:e2e
-workers: cd Backend && redis-cli flushall && rvm 3.3.0@greenie exec bundle exec sidekiq -C config/sidekiq.yml -e cypress
-cable: cd Backend && rvm 3.3.0@greenie exec ./bin/cable -e cypress
+workers: cd Backend && redis-cli flushall && rvm 3.3.4@greenie exec bundle exec sidekiq -C config/sidekiq.yml -e cypress
+cable: cd Backend && rvm 3.3.4@greenie exec ./bin/cable -e cypress
 ```
 
 #### Deployment
