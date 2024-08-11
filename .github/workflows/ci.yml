@@ -45,7 +45,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3"
+          ruby-version: .ruby-version
           bundler-cache: true
       - name: Create test database
         env:
@@ -72,7 +72,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3"
+          ruby-version: .ruby-version
           bundler-cache: true
       - name: Run Rubocop
         run: |
@@ -85,6 +85,6 @@ jobs:
           cp .rubocop-rails/.rubocop-rails.yml .
           cat .rubocop.yml | sed -e 's/~\/.rubocop/.rubocop/' | sed -e 's/.rubocop.yml/.rubocop-ruby.yml/' > .rubocop2.yml
           mv .rubocop2.yml .rubocop.yml
-          rubocop --parallel
+          rubocop --parallel -f github
       - name: Run Brakeman
-        uses: artplan1/brakeman-action@v1
+        run: bin/brakeman --no-pager
