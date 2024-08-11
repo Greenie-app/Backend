@@ -20,6 +20,7 @@ gem "responders"
 
 # VIEWS
 gem "jbuilder"
+gem "kredis"
 gem "redis"
 
 # AUTH
@@ -32,6 +33,9 @@ gem "bugsnag"
 group :development do
   gem "listen"
   gem "puma"
+
+  # LINTING
+  gem "brakeman", require: false
 
   # DEVELOPMENT
   gem "binding_of_caller"
@@ -60,8 +64,8 @@ group :test do
 end
 
 group :doc do
-  gem "redcarpet", require: nil
-  gem "yard", require: nil
+  gem "redcarpet", require: false
+  gem "yard", require: false
 end
 
 group :production do

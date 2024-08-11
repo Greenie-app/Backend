@@ -23,7 +23,7 @@ Bundler.require(*Rails.groups)
 module Greenie
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.1
+    config.load_defaults 7.2
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
@@ -50,7 +50,6 @@ module Greenie
     end
 
     # Use a real queuing backend for Active Job (and separate queues per environment).
-    config.active_job.queue_adapter     = :sidekiq
     config.active_job.queue_name_prefix = "greenie_#{Rails.env}"
 
     config.urls = config_for(:urls)

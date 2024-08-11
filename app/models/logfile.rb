@@ -24,7 +24,7 @@ require "logfile_processor"
 # | `failed_files` | The number of associated files that have failed processing. |
 
 class Logfile < ApplicationRecord
-  enum state: {pending: 0, in_progress: 1, complete: 2, failed: 3}
+  enum :state, {pending: 0, in_progress: 1, complete: 2, failed: 3}
 
   belongs_to :squadron
 
