@@ -14,7 +14,7 @@ console_command = '/rails/bin/rails console'
 
 [processes]
   app = './bin/rails server'
-  sidekiq = 'bundle exec sidekiq'
+  good_job = 'bundle exec good_job start'
 
 [http_service]
   internal_port = 3000

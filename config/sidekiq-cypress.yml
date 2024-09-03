@@ -1,7 +1,0 @@
----
-:concurrency: 5
-:pidfile: tmp/pids/sidekiq.pid
-:queues:
-- greenie_cypress_default
-- greenie_cypress_active_storage_analysis
-- greenie_cypress_active_storage_purge

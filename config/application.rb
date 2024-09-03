@@ -68,5 +68,18 @@ module Greenie
         port:     backend.port,
         protocol: backend.scheme
     }
+
+    # for GoodJob dashboard
+    config.middleware.use Rack::MethodOverride
+    config.middleware.use ActionDispatch::Flash
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore
+
+    config.active_job.queue_adapter          = :good_job
+    config.good_job.max_threads              = 2
+    config.good_job.poll_interval            = 30 # seconds
+    config.good_job.enable_cron              = true
+    config.good_job.dashboard_default_locale = :en
+    config.good_job.queues                   = "greenie_#{Rails.env}_default"
   end
 end
