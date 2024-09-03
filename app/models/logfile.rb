@@ -32,7 +32,7 @@ class Logfile < ApplicationRecord
 
   before_save :recalculate_state!
   after_create_commit :enqueue_process_job
-  after_commit(on: :create) { LogfilesChannel.broadcast_to squadron, LogfilesChannel::Coder.encode(self) }
+  after_commit { LogfilesChannel.broadcast_to squadron, LogfilesChannel::Coder.encode(self) }
 
   validates :files,
             attached:     true,
