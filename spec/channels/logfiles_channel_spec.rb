@@ -18,7 +18,7 @@ RSpec.describe LogfilesChannel do
 
   it "streams logfile creates" do
     expect { create :logfile, squadron: }.
-        to(have_broadcasted_to(squadron).with do |payload|
+        to(have_broadcasted_to(squadron).exactly(:twice).with do |payload|
              expect(payload).to match_json_expression(
                                   id:         Integer,
                                   state:      "pending",
