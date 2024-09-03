@@ -12,6 +12,6 @@ RSpec.describe FileProcessorJob do
   end
 
   it "processes increments failed_count for errors" do
-    skip "No support in Sidekiq"
+    skip "No support in GoodJob"
   end
 end

@@ -93,6 +93,4 @@ Rails.application.configure do
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 
   config.action_mailer.delivery_method = :sendmail
-
-  config.active_job.queue_adapter = :sidekiq
 end

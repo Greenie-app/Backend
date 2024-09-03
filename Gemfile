@@ -6,9 +6,9 @@ ruby "3.3.4"
 
 # FRAMEWORK
 gem "bootsnap"
+gem "good_job"
 gem "rack-cors"
 gem "rails"
-gem "sidekiq"
 
 # MODELS
 gem "active_storage_validations"

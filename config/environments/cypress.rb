@@ -53,4 +53,6 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   config.cache_store = :redis_cache_store, {url: "redis://localhost:6379/0/greenie_cypress_cache"}
+
+  config.good_job.poll_interval = 1
 end

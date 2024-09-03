@@ -7,7 +7,7 @@ of their pilots.
 
 Greenie.app consists of an API back-end, written in Ruby on Rails (this
 repository) and a tightly-coupled front-end, written in TypeScript and Vue.js.
-Along with these two processes, the website also uses a Sidekiq process to
+Along with these two processes, the website also uses a GoodJob process to
 execute background tasks, and a separate instance of the Rails server to send
 and receive data via WebSockets (Action Cable).
 
@@ -42,7 +42,7 @@ repository, run `bundle install` to install all gem requirements. Run
 `rails db:create db:migrate` to create the development database.
 
 Run the development server with `rails server`. Note that you will need to also
-run the front-end, the Sidekiq host, and the WebSockets server in order to use
+run the front-end, the GoodJob host, and the WebSockets server in order to use
 the complete website. The development server also assumes a Mailcatcher process
 is running on port 1025 to receive emails sent in development. (Mailcatcher is
 not part of the Gemfile and should be `gem install`ed manually.)
@@ -52,7 +52,7 @@ An example Foreman script that accomplishes all of this:
 ```
 backend: cd Backend && rvm 3.3.4@greenie exec rails server
 frontend: cd Frontend && yarn serve
-workers: cd Backend && rvm 3.3.4@greenie exec bundle exec sidekiq -C config/sidekiq.yml
+workers: cd Backend && rvm 3.3.4@greenie exec bundle exec good_job start
 cable: cd Backend && rvm 3.3.4@greenie exec ./bin/cable
 mail: mailcatcher -f
 ```
@@ -76,7 +76,7 @@ E2E test application:
 ```
 backend: cd Backend && rvm 3.3.4@greenie exec rails server -e cypress -b localhost
 frontend: cd Frontend && yarn run test:e2e
-workers: cd Backend && redis-cli flushall && rvm 3.3.4@greenie exec bundle exec sidekiq -C config/sidekiq.yml -e cypress
+workers: cd Backend && RAILS_ENV=cypress rvm 3.3.4@greenie exec bundle exec good_job start
 cable: cd Backend && rvm 3.3.4@greenie exec ./bin/cable -e cypress
 ```
 
@@ -98,7 +98,7 @@ to a {Pilot}. Pilots are uniquely identified by name and have no other
 attributes.
 
 The {LogfileProcessor} class parses dcs.log files and scans them for LSO grades.
-When logs are uploaded, {Logfile} records are created, and the Sidekiq job
+When logs are uploaded, {Logfile} records are created, and the GoodJob job
 processes them by calling LogfileProcessor.
 
 ### Authorization
