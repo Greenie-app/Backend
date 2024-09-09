@@ -50,10 +50,10 @@ not part of the Gemfile and should be `gem install`ed manually.)
 An example Foreman script that accomplishes all of this:
 
 ```
-backend: cd Backend && rvm 3.3.4@greenie exec rails server
+backend: cd Backend && rvm 3.3.5@greenie exec rails server
 frontend: cd Frontend && yarn serve
-workers: cd Backend && rvm 3.3.4@greenie exec bundle exec good_job start
-cable: cd Backend && rvm 3.3.4@greenie exec ./bin/cable
+workers: cd Backend && rvm 3.3.5@greenie exec bundle exec good_job start
+cable: cd Backend && rvm 3.3.5@greenie exec ./bin/cable
 mail: mailcatcher -f
 ```
 
@@ -74,10 +74,10 @@ An example Foreman script that launches all necessary processes and starts the
 E2E test application:
 
 ```
-backend: cd Backend && rvm 3.3.4@greenie exec rails server -e cypress -b localhost
+backend: cd Backend && rvm 3.3.5@greenie exec rails server -e cypress -b localhost
 frontend: cd Frontend && yarn run test:e2e
-workers: cd Backend && RAILS_ENV=cypress rvm 3.3.4@greenie exec bundle exec good_job start
-cable: cd Backend && rvm 3.3.4@greenie exec ./bin/cable -e cypress
+workers: cd Backend && RAILS_ENV=cypress rvm 3.3.5@greenie exec bundle exec good_job start
+cable: cd Backend && rvm 3.3.5@greenie exec ./bin/cable -e cypress
 ```
 
 #### Deployment
