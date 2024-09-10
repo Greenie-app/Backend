@@ -27,6 +27,9 @@ gem "redis"
 gem "devise"
 gem "devise-jwt"
 
+# ACTION CABLE
+gem "anycable-rails"
+
 # ERRORS
 gem "bugsnag"
 

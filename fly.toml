@@ -13,7 +13,7 @@ console_command = '/rails/bin/rails console'
   release_command = './bin/rails db:prepare'
 
 [processes]
-  app = './bin/rails server'
+  app = 'foreman start -f Procfile.fly'
   good_job = 'bundle exec good_job start'
 
 [http_service]

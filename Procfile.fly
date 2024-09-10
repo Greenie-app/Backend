@@ -1,0 +1,4 @@
+nginx: nginx -g 'daemon off;'
+server: bin/rails server -p 8081
+anycable: bundle exec anycable
+ws: anycable-go --port=8082

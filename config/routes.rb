@@ -12,10 +12,6 @@ Rails.application.routes.draw do
     get "/cypress/emails" => CypressEmails.new
   end
 
-  if Rails.env.production?
-    mount ActionCable.server => "/cable"
-  end
-
   devise_for :squadrons, skip: :all
   devise_scope :squadron do
     post "login" => "sessions#create"
