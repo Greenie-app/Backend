@@ -1,1 +1,1 @@
-bundle exec puma -p 28080 cable/config.ru --pidfile tmp/pids/cable.pid  $*
+bundle exec puma -p 8080 cable/config.ru --pidfile tmp/pids/cable.pid  $*

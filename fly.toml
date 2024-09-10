@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for greenie-app on 2024-06-19T15:19:06-07:00
+# fly.toml app configuration file generated for greenie-backend on 2024-09-11T12:54:50-07:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'greenie-app'
+app = 'greenie-backend'
 primary_region = 'sjc'
 console_command = '/rails/bin/rails console'
 
@@ -13,19 +13,33 @@ console_command = '/rails/bin/rails console'
   release_command = './bin/rails db:prepare'
 
 [processes]
-  app = './bin/rails server'
+  app = 'bin/rails server'
   good_job = 'bundle exec good_job start'
 
 [http_service]
   internal_port = 3000
-  force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'suspend'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']
 
+[checks]
+  [checks.status]
+    port = 3000
+    type = 'http'
+    interval = '10s'
+    timeout = '2s'
+    grace_period = '5s'
+    method = 'GET'
+    path = '/up'
+    protocol = 'http'
+    tls_skip_verify = false
+
+    [checks.status.headers]
+      X-Forwarded-Proto = 'https'
+
 [[vm]]
-  memory = '1gb'
+  memory = '512mb'
   cpu_kind = 'shared'
   cpus = 1
 

@@ -7,3 +7,4 @@ options:
   postgresql: true
   prepare: false
   redis: true
+  tigris: true
