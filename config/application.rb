@@ -81,5 +81,7 @@ module Greenie
     config.good_job.enable_cron              = true
     config.good_job.dashboard_default_locale = :en
     config.good_job.queues                   = "greenie_#{Rails.env}_default"
+
+    config.host_authorization = {exclude: ->(request) { request.path.start_with?("/up") }}
   end
 end

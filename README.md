@@ -53,7 +53,8 @@ An example Foreman script that accomplishes all of this:
 backend: cd Backend && rvm 3.3.5@greenie exec rails server
 frontend: cd Frontend && yarn serve
 workers: cd Backend && rvm 3.3.5@greenie exec bundle exec good_job start
-cable: cd Backend && rvm 3.3.5@greenie exec ./bin/cable
+anycable: cd Backend && rvm 3.3.5@greenie exec anycable
+ws: cd Backend && rvm 3.3.5@greenie execcbin/anycable-go --port=8080
 mail: mailcatcher -f
 ```
 
@@ -77,12 +78,20 @@ E2E test application:
 backend: cd Backend && rvm 3.3.5@greenie exec rails server -e cypress -b localhost
 frontend: cd Frontend && yarn run test:e2e
 workers: cd Backend && RAILS_ENV=cypress rvm 3.3.5@greenie exec bundle exec good_job start
-cable: cd Backend && rvm 3.3.5@greenie exec ./bin/cable -e cypress
+anycable: cd Backend && RAILS_ENV=cypress rvm 3.3.5@greenie exec anycable
+ws: cd Backend && rvm 3.3.5@greenie execcbin/anycable-go --port=8080
 ```
 
 #### Deployment
 
-The application is deployed using Capistrano by running `cap production deploy`.
+The application is deployed on Fly.io automatically after CI completes, with a
+GitHub Action. The `fly.toml` file contains the architecture for the production
+environment: an app server, a GoodJob worker server, a Redis cluster, and a
+PostgreSQL database cluster.
+
+The Rails processes run on a separate Fly.io cluster from the AnyCable
+processes. An nginx cluster reverse-proxies requests for `/cable` to the
+AnyCable process, and all other requests to the Rails process.
 
 ## Architecture
 

@@ -7,6 +7,7 @@ ruby "3.3.5"
 # FRAMEWORK
 gem "bootsnap"
 gem "good_job"
+gem "puma"
 gem "rack-cors"
 gem "rails"
 
@@ -27,12 +28,14 @@ gem "redis"
 gem "devise"
 gem "devise-jwt"
 
+# ACTION CABLE
+gem "anycable-rails"
+
 # ERRORS
 gem "bugsnag"
 
 group :development do
   gem "listen"
-  gem "puma"
 
   # LINTING
   gem "brakeman", require: false
