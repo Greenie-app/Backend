@@ -7,7 +7,7 @@ class CypressEmails
 
   # @private
   def call(env)
-    if (email = email_param(env).presence) # rubocop:disable Style/GuardClause
+    if (email = email_param(env).presence)
       return response(emails_for(email))
     else
       return bad_request
