@@ -147,9 +147,9 @@ class PassesController < ApplicationController
   end
 
   def pass_params
-    pass_params = params.require(:pass).permit(:time, :ship_name,
-                                               :aircraft_type, :grade, :score,
-                                               :trap, :wire, :notes, :pilot)
+    pass_params = params.expect(pass: %i[time ship_name
+                                         aircraft_type grade score
+                                         trap wire notes pilot])
 
     if (name = pass_params[:pilot]).present?
       pass_params[:pilot_id] = @squadron.pilots.find_or_create_by!(name:).id

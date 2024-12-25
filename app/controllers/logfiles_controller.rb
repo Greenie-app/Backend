@@ -38,5 +38,5 @@ class LogfilesController < ApplicationController
 
   private
 
-  def logfile_params = params.require(:logfile).permit(files: [])
+  def logfile_params = params.expect(logfile: [files: []])
 end
