@@ -81,7 +81,7 @@ RSpec.describe PassesChannel do
   end
 
   it "streams pass deletes" do
-    expect { @pass.destroy }.
+    expect { @pass.destroy! }.
         to(have_broadcasted_to(squadron).with do |payload|
              expect(payload).to match_json_expression(
                                   {
