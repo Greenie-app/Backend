@@ -105,7 +105,7 @@ class Pass < ApplicationRecord
     self.score ||= default_score
   end
 
-  def default_trap
+  def default_trap # rubocop:disable Naming/PredicateMethod
     !bolter? &&
       !technique_waveoff? && !foul_deck_waveoff? && !pattern_waveoff? &&
       !own_waveoff?

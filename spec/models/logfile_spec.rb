@@ -50,19 +50,19 @@ RSpec.describe Logfile do
     end
 
     it "returns in_progress if some jobs have been completed" do
-      logfile.update completed_files: 1
+      logfile.update! completed_files: 1
       logfile.recalculate_state!
       expect(logfile.state).to eq("in_progress")
     end
 
     it "returns complete if all jobs have been completed" do
-      logfile.update completed_files: 3
+      logfile.update! completed_files: 3
       logfile.recalculate_state!
       expect(logfile.state).to eq("complete")
     end
 
     it "returns failed if any job failed" do
-      logfile.update failed_files: 1
+      logfile.update! failed_files: 1
       logfile.recalculate_state!
       expect(logfile.state).to eq("failed")
     end
@@ -74,7 +74,7 @@ RSpec.describe Logfile do
     end
 
     it "returns the progress as a fraction" do
-      logfile.update completed_files: 3
+      logfile.update! completed_files: 3
       expect(logfile.progress).to eq(0.75)
     end
   end
