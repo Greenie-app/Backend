@@ -51,6 +51,6 @@ class SquadronsController < ApplicationController
   end
 
   def squadron_params
-    params.require(:squadron).permit :name, :username, :email, :image
+    params.expect squadron: %i[name username email image]
   end
 end

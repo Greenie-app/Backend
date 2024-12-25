@@ -42,11 +42,11 @@ class Logfile < ApplicationRecord
   # Creates {FileProcessorJob}s for each file attached to this record.
 
   def process!
-    files.each { FileProcessorJob.perform_later _1 }
+    files.each { FileProcessorJob.perform_later it }
   end
 
   def process_now!
-    files.each { FileProcessorJob.new(_1).perform_now }
+    files.each { FileProcessorJob.new(it).perform_now }
   end
 
   # @return [Float] The number of completed files, as a fraction of the total

@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.3.6"
+ruby "3.4.6"
 
 # FRAMEWORK
 gem "bootsnap"
@@ -62,7 +62,7 @@ group :test do
   gem "ffaker"
 
   # ISOLATION
-  gem "database_cleaner"
+  gem "database_cleaner-active_record"
   gem "webmock"
 end
 

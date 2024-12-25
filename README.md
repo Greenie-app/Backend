@@ -36,7 +36,7 @@ later.
 
 ### Installation and Running
 
-Greenie.app required Ruby 3.3, PostgreSQL, and Redis. (If you use Homebrew,
+Greenie.app required Ruby 3.4, PostgreSQL, and Redis. (If you use Homebrew,
 you can install those dependencies with `brew install`.) After cloning the
 repository, run `bundle install` to install all gem requirements. Run
 `rails db:create db:migrate` to create the development database.
@@ -50,11 +50,11 @@ not part of the Gemfile and should be `gem install`ed manually.)
 An example Foreman script that accomplishes all of this:
 
 ```
-backend: cd Backend && rvm 3.3.6@greenie exec rails server
+backend: cd Backend && rvm 3.4.6@greenie exec rails server
 frontend: cd Frontend && yarn serve
-workers: cd Backend && rvm 3.3.6@greenie exec bundle exec good_job start
-anycable: cd Backend && rvm 3.3.6@greenie exec anycable
-ws: cd Backend && rvm 3.3.6@greenie exec bin/anycable-go --port=8080
+workers: cd Backend && rvm 3.4.6@greenie exec bundle exec good_job start
+anycable: cd Backend && rvm 3.4.6@greenie exec anycable
+ws: cd Backend && rvm 3.4.6@greenie exec bin/anycable-go --port=8080
 mail: mailcatcher -f
 ```
 
@@ -75,11 +75,11 @@ An example Foreman script that launches all necessary processes and starts the
 E2E test application:
 
 ```
-backend: cd Backend && rvm 3.3.6@greenie exec rails server -e cypress -b localhost
+backend: cd Backend && rvm 3.4.6@greenie exec rails server -e cypress -b localhost
 frontend: cd Frontend && yarn run test:e2e
-workers: cd Backend && RAILS_ENV=cypress rvm 3.3.6@greenie exec bundle exec good_job start
-anycable: cd Backend && RAILS_ENV=cypress rvm 3.3.6@greenie exec anycable
-ws: cd Backend && rvm 3.3.6@greenie exec bin/anycable-go --port=8080
+workers: cd Backend && RAILS_ENV=cypress rvm 3.4.6@greenie exec bundle exec good_job start
+anycable: cd Backend && RAILS_ENV=cypress rvm 3.4.6@greenie exec anycable
+ws: cd Backend && rvm 3.4.6@greenie exec bin/anycable-go --port=8080
 ```
 
 #### Deployment

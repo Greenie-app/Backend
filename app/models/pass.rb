@@ -78,6 +78,7 @@ class Pass < ApplicationRecord
   validate :pilot_must_be_same_squadron
 
   extend SetNilIfBlank
+
   set_nil_if_blank :ship_name, :aircraft_type, :notes
 
   before_validation :set_defaults, on: :create
@@ -105,7 +106,7 @@ class Pass < ApplicationRecord
     self.score ||= default_score
   end
 
-  def default_trap
+  def default_trap # rubocop:disable Naming/PredicateMethod
     !bolter? &&
       !technique_waveoff? && !foul_deck_waveoff? && !pattern_waveoff? &&
       !own_waveoff?

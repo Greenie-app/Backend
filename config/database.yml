@@ -17,4 +17,5 @@ test: &test
 cypress: *test
 
 production:
+  url: <%= ENV['DATABASE_URL'] %>
   database: greenie_production
