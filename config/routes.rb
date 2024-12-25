@@ -42,7 +42,7 @@ Rails.application.routes.draw do
   end
 
   if Rails.env.production?
-    authenticate :squadron, -> { _1.admin? } do
+    authenticate :squadron, -> { it.admin? } do
       mount GoodJob::Engine => "good_job"
     end
   else

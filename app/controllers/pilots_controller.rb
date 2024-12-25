@@ -79,5 +79,5 @@ class PilotsController < ApplicationController
     @pilot = current_squadron.pilots.find_by!(name: params[:id])
   end
 
-  def pilot_params = params.require(:pilot).permit(:name)
+  def pilot_params = params.expect(pilot: %i[name])
 end
