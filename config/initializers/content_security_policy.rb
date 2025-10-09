@@ -6,9 +6,6 @@
 # See the Securing Rails Applications Guide for more information:
 # https://guides.rubyonrails.org/security.html#content-security-policy-header
 
-# Bugsnag requires:
-# - connect-src 'https://sessions.bugsnag.com'
-#
 # AWS assets require:
 # - img-src 'https://avfacts.s3.us-west-2.amazonaws.com'
 # - media-src <cloudfront url>
@@ -20,9 +17,7 @@ extra_image_sources = %w[
     https://avfacts.s3.us-west-2.amazonaws.com
 ]
 extra_script_sources = []
-extra_connect_sources = %w[
-    https://sessions.bugsnag.com
-]
+extra_connect_sources = %w[]
 
 if Rails.env.development? || Rails.env.cypress?
   extra_script_sources << :unsafe_eval << :unsafe_inline

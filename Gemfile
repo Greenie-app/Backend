@@ -32,7 +32,8 @@ gem "devise-jwt"
 gem "anycable-rails"
 
 # ERRORS
-gem "bugsnag"
+gem "sentry-rails"
+gem "sentry-ruby"
 
 group :development do
   gem "listen"

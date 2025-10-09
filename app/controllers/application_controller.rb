@@ -27,7 +27,6 @@ class ApplicationController < ActionController::API
   # Max per-page value for {#paginate}.
   MAX_PER_PAGE = 200
 
-  before_bugsnag_notify :add_user_info_to_bugsnag
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   respond_to :json
@@ -75,13 +74,6 @@ class ApplicationController < ActionController::API
   end
 
   private
-
-  def add_user_info_to_bugsnag(report)
-    report.user = {
-        id:   current_squadron.id,
-        name: current_squadron.username
-    } if squadron_signed_in?
-  end
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: %i[name image email])

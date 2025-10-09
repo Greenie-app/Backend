@@ -24,15 +24,18 @@ jobs:
       if: ${{ github.event.workflow_run.conclusion == 'success' }}
       runs-on: ubuntu-latest
       steps:
-        - name: Check out repository
-          uses: actions/checkout@v4
+        - uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
         - name: Set up flyctl
           uses: superfly/flyctl-actions/setup-flyctl@master
         - name: Deploy to Fly.io
           run: flyctl deploy --remote-only
-        - name: Notify Bugsnag
-          uses: psprings/bugsnag-release-action@v0.0.3
+        - name: Create Sentry release
+          uses: getsentry/action-release@v3
+          env:
+            SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+            SENTRY_ORG: timcodes
+            SENTRY_PROJECT: greenie-backend
           with:
-            apiKey: ${{ secrets.BUGSNAG_API_KEY }}
-            appVersion: ${{ github.sha }}
-            releaseStage: production
+            environment: production
