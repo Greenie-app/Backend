@@ -36,6 +36,10 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = {host: "localhost", port: 3000}
 
+  # Register mail interceptor to write emails to files for E2E testing
+  require "file_delivery_interceptor"
+  config.action_mailer.interceptors = ["FileDeliveryInterceptor"]
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
