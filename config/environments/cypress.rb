@@ -38,7 +38,7 @@ Rails.application.configure do
 
   # Register mail interceptor to write emails to files for E2E testing
   require "file_delivery_interceptor"
-  config.action_mailer.interceptors = ["FileDeliveryInterceptor"]
+  config.action_mailer.interceptors = %w[FileDeliveryInterceptor]
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
