@@ -36,11 +36,9 @@ class LogfilesController < ApplicationController
     respond_with @logfile
   rescue ActionDispatch::Http::Parameters::ParseError => e
     # Handle oversized upload errors gracefully
-    if e.message.include?('exceeded') || e.message.include?('limit')
-      render json: { errors: { files: ['File size exceeds maximum limit of 10MB'] } }, status: :unprocessable_entity
-    else
-      raise
-    end
+    raise unless e.message.include?("exceeded") || e.message.include?("limit")
+
+    render json: {errors: {files: ["File size exceeds maximum limit of 10MB"]}}, status: :unprocessable_entity
   end
 
   private
