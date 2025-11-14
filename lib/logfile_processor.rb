@@ -75,8 +75,8 @@ class LogfileProcessor
   def process_landing_line(timestamp, message)
     if (matches = message.match(/^Scripting: event:type=land,initiatorPilotName=(?<name>.+?),place=(?<ship>.+?),t=[0-9.]+,initiatorMissionID=(?<id>\d+),$/))
       @last_landing = {timestamp:, name: matches[:name], ship: matches[:ship], id: matches[:id].to_i}
-    elsif /^Scripting: event:place=.+?,t=[0-9.]+,type=land,initiatorMissionID=\d+,$/.match?(message)
-      @last_landing = {timestamp:, ai: true}
+    elsif (matches = message.match(/^Scripting: event:place=(?<ship>.+?),t=[0-9.]+,type=land,initiatorMissionID=(?<id>\d+),$/))
+      @last_landing = {timestamp:, ship: matches[:ship], id: matches[:id].to_i, ai: true}
     end
   end
 
