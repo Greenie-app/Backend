@@ -38,7 +38,6 @@ RSpec.describe PassesChannel do
                                       email:              squadron.email,
                                       created_at:         String,
                                       updated_at:         String,
-                                      boarding_rate:      squadron.boarding_rate,
                                       unknown_pass_count: squadron.unknown_pass_count,
                                       image:              {
                                           url: String
@@ -70,7 +69,6 @@ RSpec.describe PassesChannel do
                                       email:              squadron.email,
                                       created_at:         String,
                                       updated_at:         String,
-                                      boarding_rate:      squadron.boarding_rate,
                                       unknown_pass_count: squadron.unknown_pass_count,
                                       image:              {
                                           url: String

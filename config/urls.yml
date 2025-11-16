@@ -1,10 +1,10 @@
 development:
   frontend: 'http://localhost:5100'
-  backend: 'http://localhost:5100'
+  backend: 'http://localhost:5000'
   cable: 'ws://localhost:8080/cable'
 cypress:
   frontend: 'http://localhost:5100'
-  backend: 'http://localhost:5100'
+  backend: 'http://localhost:5000'
   cable: 'ws://localhost:8080/cable'
 test:
   frontend: 'http://frontend.example.com'

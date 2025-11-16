@@ -12,12 +12,11 @@ class PassesChannel < ApplicationCable::Channel
     extend self
 
     # @private
-    def encode(pass, boarding_rate: nil, unknown_pass_count: nil)
+    def encode(pass, unknown_pass_count: nil)
       ApplicationController.render partial: "passes/pass",
                                    locals:  {
                                        pass:,
                                        include_squadron:   true,
-                                       boarding_rate:,
                                        unknown_pass_count:
                                    }
     end

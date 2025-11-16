@@ -9,9 +9,8 @@ if defined?(include_squadron) && include_squadron
   json.squadron do
     json.partial! "squadrons/squadron",
                   locals: {
-                      squadron:       pass.squadron,
-                      boarding_rate:  defined?(boarding_rate) ? boarding_rate : nil,
-                      unknown_passes: defined?(unknown_pass_count) ? unknown_pass_count : nil
+                      squadron:           pass.squadron,
+                      unknown_pass_count: defined?(unknown_pass_count) ? unknown_pass_count : nil
                   }
   end
 end

@@ -2,8 +2,17 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "id": "file:/passes.json#",
   "title": "Passes",
-  "type": "array",
-  "items": {
-    "$ref": "file:/pass.json#"
-  }
+  "type": "object",
+  "properties": {
+    "passes": {
+      "type": "array",
+      "items": {
+        "$ref": "file:/pass.json#"
+      }
+    },
+    "boarding_rate": {
+      "type": ["number", "null"]
+    }
+  },
+  "required": ["passes", "boarding_rate"]
 }

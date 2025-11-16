@@ -30,6 +30,9 @@ class ResetCypress
   end
 
   def create_fixtures(upload: true)
+    # First ensure no squadron with this username or email exists
+    Squadron.where(username: "squadron-1").or(Squadron.where(email: "cypress@example.com")).destroy_all
+
     squadron = Squadron.create!(name:                  "Squadron 1",
                                 username:              "squadron-1",
                                 email:                 "cypress@example.com",

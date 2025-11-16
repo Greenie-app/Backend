@@ -8,7 +8,7 @@ class PassesController < ApplicationController
   before_action :set_squadron, only: %i[create update destroy unknown]
   before_action :find_pass, except: %i[index create unknown]
 
-  # Lists a Squadron's passes.
+  # Lists a Squadron's passes within a date range.
   #
   # Routes
   # ------
@@ -19,11 +19,30 @@ class PassesController < ApplicationController
   # ---------------
   #
   # | `squadron_id` | The username of a {Squadron}. |
+  #
+  # Query Parameters
+  # ----------------
+  #
+  # | `start_date` | The start date for filtering passes (optional, ISO 8601 format). |
+  # | `end_date` | The end date for filtering passes (optional, ISO 8601 format). |
 
   def index
-    @passes = @squadron.passes.includes(:pilot).order(time: :desc)
-    @passes = paginate(@passes)
+    @passes = @squadron.passes.includes(:pilot)
 
+    # Date filtering is required
+    unless params[:start_date].present? && params[:end_date].present?
+      render json: {error: "start_date and end_date parameters are required"}, status: :bad_request
+      return
+    end
+
+    return unless valid_date_params?
+
+    start_date = Time.zone.parse(params[:start_date]).beginning_of_day
+    end_date = Time.zone.parse(params[:end_date]).end_of_day
+    @passes = @passes.where(time: start_date..end_date)
+    @boarding_rate = @squadron.boarding_rate(start_date: start_date, end_date: end_date)
+
+    @passes = @passes.order(time: :desc)
     respond_with @passes
   end
 
@@ -124,7 +143,6 @@ class PassesController < ApplicationController
         pass.instance_variable_set :@destroyed, true
         PassesChannel.broadcast_to @squadron,
                                    PassesChannel::Coder.encode(pass,
-                                                               boarding_rate:      @squadron.boarding_rate,
                                                                unknown_pass_count: @squadron.unknown_pass_count)
       end
     end
@@ -157,5 +175,22 @@ class PassesController < ApplicationController
     pass_params.delete "pilot"
 
     return pass_params
+  end
+
+  def valid_date_params?
+    begin
+      parsed_start = Time.zone.parse(params[:start_date])
+      parsed_end = Time.zone.parse(params[:end_date])
+
+      if parsed_start.nil? || parsed_end.nil?
+        render json: {error: "Invalid date format"}, status: :bad_request
+        return false
+      end
+    rescue ArgumentError => e
+      render json: {error: "Invalid date format: #{e.message}"}, status: :bad_request
+      return false
+    end
+
+    true
   end
 end

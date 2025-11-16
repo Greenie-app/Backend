@@ -1,3 +1,4 @@
 # frozen_string_literal: true
 
-json.array! @passes, partial: "pass", as: :pass
+json.passes @passes, partial: "pass", as: :pass
+json.boarding_rate @boarding_rate

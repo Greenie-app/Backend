@@ -53,8 +53,8 @@ class Squadron < ApplicationRecord
   # @private
   def jwt_payload = {u: username}
 
-  def boarding_rate(days=50)
-    matching_passes = passes.where(Pass.arel_table[:time].gteq(days.days.ago.beginning_of_day))
+  def boarding_rate(start_date:, end_date:)
+    matching_passes = passes.where(time: start_date..end_date)
 
     attempts = matching_passes.where(Pass.arel_table[:trap].not_eq(nil)).count
     return nil if attempts.zero?

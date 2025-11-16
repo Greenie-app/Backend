@@ -25,15 +25,8 @@
       "type":   "string",
       "format": "date-time"
     },
-    "boarding_rate": {
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ]
+    "unknown_pass_count": {
+      "type": "number"
     },
     "image":         {
       "type":       [
@@ -57,6 +50,7 @@
     "username",
     "email",
     "created_at",
-    "updated_at"
+    "updated_at",
+    "unknown_pass_count"
   ]
 }
