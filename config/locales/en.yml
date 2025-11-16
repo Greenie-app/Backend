@@ -73,3 +73,93 @@ en:
       on_or_before: must be on or before %{restriction}
       after: must be after %{restriction}
       on_or_after: must be on or after %{restriction}
+  error_codes:
+    "/": Fly through the glideslope (going up)
+    "\\": Fly through the glideslope (going down)
+    "^": Over the top
+    3PTS: Landed 3 points
+    AA: Angling approach
+    ACC: Accelerate
+    AFU: All fouled up
+    B: Flat glideslope
+    C: Climbing
+    CB: Coming back to lineup
+    CD: Coming down
+    CH: Chased
+    CO: Come-on
+    CU: Cocked up
+    DD: Deck down
+    DEC: Decelerate
+    DL: Drifted left
+    DN: Dropped nose
+    DR: Drifted right
+    DU: Deck up
+    EG: Eased gun
+    F: Fast
+    FD: Fouled deck
+    GLI: Gliding approach
+    H: High
+    HO: Hold off
+    LIG: Long in the groove
+    LL: Landed left
+    LLU: Late lineup
+    LLWD: Landed left wing down
+    LNF: Landed nose first
+    LO: Low
+    LR: Landed right
+    LRWD: Landed right wing down
+    LTR: Left to right
+    LU: Lineup
+    LUL: Lined up left
+    LUR: Lined up right
+    LWD: Left wing down
+    N: Nose
+    NC: Nice correction
+    ND: Nose down
+    NEA: Not enough attitude
+    NEP: Not enough power
+    NERD: Not enough rate of descent
+    NERR: Not enough right rudder
+    NESA: Not enough straight away
+    NH: No hook
+    NSU: Not set up
+    OR: Overrotate
+    OS: Overshoot
+    OSCB: Overshot coming back
+    P: Power
+    PD: Pitching deck
+    PNU: Pulled nose up
+    PPP: Power, power, power
+    ROT: Rotate
+    RR: Right rudder
+    RTL: Right to left
+    RUD: Rudder
+    RUF: Rough
+    RWD: Right wing down
+    S: Settle
+    SD: Spotted deck
+    SHT: Ship's turn
+    SKD: Skid
+    SLO: Slow
+    SRD: Stopped rate of descent
+    ST: Steep turn
+    TCA: Too close abeam
+    TMA: Too much attitude
+    TMP: Too much power
+    TMRD: Too much rate of descent
+    TMRR: Too much right rudder
+    TTL: Turned too late
+    TTS: Turned too soon
+    TWA: Too wide abeam
+    W: Wings
+    WU: Wrapped up
+    XCTL: Cross control
+  phase_codes:
+    X: At the start
+    BC: Ball call
+    IM: In the middle
+    IC: In close
+    AR: At the ramp
+    TL: To land
+    IW: In the wires
+    AW: All the way

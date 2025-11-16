@@ -29,6 +29,7 @@ Rails.application.routes.draw do
 
   resources :squadrons, only: :show do
     resources :passes, only: %i[index show]
+    resources :pilots, only: %i[show], controller: "squadron_pilots"
   end
 
   resource :squadron, only: :update do
