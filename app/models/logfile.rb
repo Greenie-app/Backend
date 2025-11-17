@@ -52,7 +52,7 @@ class Logfile < ApplicationRecord
   # @return [Float] The number of completed files, as a fraction of the total
   #   file count.
 
-  def progress = completed_files.to_f/files.count
+  def progress = completed_files.to_f / files.count
 
   # Recalculates the value of the `state` property.
   #
@@ -75,6 +75,6 @@ class Logfile < ApplicationRecord
   end
 
   def enqueue_process_job
-    LogfileProcessorJob.set(wait: 10.seconds).perform_later self
+    LogfileProcessorJob.perform_later self
   end
 end
