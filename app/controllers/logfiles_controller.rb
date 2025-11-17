@@ -38,7 +38,7 @@ class LogfilesController < ApplicationController
     # Handle oversized upload errors gracefully
     raise unless e.message.include?("exceeded") || e.message.include?("limit")
 
-    render json: {errors: {files: ["File size exceeds maximum limit of 10MB"]}}, status: :unprocessable_entity
+    render json: {errors: {files: ["File size exceeds maximum limit of 10MB"]}}, status: :unprocessable_content
   end
 
   private

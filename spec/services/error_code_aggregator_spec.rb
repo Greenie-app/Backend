@@ -137,6 +137,98 @@ RSpec.describe ErrorCodeAggregator do
     end
   end
 
+  describe "#by_phase" do
+    it "groups errors by phase and returns top N for each" do
+      errors = [
+          technique_error.new(code: "LUL", intensity: :high, phase: "X", modifiers: []),
+          technique_error.new(code: "F", intensity: :medium, phase: "X", modifiers: []),
+          technique_error.new(code: "H", intensity: :low, phase: "X", modifiers: []),
+          technique_error.new(code: "DR", intensity: :low, phase: "X", modifiers: []),
+          technique_error.new(code: "LUL", intensity: :high, phase: "IM", modifiers: []),
+          technique_error.new(code: "F", intensity: :high, phase: "IM", modifiers: []),
+          technique_error.new(code: "H", intensity: :medium, phase: "IC", modifiers: [])
+      ]
+
+      aggregator = described_class.new(errors)
+      result = aggregator.by_phase(3)
+
+      expect(result.keys).to contain_exactly("X", "IM", "IC")
+
+      # X phase: LUL (2.0), F (1.0), H (0.5), DR (0.5) -> top 3: LUL, F, H
+      expect(result["X"].length).to eq(3)
+      expect(result["X"][0][:code]).to eq("LUL")
+      expect(result["X"][1][:code]).to eq("F")
+      expect(result["X"][2][:code]).to eq("H")
+
+      # IM phase: LUL (2.0), F (2.0)
+      expect(result["IM"].length).to eq(2)
+
+      # IC phase: H (1.0)
+      expect(result["IC"].length).to eq(1)
+      expect(result["IC"][0][:code]).to eq("H")
+    end
+
+    it "excludes AW phase by default" do
+      errors = [
+          technique_error.new(code: "LUL", intensity: :high, phase: "X", modifiers: []),
+          technique_error.new(code: "F", intensity: :high, phase: "AW", modifiers: [])
+      ]
+
+      aggregator = described_class.new(errors)
+      result = aggregator.by_phase(3)
+
+      expect(result.keys).to contain_exactly("X")
+      expect(result).not_to have_key("AW")
+    end
+
+    it "excludes custom phases when specified" do
+      errors = [
+          technique_error.new(code: "LUL", intensity: :high, phase: "X", modifiers: []),
+          technique_error.new(code: "F", intensity: :high, phase: "IM", modifiers: []),
+          technique_error.new(code: "H", intensity: :high, phase: "IC", modifiers: [])
+      ]
+
+      aggregator = described_class.new(errors)
+      result = aggregator.by_phase(3, exclude_phases: %w[AW IM])
+
+      expect(result.keys).to contain_exactly("X", "IC")
+    end
+
+    it "returns phases in correct order" do
+      errors = [
+          technique_error.new(code: "H", intensity: :high, phase: "IC", modifiers: []),
+          technique_error.new(code: "LUL", intensity: :high, phase: "X", modifiers: []),
+          technique_error.new(code: "F", intensity: :high, phase: "IW", modifiers: []),
+          technique_error.new(code: "DR", intensity: :high, phase: "IM", modifiers: [])
+      ]
+
+      aggregator = described_class.new(errors)
+      result = aggregator.by_phase(3)
+
+      expect(result.keys).to eq(%w[X IM IC IW])
+    end
+
+    it "handles nil phase errors" do
+      errors = [
+          technique_error.new(code: "LUL", intensity: :high, phase: "X", modifiers: []),
+          technique_error.new(code: "F", intensity: :high, phase: nil, modifiers: [])
+      ]
+
+      aggregator = described_class.new(errors)
+      result = aggregator.by_phase(3)
+
+      expect(result.keys).to include("X")
+      expect(result.keys).to include(nil)
+    end
+
+    it "handles empty errors array" do
+      aggregator = described_class.new([])
+      result = aggregator.by_phase(3)
+
+      expect(result).to be_empty
+    end
+  end
+
   describe "integration with RemarksParser" do
     it "aggregates errors from parsed remarks" do
       remarks = "GRADE:WO  (DLX)  _LULX_  _LULIM_  (DLIM)  WO(AFU)IC"

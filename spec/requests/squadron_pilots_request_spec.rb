@@ -102,28 +102,63 @@ RSpec.describe "Squadron Pilots routes" do
         expect(body["boarding_rate"]).to eq(0.5)
       end
 
-      it "returns aggregated error statistics" do
+      it "returns aggregated error statistics with overall top 3" do
         get "/squadrons/#{squadron.to_param}/pilots/#{pilot.to_param}.json?start_date=#{start_date}&end_date=#{end_date}"
 
         body = response.parsed_body
         stats = body["error_statistics"]
 
-        expect(stats).to be_an(Array)
-        expect(stats.length).to be <= 5 # Top 5 only
+        expect(stats).to be_a(Hash)
+        expect(stats).to include("overall", "by_phase")
+
+        overall = stats["overall"]
+        expect(overall).to be_an(Array)
+        expect(overall.length).to be <= 3 # Top 3 only
 
         # LUL should be the top error (appears 3 times with high intensity)
-        lul_stat = stats.find { |s| s["code"] == "LUL" }
+        lul_stat = overall.find { |s| s["code"] == "LUL" }
         expect(lul_stat).not_to be_nil
         expect(lul_stat["description"]).to eq("Lined up left")
         expect(lul_stat["score"]).to eq(6.0) # 3 * 2.0 (high intensity)
         expect(lul_stat["count"]).to eq(3)
       end
 
-      it "sorts error statistics by score descending" do
+      it "returns error statistics grouped by phase" do
         get "/squadrons/#{squadron.to_param}/pilots/#{pilot.to_param}.json?start_date=#{start_date}&end_date=#{end_date}"
 
         body = response.parsed_body
-        stats = body["error_statistics"]
+        by_phase = body["error_statistics"]["by_phase"]
+
+        expect(by_phase).to be_a(Hash)
+
+        # X phase should have LUL and F errors
+        expect(by_phase).to have_key("X")
+        expect(by_phase["X"]["phase_description"]).to eq("At the start")
+        x_errors = by_phase["X"]["errors"]
+        expect(x_errors).to be_an(Array)
+        expect(x_errors.length).to be <= 3
+
+        lul_in_x = x_errors.find { |e| e["code"] == "LUL" }
+        expect(lul_in_x).not_to be_nil
+
+        # IM phase should have LUL and DL errors
+        expect(by_phase).to have_key("IM")
+        expect(by_phase["IM"]["phase_description"]).to eq("In the middle")
+
+        # IC phase should have AFU errors
+        expect(by_phase).to have_key("IC")
+        expect(by_phase["IC"]["phase_description"]).to eq("In close")
+
+        # IW phase should have 3PTS and B errors
+        expect(by_phase).to have_key("IW")
+        expect(by_phase["IW"]["phase_description"]).to eq("In the wires")
+      end
+
+      it "sorts overall error statistics by score descending" do
+        get "/squadrons/#{squadron.to_param}/pilots/#{pilot.to_param}.json?start_date=#{start_date}&end_date=#{end_date}"
+
+        body = response.parsed_body
+        stats = body["error_statistics"]["overall"]
 
         scores = stats.pluck("score")
         expect(scores).to eq(scores.sort.reverse)
@@ -133,9 +168,14 @@ RSpec.describe "Squadron Pilots routes" do
         get "/squadrons/#{squadron.to_param}/pilots/#{pilot.to_param}.json?start_date=#{start_date}&end_date=#{end_date}"
 
         body = response.parsed_body
-        stats = body["error_statistics"]
+        overall = body["error_statistics"]["overall"]
+        by_phase = body["error_statistics"]["by_phase"]
 
-        expect(stats).to all(include("code", "description", "score", "count"))
+        expect(overall).to all(include("code", "description", "score", "count"))
+        by_phase.each_value do |phase_data|
+          expect(phase_data).to include("phase_description", "errors")
+          expect(phase_data["errors"]).to all(include("code", "description", "score", "count"))
+        end
       end
     end
 
@@ -148,7 +188,8 @@ RSpec.describe "Squadron Pilots routes" do
 
         expect(body["passes"]).to be_empty
         expect(body["boarding_rate"]).to eq(0.0)
-        expect(body["error_statistics"]).to be_empty
+        expect(body["error_statistics"]["overall"]).to be_empty
+        expect(body["error_statistics"]["by_phase"]).to be_empty
       end
     end
 
@@ -164,7 +205,8 @@ RSpec.describe "Squadron Pilots routes" do
         get "/squadrons/#{squadron.to_param}/pilots/#{pilot.to_param}.json?start_date=#{start_date}&end_date=#{end_date}"
 
         body = response.parsed_body
-        expect(body["error_statistics"]).to be_empty
+        expect(body["error_statistics"]["overall"]).to be_empty
+        expect(body["error_statistics"]["by_phase"]).to be_empty
       end
     end
 
@@ -176,7 +218,8 @@ RSpec.describe "Squadron Pilots routes" do
       expect(response).to have_http_status(:success)
       body = response.parsed_body
       expect(body["passes"].count).to eq(1)
-      expect(body["error_statistics"]).to be_empty
+      expect(body["error_statistics"]["overall"]).to be_empty
+      expect(body["error_statistics"]["by_phase"]).to be_empty
     end
   end
 end

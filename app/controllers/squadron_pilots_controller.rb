@@ -40,6 +40,7 @@ class SquadronPilotsController < ApplicationController
     @passes = @pilot.passes.where(time: start_date..end_date).order(time: :desc)
     @boarding_rate = calculate_boarding_rate(@passes)
     @error_statistics = calculate_error_statistics(@passes)
+    @error_statistics_by_phase = calculate_error_statistics_by_phase(@passes)
 
     respond_with @pilot
   end
@@ -72,7 +73,21 @@ class SquadronPilotsController < ApplicationController
     end
 
     aggregator = ErrorCodeAggregator.new(all_errors)
-    aggregator.top(5)
+    aggregator.top(3)
+  end
+
+  def calculate_error_statistics_by_phase(passes)
+    all_errors = []
+
+    passes.each do |pass|
+      next if pass.notes.blank?
+
+      parser = RemarksParser.new(pass.notes)
+      all_errors.concat(parser.parse)
+    end
+
+    aggregator = ErrorCodeAggregator.new(all_errors)
+    aggregator.by_phase(3)
   end
 
   def valid_date_params?

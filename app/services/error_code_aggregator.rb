@@ -66,4 +66,26 @@ class ErrorCodeAggregator
   # @param n [Integer] The number of top errors to return
   # @return [Array<Hash>] The top N aggregated errors
   def top(n=5) = aggregate.first(n)
+
+  # Aggregates errors by phase, calculating top N errors for each phase.
+  #
+  # @param n [Integer] The number of top errors to return per phase
+  # @param exclude_phases [Array<String>] Phases to exclude from results
+  # @return [Hash] Hash with phase codes as keys and arrays of top errors as values
+  #   Only includes phases that have errors
+  def by_phase(n=3, exclude_phases: %w[AW])
+    @technique_errors.
+        reject { |e| exclude_phases.include?(e.phase) }.
+        group_by(&:phase).
+        transform_values do |phase_errors|
+      ErrorCodeAggregator.new(phase_errors).top(n)
+    end.
+        reject { |_phase, errors| errors.empty? }.
+        sort_by { |phase, _errors| PHASE_ORDER.index(phase) || 999 }.
+        to_h
+  end
+
+  # @api private
+  PHASE_ORDER = %w[X BC IM IC AR TL IW AW].freeze
+  private_constant :PHASE_ORDER
 end
