@@ -37,6 +37,7 @@ gem "anycable-rails"
 # ERRORS
 gem "sentry-rails"
 gem "sentry-ruby"
+gem "vernier"
 
 group :development do
   gem "listen"

@@ -11,4 +11,5 @@ Sentry.init do |config|
 
   config.traces_sample_rate = 1.0
   config.profiles_sample_rate = 1.0
+  config.profiler_class = Sentry::Vernier::Profiler
 end
