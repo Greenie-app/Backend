@@ -68,7 +68,7 @@ class Logfile < ApplicationRecord
 
   def calculated_state
     return :failed if failed_files.positive?
-    return :complete if completed_files == files.count
+    return :complete if files.any? && completed_files == files.count
     return :pending if completed_files.zero? && failed_files.zero?
 
     return :in_progress

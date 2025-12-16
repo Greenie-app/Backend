@@ -24,6 +24,9 @@ gem "jbuilder"
 gem "kredis"
 gem "redis"
 
+# Pin connection_pool to 2.x until Rails supports 3.x
+gem "connection_pool", "~> 2.0"
+
 # AUTH
 gem "devise"
 gem "devise-jwt"

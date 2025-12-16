@@ -10,9 +10,7 @@ RSpec.describe Logfile do
     let(:logfile) { create :logfile, squadron: }
 
     it "processes log files and creates passes" do
-      logfile.tap do |logfile|
-        perform_enqueued_jobs { logfile.process! }
-      end
+      perform_enqueued_jobs { logfile }
 
       expect(squadron.passes.count).to eq(12)
 
